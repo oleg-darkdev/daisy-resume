@@ -1,6 +1,7 @@
 <script>
 	import Nav from '../lib/components/Nav.svelte';
 	import Hello from '../lib/components/Hello.svelte';
+	import Resume from '../lib/components/Resume.svelte';
 	// import GamesList from "../lib/components/GamesList.svelte";
 	import { fade } from 'svelte/transition';
 	let sections = [
@@ -39,20 +40,17 @@
 </svelte:head>
 
 {#if selectedSection.text == sections[0].text}
-	<section class="flex w-full flex-wrap justify-center bg-primary  p-4 text-primary-content">
-		<div class="h-full w-9/12 ">
-			<!-- -->
-			<Hello bind:selectedSection {sections} />
-		</div>
-		<div style="width: 300px;" class="flex h-full items-center  ">
-			<Nav bind:selectedSection {sections} />
-		</div>
+	<section class="hero flex w-full flex-wrap justify-center  p-4  ">
+			<div class="h-full w-w-7/12 ">
+				<Hello bind:selectedSection {sections} />
+			</div>
+			<div style="width: 300px;" class="flex h-full items-center  ">
+				<Nav bind:selectedSection {sections} />
+			</div>
 	</section>
 {:else if selectedSection.text == sections[1].text}
-	<section
-		class="flex w-full flex-wrap justify-center bg-primary bg-secondary p-4  text-secondary-content "
-	>
-		<div class="h-full w-9/12">text 2</div>
+	<section class="flex w-full flex-wrap justify-center bg-secondary p-4  text-secondary-content ">
+		<div class="h-full w-w-7/12">text 2</div>
 		<!--  -->
 		<div style="width: 300px;" class="flex h-full items-center ">
 			<Nav bind:selectedSection {sections} />
@@ -60,8 +58,8 @@
 	</section>
 {:else if selectedSection.text == sections[2].text}
 	<section class="flex w-full flex-wrap justify-center bg-success p-4  text-success-content ">
-		<div class="h-full w-9/12">
-			<!-- <GamesList /> -->
+		<div class="h-full w-7/12">
+			<Resume />
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center ">
 			<Nav bind:selectedSection {sections} />
@@ -69,7 +67,7 @@
 	</section>
 {:else if selectedSection.text == sections[3].text}
 	<section class="flex w-full flex-wrap justify-center bg-warning p-4  text-warning-content ">
-		<div class="h-full w-9/12">
+		<div class="h-full w-w-7/12">
 			<!-- <GamesList /> -->
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center ">
@@ -78,7 +76,7 @@
 	</section>
 {:else if selectedSection.text == sections[4].text}
 	<section class="flex w-full flex-wrap justify-center  bg-info p-4  text-info-content ">
-		<div class="h-full w-9/12">
+		<div class="h-full w-w-7/12">
 			<!-- <GamesList /> -->
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center ">
@@ -87,7 +85,7 @@
 	</section>
 {:else if selectedSection.text == sections[5].text}
 	<section class="flex w-full flex-wrap justify-center bg-error p-4 text-error-content ">
-		<div class="h-full w-9/12">
+		<div class="h-full w-w-7/12">
 			<!-- <GamesList /> -->
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center ">
@@ -99,5 +97,21 @@
 <style>
 	section {
 		min-height: 100vh;
+	}
+
+	.hero {
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		background: url(/images/hero.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		filter: brightness(80%);
 	}
 </style>
