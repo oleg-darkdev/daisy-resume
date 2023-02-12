@@ -12,23 +12,23 @@
 		},
 		{
 			text: 'About',
-			color: '#673AB7'
+			color: 'bg-secondary text-secondary-content '
 		},
 		{
 			text: 'Resume',
-			color: '#009688'
+			color: 'bg-success text-success-content'
 		},
 		{
 			text: 'Portfolio',
-			color: '#4CAF50'
+			color: 'bg-warning text-warning-content'
 		},
 		{
 			text: 'Activism',
-			color: '#4CAF50'
+			color: 'text-info-content bg-info '
 		},
 		{
 			text: 'Contact',
-			color: '#FF5722'
+			color: 'bg-error text-error-content'
 		}
 	];
 
@@ -41,17 +41,39 @@
 
 {#if selectedSection.text == sections[0].text}
 	<section class="hero flex w-full flex-wrap justify-center  p-4  ">
-			<div class="h-full w-w-7/12 ">
-				<Hello bind:selectedSection {sections} />
-			</div>
-			<div style="width: 300px;" class="flex h-full items-center  ">
-				<Nav bind:selectedSection {sections} />
-			</div>
+		<div class="w-7/12 h-full ">
+			<Hello bind:selectedSection {sections} />
+		</div>
+		<div style="width: 300px;" class="flex h-full items-center  ">
+			<Nav bind:selectedSection {sections} />
+		</div>
 	</section>
+{:else}
+	<section class="flex w-full flex-wrap justify-center p-4 {selectedSection.color}  ">
+		<div class="w-7/12 h-full flex flex-col">
+			{#if selectedSection.text == sections[1].text}
+				<h2>2</h2>
+			{:else if selectedSection.text == sections[2].text}
+				<Resume />
+			{:else if selectedSection.text == sections[3].text}
+
+      {:else if selectedSection.text == sections[4].text}
+
+      {:else if selectedSection.text == sections[5].text}
+
+      {/if}
+
+		</div>
+		<div style="width: 300px;" class="flex items-center ">
+			<Nav bind:selectedSection {sections} />
+		</div>
+	</section>
+{/if}
+
+<!--
 {:else if selectedSection.text == sections[1].text}
 	<section class="flex w-full flex-wrap justify-center bg-secondary p-4  text-secondary-content ">
 		<div class="h-full w-w-7/12">text 2</div>
-		<!--  -->
 		<div style="width: 300px;" class="flex h-full items-center ">
 			<Nav bind:selectedSection {sections} />
 		</div>
@@ -68,7 +90,6 @@
 {:else if selectedSection.text == sections[3].text}
 	<section class="flex w-full flex-wrap justify-center bg-warning p-4  text-warning-content ">
 		<div class="h-full w-w-7/12">
-			<!-- <GamesList /> -->
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center ">
 			<Nav bind:selectedSection {sections} />
@@ -77,7 +98,6 @@
 {:else if selectedSection.text == sections[4].text}
 	<section class="flex w-full flex-wrap justify-center  bg-info p-4  text-info-content ">
 		<div class="h-full w-w-7/12">
-			<!-- <GamesList /> -->
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center ">
 			<Nav bind:selectedSection {sections} />
@@ -86,14 +106,12 @@
 {:else if selectedSection.text == sections[5].text}
 	<section class="flex w-full flex-wrap justify-center bg-error p-4 text-error-content ">
 		<div class="h-full w-w-7/12">
-			<!-- <GamesList /> -->
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center ">
 			<Nav bind:selectedSection {sections} />
 		</div>
 	</section>
-{/if}
-
+{/if} -->
 <style>
 	section {
 		min-height: 100vh;
