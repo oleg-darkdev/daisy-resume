@@ -3,12 +3,18 @@
 </script>
 
 <div class="flex h-full w-full flex-row flex-wrap ">
-	<div class=" text flex flex-col justify-center" style="">
-		<h1 class="text-cyberway mb-4 mb-10 max-w-sm text-end text-6xl">
-			Hi 👐, <br /> I`m Oleg Medvedev
+	<div class=" text flex max-w-sm flex-col justify-center" style="">
+		<h1 class="text-cyberway mb-4 mb-10 text-end text-6xl text-white">
+			Hi 👐 <br /> I`m Oleg Medvedev
 		</h1>
-		<h2 class="m-1 text-end  text-3xl">Engineer 🛠</h2>
-		<h2 class="m-1 text-end  text-3xl">IT enthusiast 📟</h2>
+		<h2 class="m-1 text-end  text-3xl ">Engineer 🛠</h2>
+		<h2 class="m-1 text-end  text-3xl">IT enthusiast, Javascript developer 📟</h2>
+		<h2 class="m-1 text-end  text-3xl">
+			<a href="https://yellow-elephant.vercel.app/" class="link-warning link"
+				>Mistrz szachowy
+			</a>Białorusi
+		</h2>
+
 		<h2 class="m-1 text-end  text-3xl">
 			<a href="#boardgames" on:click={() => (selectedSection = sections[4])} class="link text-white"
 				>Boardgames creator</a
@@ -17,16 +23,20 @@
 		<h2 class="m-1 text-end  text-3xl">
 			Supporter <a href="https://github.com/oleg-darkdev" class="link">open-source</a> 👍
 		</h2>
-		<h2 class="m-1 text-end  text-3xl">
-			Founder of <a href="https://44hackerspace.vercel.app/" class="link-warning link">@44FabLab</a
-			>🤖
-		</h2>
 		<h2 class="m-1 text-end  text-3xl ">
 			Social
 			<a href="#boardgames" on:click={() => (selectedSection = sections[5])} class="link">
 				Activist
 			</a> 🏴
 		</h2>
+		<!-- <h2 class="m-1 text-end  text-3xl">
+			Founder of startups: <a href="https://44hackerspace.vercel.app/" class="link-primary link"
+				>@44FabLab</a
+			>, <a href="https://itingo.vercel.app/" class="link-secondary link">@ITingo</a>,
+			<a href="" class="link-success link">@darkdev.games</a>,
+      <a href="" class="link-success link">@kanbanel</a>,
+			<a href="https://yellow-elephant.vercel.app" class="link-warning link">@Yellow Elephant</a>
+		</h2> -->
 
 		<!-- <p class="text-2xl m-2 max-w-sm">💙 Comfortable in turquoise model of the organizations or organizations with a flat structure.</p>
 <p class="text-2xl m-2 max-w-sm">Opportunity to evolve , a chance to showcase my talents and creative thinking 🧠</p> -->
@@ -87,6 +97,6 @@
 	.text {
 		position: absolute;
 		left: 18%;
-		top: 20%;
+		top: 10%;
 	}
 </style>
