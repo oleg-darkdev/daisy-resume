@@ -1,5 +1,5 @@
 <script>
-  import npmPackages from '../data/activism/npm';
+  import npmPackages from '../../data/activism/npm';
 
   let showFullNpm = false;
 </script>

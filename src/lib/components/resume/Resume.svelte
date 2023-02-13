@@ -1,33 +1,11 @@
 <script>
-	import resumeData from '../data/resume';
-	import languages from '../data/languages';
-	import Statistics from './Statistics.svelte';
-	import statisticsData from '../data/statistics';
+	import resumeData from '../../data/resume/resume';
+	import languages from '../../data/resume/languages';
+	import Statistics from '../Statistics.svelte';
+	import statisticsData from '../../data/statistics';
+  import experienceData from '../../data/resume/experience';
 
-	let active = 0;
-
-	const experienceData = [
-		{
-			title: 'Lorem ipsum ',
-			desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-			stack: ['Design', 'SvelteJS', 'TailwindCSS'],
-			dates: ['11.10.2023', '11.20.2023']
-		},
-		{
-			title: '',
-			desc: '',
-			stack: ['', '', ''],
-			dates: ['', '']
-		},
-		{
-			title: '',
-			desc: '',
-			stack: ['', '', ''],
-			dates: ['', '']
-		}
-	];
-
-	let showFull = false;
+	let active = 0, showFull = false;
 </script>
 
 <Statistics statisticsData={statisticsData.commercial} />

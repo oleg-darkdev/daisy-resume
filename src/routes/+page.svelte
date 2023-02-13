@@ -2,10 +2,10 @@
   import Header from '../lib/components/Header.svelte';
 	import Nav from '../lib/components/Nav.svelte';
 	import Hello from '../lib/components/Hello.svelte';
-	import Resume from '../lib/components/Resume.svelte';
+	import Resume from '../lib/components/resume/Resume.svelte';
 	// import GamesList from "../lib/components/GamesList.svelte";
 	import { fade } from 'svelte/transition';
-	import Activism from '../lib/components/Activism.svelte';
+	import Activism from '../lib/components/activism/Activism.svelte';
 	import Contact from '../lib/components/Contact.svelte';
 	import About from '../lib/components/About.svelte';
 
