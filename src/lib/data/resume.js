@@ -46,64 +46,76 @@ const resume = {
 		{
 			img: '/images/resume/svelteJs.svg',
 			text: 'Svelte JS',
-			link: 'https://svelte.dev/'
+			link: 'https://svelte.dev/',
+			description: ''
 		},
 		{
 			img: '/images/resume/vueJs.svg',
 			text: 'Vue JS',
-			link: 'https://vuejs.org/'
+			link: 'https://vuejs.org/',
+			description: ''
 		},
 		{
 			img: '/images/resume/mongodb.svg',
 			text: 'Mongo DB',
-			link: 'https://www.mongodb.com/'
+			link: 'https://www.mongodb.com/',
+			description: ''
 		},
 		{
-			img: '',
+			img: '/images/resume/tailwind.svg',
 			text: 'TailwindCSS',
-			link: ''
+			link: 'https://tailwindcss.com/',
+			description: ''
 		},
 		{
-			img: '',
-			text: 'Mongo DB',
-			link: ''
+			img: '/images/resume/material.svg',
+			text: 'Material Design System',
+			link: 'https://m2.material.io/design',
+			description: ''
 		},
 		{
 			img: '/images/resume/scrum.svg',
 			text: 'Scrum',
-			link: 'https://www.scrum.org/'
+			link: 'https://www.scrum.org/',
+			description: ''
 		},
 		{
 			img: '/images/resume/m-3.svg',
 			text: 'M 3.0',
-			link: 'https://management30.com/'
+			link: 'https://management30.com/',
+			description: ''
 		},
 		{
 			img: '/images/resume/holacracy.svg',
 			text: 'Holacracy',
-			link: 'https://www.holacracy.org/'
+			link: 'https://www.holacracy.org/',
+			description: ''
 		},
 
 		{
 			img: '/images/resume/webpack.svg',
 			text: 'Webpack',
-			link: 'https://webpack.js.org/'
+			link: 'https://webpack.js.org/',
+			description: ''
 		},
 
 		{
 			img: '/images/resume/figma.svg',
 			text: 'Figma',
-			link: 'https://www.figma.com/'
+			link: 'https://www.figma.com/',
+			description: ''
 		},
 		{
 			img: '/images/resume/XD.svg',
 			text: 'Adobe XD',
-			link: 'https://www.adobe.com/products/xd.html'
+			link: 'https://www.adobe.com/products/xd.html',
+			description: ''
 		},
 		{
 			img: '/images/resume/illustrator.svg',
 			text: 'Illustrator',
-			link: 'https://www.adobe.com/products/illustrator/free-trial-download.html'
+			link: 'https://www.adobe.com/products/illustrator/free-trial-download.html',
+			description: ''
 		}
 	]
 };
