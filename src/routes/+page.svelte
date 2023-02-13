@@ -1,4 +1,5 @@
 <script>
+  import Header from '../lib/components/Header.svelte';
 	import Nav from '../lib/components/Nav.svelte';
 	import Hello from '../lib/components/Hello.svelte';
 	import Resume from '../lib/components/Resume.svelte';
@@ -11,7 +12,7 @@
 	let sections = [
 		{
 			text: 'Hello',
-			color: '#661AE6'
+			color: 'bg-primary text-primary-content'
 			// #E91E63
 		},
 		{
@@ -43,6 +44,7 @@
 	<title>Home</title>
 </svelte:head>
 
+<Header bind:selectedSection {sections}/>
 {#if selectedSection.text == sections[0].text}
 	<section class="hero flex w-full flex-wrap justify-center  p-4  ">
 		<div class="w-7/12 ">
