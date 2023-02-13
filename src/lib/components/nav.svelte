@@ -7,9 +7,7 @@
 		<h2 class="m-1 text-5xl text-white">{selectedSection.text}</h2>
 		<div class="w-full rounded-xl border p-1">
 			<div
-				on:click={() => {
-					selectedSection = sections[0];
-				}}
+				on:click={() => selectedSection = sections[0]}
 				class="h-16 w-full place-content-center rounded-t-xl {selectedSection == sections[0] ? 'bg-gray-800 ': 'bg-primary text-primary-content'}  hover:bg-white hover:bg-gray-800"
 			>
 				<!-- <a href="#hello"></a> -->
