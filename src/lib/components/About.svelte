@@ -3,6 +3,7 @@
 	import Statistics from './Statistics.svelte';
 	import statisticsData from '../data/statistics';
 	// добавить фото с хакатонов, выступлений и т.д.
+  // добавить секцию хобби из резюме
 	const gallery = [
 		{
 			img: '',
@@ -39,7 +40,7 @@
 
 <Statistics statisticsData={statisticsData.personal} />
 
-<SocialProjects />
+<!-- <SocialProjects /> -->
 
 <div class="mb-8 flex max-w-2xl flex-row flex-wrap">
 	{#each gallery as photo}

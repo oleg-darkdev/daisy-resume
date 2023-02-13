@@ -47,7 +47,7 @@
 <Header bind:selectedSection {sections}/>
 {#if selectedSection.text == sections[0].text}
 	<section class="hero flex w-full flex-wrap justify-center  p-4  ">
-		<div class="w-7/12 ">
+		<div class="xl:w-8/12 lg:w-7/12 md:w-7/12 w-full">
 			<Hello bind:selectedSection {sections} />
 		</div>
 		<div style="width: 300px;" class="nav flex items-center  ">
@@ -56,7 +56,7 @@
 	</section>
 {:else}
 	<section class="flex w-full flex-wrap justify-center p-4 {selectedSection.color}  ">
-		<div style="height: 100%;" class="flex w-7/12 flex-col  justify-start">
+		<div style="height: 100%;" class="flex xl:w-8/12 lg:w-7/12 md:w-7/12 w-full flex-col  justify-start">
 			{#if selectedSection.text == sections[1].text}
 				<About />
 			{:else if selectedSection.text == sections[2].text}
@@ -126,7 +126,7 @@
 		}
 		.hero {
 			background-position: left center;
-			background: url(/images/hero.png);
+			background: url(/images/hero_1.jpg);
 			top: 0;
 			left: 0;
 		}
@@ -134,7 +134,7 @@
 
 	@media (min-width: 780px) {
 		.hero {
-			background: url(/images/hero.png);
+			background: url(/images/hero_1.jpg);
 			top: 0;
 			left: 0;
 		}

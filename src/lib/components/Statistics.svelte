@@ -2,7 +2,11 @@
 	export let statisticsData;
 </script>
 
-<div class="stats mb-4 shadow {statisticsData.length <= 2 ? 'max-w-2xl' : ''}">
+<div
+	class="stats mb-4 shadow sm:stats-vertical md:stats-vertical {statisticsData.length <= 2
+		? 'md:max-w-2xl lg:max-w-2xl '
+		: ''}"
+>
 	{#each statisticsData as stat}
 		<div class="stat ">
 			<div class="stat-title">{stat.title}</div>
@@ -14,3 +18,7 @@
 		</div>
 	{/each}
 </div>
+
+<style>
+
+</style>

@@ -7,23 +7,23 @@
 		<h1 class="text-cyberway mb-4 mb-10 text-end text-6xl text-white">
 			Hi 👐 <br /> I`m Oleg Medvedev
 		</h1>
-		<h2 class="m-1 text-end  text-3xl ">Engineer 🛠</h2>
-		<h2 class="m-1 text-end  text-3xl">IT enthusiast, Javascript developer 📟</h2>
-		<h2 class="m-1 text-end  text-3xl">
-			<a href="https://yellow-elephant.vercel.app/" class="link-warning link"
+		<h2 class="m-1 text-end  text-3xl font-bold text-white">Engineer 🛠</h2>
+		<h2 class="m-1 text-end  text-3xl font-bold text-white">IT enthusiast, Javascript developer 📟</h2>
+		<h2 class="m-1 text-end  text-3xl font-bold text-white">
+			<a href="https://yellow-elephant.vercel.app/" class=" link"
 				>Mistrz szachowy
 			</a>Białorusi
 		</h2>
 
-		<h2 class="m-1 text-end  text-3xl">
+		<h2 class="m-1 text-end font-bold text-3xl  text-white">
 			<a href="#boardgames" on:click={() => (selectedSection = sections[4])} class="link text-white"
 				>Boardgames creator</a
 			>🎲
 		</h2>
-		<h2 class="m-1 text-end  text-3xl">
+		<h2 class="m-1 text-end font-bold text-3xl  text-white">
 			Supporter <a href="https://github.com/oleg-darkdev" class="link">open-source</a> 👍
 		</h2>
-		<h2 class="m-1 text-end  text-3xl ">
+		<h2 class="m-1 text-end  font-bold text-3xl  text-white">
 			Social
 			<a href="#boardgames" on:click={() => (selectedSection = sections[5])} class="link">
 				Activist

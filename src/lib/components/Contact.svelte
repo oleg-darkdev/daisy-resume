@@ -31,10 +31,10 @@
 	];
 </script>
 
-<div style="height: 100vh;"  class="flex w-full  items-center justify-center">
-  <div class="flex flex-col max-w-md">
-	<h2 class="text-5xl text-white">Contact with me 🖤</h2>
-	<div class="flex flex-row flex-wrap">
+<div style="height: 100vh;"  class="flex w-full  xl:items-center lg:items-center md:items-center items-start ">
+  <div class="flex flex-col max-w-md items-center pt-10">
+	<h2 class="xl:text-5xl lg:text-5xl md:text-4xl text-3xl text-white">Contact with me 🖤</h2>
+	<div class="flex flex-row flex-wrap items-center justify-center">
 		{#each cosialList as item}
 			<div class="avatar m-1 hover:bg-gray-800 rounded-xl">
 				<div class="w-32 rounded">
