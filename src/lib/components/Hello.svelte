@@ -94,9 +94,18 @@
 		background-image: url(https://raw.githubusercontent.com/oleg-darkdev/CV---Resume/master/src/lib/images/photo//my_photo_1.png);
 	} */
 
-	.text {
-		position: absolute;
-		left: 18%;
-		top: 10%;
+	@media (max-width: 780px) {
+		.text {
+			position: absolute;
+			left: 10%;
+			top: 10%;
+		}
+	}
+	@media (min-width: 780px) {
+		.text {
+			position: absolute;
+			left: 18%;
+			top: 10%;
+		}
 	}
 </style>
