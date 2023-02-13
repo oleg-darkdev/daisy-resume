@@ -64,7 +64,7 @@
 	>
 </div>
 
-<div class="container relative mb-20 flex w-full flex-row flex-wrap">
+<div class="container relative mb-20 flex w-full flex-row flex-wrap pr-14">
 	{#each active ? resumeData.toolsList : resumeData.skillsList as item}
 		<div class="box relative m-2 mb-10 rounded-lg bg-gray-800 hover:border hover:border-2">
 			<div class="imgBx">
@@ -80,7 +80,7 @@
 	{/each}
 </div>
 
-<div class="flex flex-col">
+<div class="flex flex-col mt-6">
 	<h2 class="mb-2 text-5xl font-bold text-gray-800">My experience</h2>
 	<div class="mb-2 flex flex-row flex-wrap">
 		{#each !showFull ? experienceData.slice(0, 4) : experienceData as experience}

@@ -16,7 +16,7 @@
 		</h2>
 
 		<h2 class="m-1 text-end font-bold text-3xl  text-white">
-			<a href="#boardgames" on:click={() => (selectedSection = sections[4])} class="link text-white"
+			<a href="" on:click={() => (selectedSection = sections[4])} class="link text-white"
 				>Boardgames creator</a
 			>🎲
 		</h2>
@@ -25,7 +25,7 @@
 		</h2>
 		<h2 class="m-1 text-end  font-bold text-3xl  text-white">
 			Social
-			<a href="#boardgames" on:click={() => (selectedSection = sections[5])} class="link">
+			<a href="" on:click={() => (selectedSection = sections[5])} class="link">
 				Activist
 			</a> 🏴
 		</h2>
@@ -51,7 +51,7 @@
 		<h2 class="m-1 text-4xl">🛠 Engineer</h2>
 		<h2 class="m-1 text-4xl">📟 IT enthusiast</h2>
 		<h2 class="m-1 text-4xl">🎲
-			<a href="#boardgames" on:click={() => (selectedSection = sections[4])} class="link text-white"
+			<a href="" on:click={() => (selectedSection = sections[4])} class="link text-white"
 				>Boardgames creator</a
 			>
 		</h2>
@@ -65,7 +65,7 @@
 		</h2>
 		<h2 class="m-1 text-4xl">
 			🏴 Social
-			<a href="#boardgames" on:click={() => (selectedSection = sections[5])} class="link">
+			<a href="" on:click={() => (selectedSection = sections[5])} class="link">
 				Activist
 			</a>
 		</h2>

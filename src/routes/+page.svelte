@@ -61,7 +61,6 @@
 				<About />
 			{:else if selectedSection.text == sections[2].text}
 				<Resume />
-				<!-- {:else if selectedSection.text == sections[3].text} -->
 			{:else if selectedSection.text == sections[3].text}
 				<Activism />
 			{:else if selectedSection.text == sections[4].text}
@@ -74,48 +73,6 @@
 	</section>
 {/if}
 
-<!--
-{:else if selectedSection.text == sections[1].text}
-	<section class="flex w-full flex-wrap justify-center bg-secondary p-4  text-secondary-content ">
-		<div class="w-w-7/12">text 2</div>
-		<div style="width: 300px;" class="flex items-center ">
-			<Nav bind:selectedSection {sections} />
-		</div>
-	</section>
-{:else if selectedSection.text == sections[2].text}
-	<section class="flex w-full flex-wrap justify-center bg-success p-4  text-success-content ">
-		<div class="w-7/12">
-			<Resume />
-		</div>
-		<div style="width: 300px;" class="flex items-center ">
-			<Nav bind:selectedSection {sections} />
-		</div>
-	</section>
-{:else if selectedSection.text == sections[3].text}
-	<section class="flex w-full flex-wrap justify-center bg-warning p-4  text-warning-content ">
-		<div class="w-w-7/12">
-		</div>
-		<div style="width: 300px;" class="flex items-center ">
-			<Nav bind:selectedSection {sections} />
-		</div>
-	</section>
-{:else if selectedSection.text == sections[4].text}
-	<section class="flex w-full flex-wrap justify-center  bg-info p-4  text-info-content ">
-		<div class="w-w-7/12">
-		</div>
-		<div style="width: 300px;" class="flex items-center ">
-			<Nav bind:selectedSection {sections} />
-		</div>
-	</section>
-{:else if selectedSection.text == sections[5].text}
-	<section class="flex w-full flex-wrap justify-center bg-error p-4 text-error-content ">
-		<div class="w-w-7/12">
-		</div>
-		<div style="width: 300px;" class="flex items-center ">
-			<Nav bind:selectedSection {sections} />
-		</div>
-	</section>
-{/if} -->
 <style>
 	section {
 		min-height: 100vh;
