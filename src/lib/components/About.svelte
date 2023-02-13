@@ -1,5 +1,5 @@
 <script>
-	import SocialProjects from './SocialProjects.svelte';
+	import SocialProjects from './activism/SocialProjects.svelte';
 	import Statistics from './Statistics.svelte';
 	import statisticsData from '../data/statistics';
 	// добавить фото с хакатонов, выступлений и т.д.
