@@ -1,17 +1,45 @@
 <script>
 	import resumeData from '../data/resume';
 	import languages from '../data/languages';
+	import Statistics from './Statistics.svelte';
+	import statisticsData from '../data/statistics';
 
 	let active = 0;
+
+	const experienceData = [
+		{
+			title: 'Lorem ipsum ',
+			desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
+			stack: ['Design', 'SvelteJS', 'TailwindCSS'],
+			dates: ['11.10.2023', '11.20.2023']
+		},
+		{
+			title: '',
+			desc: '',
+			stack: ['', '', ''],
+			dates: ['', '']
+		},
+		{
+			title: '',
+			desc: '',
+			stack: ['', '', ''],
+			dates: ['', '']
+		}
+	];
+
+  let showFull = false;
 </script>
 
-<div class="mb-20  flex w-full flex-row flex-wrap ">
+<Statistics statisticsData={statisticsData.commercial} />
+<Statistics statisticsData={statisticsData.social} />
+
+<div class="mb-12 mt-6 flex w-full flex-row flex-wrap ">
 	{#each languages as lang}
-		<div class="flex flex-col m-2 items-center">
+		<div class="m-2 flex flex-col items-center">
 			<h2 class="text-3xl text-gray-800 ">{lang.title}</h2>
 			<div
-				class="radial-progress bg-success text-gray-800  hover:bg-text-gray-800 hover:text-white"
-				style="--value: {lang.value}; --size:10rem; --thickness: 1.6rem; "
+				class="hover:bg-text-gray-800 radial-progress bg-success  text-gray-800 hover:text-white"
+				style="--value: {lang.value}; --size:8rem; --thickness: 1.0rem; "
 			>
 				<span class="text-5xl">{lang.label}</span>
 			</div>
@@ -21,18 +49,22 @@
 
 <div class="tabs">
 	<a
-		class="tab tab-lifted tab-lg hover:text-white {active ? 'text-gray-800' : 'text-white tab-active'}"
+		class="tab tab-lifted tab-lg hover:text-white {active
+			? 'text-gray-800'
+			: 'tab-active text-white'}"
 		on:click={() => (active = 0)}>My Skills</a
 	>
 	<a
-		class="tab tab-lifted tab-lg hover:text-white {active ? 'tab-active text-white' : 'text-gray-800'}"
+		class="tab tab-lifted tab-lg hover:text-white {active
+			? 'tab-active text-white'
+			: 'text-gray-800'}"
 		on:click={() => (active = 1)}>My stack</a
 	>
 </div>
 
-<div class="container relative flex w-full flex-row flex-wrap">
+<div class="container relative flex w-full flex-row flex-wrap mb-20">
 	{#each active ? resumeData.toolsList : resumeData.skillsList as item}
-		<div class="box relative rounded-lg m-2 mb-10 bg-gray-800 hover:border hover:border-2">
+		<div class="box relative m-2 mb-10 rounded-lg bg-gray-800 hover:border hover:border-2">
 			<div class="imgBx">
 				<img src={item.img} />
 			</div>
@@ -46,9 +78,28 @@
 	{/each}
 </div>
 
+<div class="flex flex-col">
+	<h2 class="font-bold text-5xl text-gray-800 mb-2">My experience</h2>
+	<div class="flex flex-row flex-wrap mb-2">
+		{#each !showFull ? experienceData.slice(0, 4) : experienceData as experience}
+			<div class="m-1 card w-96 bg-base-100 shadow-xl">
+				<div class="card-body">
+					<h2 class="card-title text-gray-200">{experience.title}</h2>
+					<p class="text-gray-200">{experience.desc}</p>
+          <p class="text-sm  text-warning dark:text-gray-400 mb-2">{experience.dates[0]} - {experience.dates[1]}</p>
+					<div class="card-actions justify-end">
+            {#each experience.stack as stack}
+						<button class="btn  gap-2 hover:bg-warning hover:text-gray-800"> {stack} </button>
+            {/each}
+					</div>
+				</div>
+			</div>
+		{/each}
+	</div>
+  <button class="btn btn-active btn-lg max-w-md" on:click={() => showFull = !showFull}>{!showFull ? 'Show': 'Hide'}  full experience</button>
+</div>
+
 <style>
-
-
 	.container {
 		transform-style: preserve-3d;
 		perspective: 500px;
@@ -60,7 +111,6 @@
 		transition: 0.5s;
 		transform-style: preserve-3d;
 		overflow: hidden;
-
 	}
 	.container:hover .box {
 		transform: rotateY(25deg);

@@ -1,5 +1,7 @@
 <script>
   import SocialProjects from "./SocialProjects.svelte";
+  import Statistics from './Statistics.svelte';
+  import statisticsData from '../data/statistics';
 
 	const photosList = [
 		{
@@ -36,6 +38,7 @@
 	];
 </script>
 
+<Statistics statisticsData={statisticsData.social} />
 
 <SocialProjects />
 
