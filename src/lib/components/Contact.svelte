@@ -31,7 +31,7 @@
 	];
 </script>
 
-<div style="height: 100vh;"  class="flex w-full  xl:items-center lg:items-center md:items-center items-start ">
+<div style="height: 100vh;"  class="flex w-full  xl:justify-center lg:justify-center md:justify-center justify-start items-center ">
   <div class="flex flex-col max-w-md items-center pt-10">
 	<h2 class="xl:text-5xl lg:text-5xl md:text-4xl text-3xl text-white">Contact with me 🖤</h2>
 	<div class="flex flex-row flex-wrap items-center justify-center">

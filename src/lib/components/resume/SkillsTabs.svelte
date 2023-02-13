@@ -20,7 +20,7 @@
 	>
 </div>
 
-<div class="container relative mb-20 flex w-full flex-row flex-wrap pr-14">
+<div class="container relative mb-20 flex w-full flex-row flex-wrap ">
 	{#each active ? resumeData.toolsList : resumeData.skillsList as item}
 		<div class="box relative m-2 mb-10 rounded-lg bg-gray-800 hover:border hover:border-2">
 			<div class="imgBx">

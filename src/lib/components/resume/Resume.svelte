@@ -15,7 +15,7 @@
 
 <!-- добавить ссылку на скачивание резюме для печати -->
 
-<div class="mb-12 mt-6 flex w-full flex-row flex-wrap justify-center">
+<div class="mb-12 mt-6 flex w-full flex-row flex-wrap xl:justify-start lg:justify-start md:justify-start justify-center">
 	{#each languages as lang}
 		<div class="m-2 flex flex-col items-center ">
 			<h2 class="text-3xl text-gray-800 ">{lang.title}</h2>
