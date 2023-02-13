@@ -41,7 +41,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Oleg DarkDev</title>
 </svelte:head>
 
 <Header bind:selectedSection {sections}/>
