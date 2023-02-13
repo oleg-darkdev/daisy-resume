@@ -4,6 +4,10 @@
 	import Resume from '../lib/components/Resume.svelte';
 	// import GamesList from "../lib/components/GamesList.svelte";
 	import { fade } from 'svelte/transition';
+	import Activism from '../lib/components/Activism.svelte';
+	import Contact from '../lib/components/Contact.svelte';
+  import About from '../lib/components/About.svelte';
+
 	let sections = [
 		{
 			text: 'Hello',
@@ -18,10 +22,10 @@
 			text: 'Resume',
 			color: 'bg-success text-success-content'
 		},
-		{
-			text: 'Portfolio',
-			color: 'bg-warning text-warning-content'
-		},
+		// {
+		// 	text: 'Portfolio',
+		// 	color: 'bg-warning text-warning-content'
+		// },
 		{
 			text: 'Activism',
 			color: 'text-info-content bg-info '
@@ -41,7 +45,7 @@
 
 {#if selectedSection.text == sections[0].text}
 	<section class="hero flex w-full flex-wrap justify-center  p-4  ">
-		<div class="w-7/12 h-full ">
+		<div class="h-full w-7/12 ">
 			<Hello bind:selectedSection {sections} />
 		</div>
 		<div style="width: 300px;" class="flex h-full items-center  ">
@@ -50,19 +54,18 @@
 	</section>
 {:else}
 	<section class="flex w-full flex-wrap justify-center p-4 {selectedSection.color}  ">
-		<div class="w-7/12 h-full flex flex-col">
+		<div style="height: 100%;" class="flex w-7/12 flex-col  justify-start">
 			{#if selectedSection.text == sections[1].text}
-				<h2>2</h2>
+				<About />
 			{:else if selectedSection.text == sections[2].text}
 				<Resume />
-			{:else if selectedSection.text == sections[3].text}
+			<!-- {:else if selectedSection.text == sections[3].text} -->
 
-      {:else if selectedSection.text == sections[4].text}
-
-      {:else if selectedSection.text == sections[5].text}
-
-      {/if}
-
+      {:else if selectedSection.text == sections[3].text}
+				<Activism />
+			{:else if selectedSection.text == sections[4].text}
+				<Contact />
+			{/if}
 		</div>
 		<div style="width: 300px;" class="flex items-center ">
 			<Nav bind:selectedSection {sections} />
@@ -130,6 +133,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		filter: brightness(80%);
+		/* filter: brightness(80%); */
 	}
 </style>
