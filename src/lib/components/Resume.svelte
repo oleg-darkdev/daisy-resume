@@ -26,7 +26,7 @@
 	>
 	<a
 		class="tab tab-lifted tab-lg hover:text-white {active ? 'tab-active text-white' : 'text-gray-800'}"
-		on:click={() => (active = 1)}>My Tools</a
+		on:click={() => (active = 1)}>My stack</a
 	>
 </div>
 
