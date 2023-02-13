@@ -1,6 +1,6 @@
 <script>
   import Header from '../lib/components/Header.svelte';
-	import Nav from '../lib/components/Nav.svelte';
+	// import Nav from '../lib/components/Nav.svelte';
 	import Hello from '../lib/components/Hello.svelte';
 	import Resume from '../lib/components/Resume.svelte';
 	// import GamesList from "../lib/components/GamesList.svelte";
@@ -51,7 +51,7 @@
 			<Hello bind:selectedSection {sections} />
 		</div>
 		<div style="width: 300px;" class="nav flex items-center  ">
-			<Nav bind:selectedSection {sections} />
+			<!-- <Nav bind:selectedSection {sections} /> -->
 		</div>
 	</section>
 {:else}
@@ -68,7 +68,7 @@
 			{/if}
 		</div>
 		<div style="width: 300px;" class="nav flex items-center ">
-			<Nav bind:selectedSection {sections} />
+			<!-- <Nav bind:selectedSection {sections} /> -->
 		</div>
 	</section>
 {/if}
