@@ -3,19 +3,22 @@
 
   let active = 0;
 </script>
-
-
+<h2
+	class="mb-4 rounded-xl bg-gray-800 p-4 text-5xl font-bold text-white md:w-8/12 lg:w-8/12 xl:w-8/12"
+>
+	My skills & stack
+</h2>
 <div class="tabs">
 	<a
-		class="tab tab-lifted tab-lg hover:text-white {active
+		class="tab tab-lifted tab-lg hover:text-info {active
 			? 'text-gray-800'
 			: 'tab-active text-white'}"
 		on:click={() => (active = 0)}>My Skills</a
 	>
 	<a
-		class="tab tab-lifted tab-lg hover:text-white {active
+		class="tab tab-lifted tab-lg hover:text-info {active
 			? 'tab-active text-white'
-			: 'text-gray-800'}"
+			: 'text-white'}"
 		on:click={() => (active = 1)}>My stack</a
 	>
 </div>
