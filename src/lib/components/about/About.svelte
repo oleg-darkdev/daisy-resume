@@ -55,7 +55,7 @@
 	class="mt-4 mb-4 flex flex-col rounded-xl bg-gray-700  p-4 md:w-8/12 lg:w-8/12 xl:w-9/12"
 >
 	<div class="flex flex-row flex-wrap">
-		<div style="width: 340px;" class="flex flex-col ">
+		<div style="width: 340px;" class="flex flex-col mb-6">
 			<h2
 				class="mb-2 rounded-xl bg-gray-800 p-4 text-4xl  text-white md:w-8/12 lg:w-8/12 xl:w-8/12"
 			>
@@ -133,7 +133,7 @@
 			<div class="card  m-1 w-96 bg-gray-800 shadow-xl hover:bg-gray-900">
 				<div class="card-body">
 					<h2 class="card-title text-error">{edu.title}</h2>
-					<p class=" text-sm dark:text-gray-400">
+					<p class=" text-sm text-error">
 						{edu.dates[0]} - {edu.dates[1]}
 					</p>
 					<!-- <p class="">{edu.institution}</p> -->
@@ -169,7 +169,7 @@
 			<div class="card  m-1 w-96 bg-gray-800 shadow-xl hover:bg-gray-900">
 				<div class="card-body">
 					<h2 class="card-title text-error">{course.title}</h2>
-					<p class=" text-sm dark:text-gray-400">
+					<p class=" text-sm text-error">
 						{course.dates[0]} - {course.dates[1]}
 					</p>
 					<!-- <p class="text-white">{course.institution}</p> -->

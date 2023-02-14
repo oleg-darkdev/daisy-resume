@@ -24,7 +24,7 @@
 							~{npm.downloads} downloads per week
 						</p>
 						<div class="card-actions justify-end">
-							<button class="btn  gap-2 hover:bg-error hover:text-gray-800">read more</button>
+							<button class="btn  gap-2 hover:bg-error hover:text-gray-800">Go to NPM</button>
 						</div>
 					</div>
 				</div>

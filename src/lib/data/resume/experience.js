@@ -83,11 +83,10 @@ const experienceData = [
 			'SvelteJS',
 			'NodeJS',
 			'MongoDB',
+			'Adobe Illustrator',
 			'3D',
 			'FlowbiteCSS',
-			'Adobe Illustrator',
-			'UX/UI',
-			'Corel Draw'
+			'UX/UI'
 		],
 		dates: ['15.06.2022', 'present'],
 		id: 6
@@ -106,8 +105,8 @@ const experienceData = [
 			'TailwindCSS',
 			'TelegrafJs',
 			'VueJs',
-			'Material Design System',
-			'Carbon Design System',
+			// 'Material Design System',
+			// 'Carbon Design System',
 			'Trello API',
 			'Scrum',
 			'Kanban'

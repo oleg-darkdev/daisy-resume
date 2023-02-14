@@ -46,6 +46,6 @@
 
 <style>
   .max-h-630 {
-    max-height: 630px;
+    max-height: 650px;
   }
 </style>
