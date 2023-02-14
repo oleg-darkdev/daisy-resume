@@ -28,16 +28,16 @@
 		</div>
 	{/each}
 </div>
-<div class="success-dark mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
+<div class="bg-gray-700 mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
 	<SkillsTabs />
 </div>
-<div class="success-dark mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
+<div class="bg-gray-700 mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
 	<Expirience />
 </div>
-<div class="success-dark mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
+<div class="bg-gray-700 mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
 	<Npm />
 </div>
-<div class="success-dark mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
+<div class="bg-gray-700 mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
 	<SocialProjects />
 </div>
 
