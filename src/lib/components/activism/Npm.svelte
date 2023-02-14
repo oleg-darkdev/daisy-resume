@@ -10,7 +10,7 @@
 	>
 		My npm packages
 	</h2>
-	<div class="mb-2 flex flex-row flex-wrap">
+	<div class="mb-6 flex flex-row flex-wrap">
 		{#each !showFullNpm ? npmPackages.slice(0, 6) : npmPackages as npm}
 			<a href={npm.link} target="_blank" rel="noopener noreferrer">
 				<div class="card m-1 w-64 bg-base-100 shadow-xl">
@@ -20,6 +20,9 @@
 							{npm.title}
 							<div class="badge-error badge">{npm.stack}</div>
 						</h2>
+						<p class=" text-sm text-2xl mb-2 text-white">
+							~{npm.downloads} downloads per week
+						</p>
 						<div class="card-actions justify-end">
 							<button class="btn  gap-2 hover:bg-error hover:text-gray-800">read more</button>
 						</div>
