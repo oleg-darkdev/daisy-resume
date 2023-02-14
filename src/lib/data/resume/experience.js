@@ -219,7 +219,8 @@ const experienceData = [
 		desc: [
 			'Modernized industrial electrical equipment for microchip production as an electromechanical engineer',
 			'Programmed equipment using BASIC and Fortran programming languages',
-			'Performed verification and calibration functions as a process engineer'
+			'Performed verification and calibration functions as a process engineer',
+			'Repair and adjustment of equipment for the production of micro-circuits and radio elements according to the qualification of the 6th category'
 		],
 		stack: ['Fortran', 'BASIC', 'Electricity'],
 		dates: ['02.09.2011', '16.09.2017'],
