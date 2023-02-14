@@ -7,7 +7,7 @@
 	import { fade } from 'svelte/transition';
 	import Activism from '../lib/components/activism/Activism.svelte';
 	import Contact from '../lib/components/Contact.svelte';
-	import About from '../lib/components/About.svelte';
+	import About from '../lib/components/about/About.svelte';
 
 	let sections = [
 		{
