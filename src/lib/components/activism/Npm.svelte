@@ -13,7 +13,7 @@
 	<div class="mb-6 flex flex-row flex-wrap">
 		{#each !showFullNpm ? npmPackages.slice(0, 6) : npmPackages as npm}
 			<a href={npm.link} target="_blank" rel="noopener noreferrer">
-				<div class="card m-1 w-64 bg-base-100 shadow-xl">
+				<div class="card m-1 w-64 hover:bg-gray-900 bg-gray-800 shadow-xl">
 					<figure><img async src={npm.img} alt={npm.title} /></figure>
 					<div class="card-body">
 						<h2 class="card-title -mt-6 text-gray-200">

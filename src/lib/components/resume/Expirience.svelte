@@ -4,14 +4,22 @@
 	let showFullExp = false, showFullDesc = false;
 </script>
 
-<h2
+<h2 data-aos="fade-up"
+		data-aos-delay="80"
+		data-aos-duration="400"
+		data-aos-once="true"
+		data-aos-mirror="true"
 	class="mb-2 rounded-xl bg-gray-800 p-4 text-5xl font-bold text-white md:w-8/12 lg:w-8/12 xl:w-8/12"
 >
 	My experience
 </h2>
-<div class="mb-6 flex flex-row flex-wrap ">
-	{#each showFullExp ? experienceData.slice(0, 2) : experienceData as experience (experience.id)}
-		<div class="card m-1 w-96 {experience.showFullDesc ? 'h-auto': 'max-h-630'} bg-base-100 shadow-xl">
+<div data-aos="fade-up"
+		data-aos-delay="80"
+		data-aos-duration="800"
+		data-aos-once="true"
+		data-aos-mirror="true"  class="mb-6 flex flex-row flex-wrap ">
+	{#each !showFullExp ? experienceData.slice(0, 2) : experienceData as experience (experience.id)}
+		<div class="card m-1 w-96 hover:bg-gray-900 bg-gray-800 {experience.showFullDesc ? 'h-auto': 'max-h-630'}  shadow-xl">
 			<div class="card-body">
 				<h2 class="card-title text-gray-200">{@html experience.title}</h2>
 				<p class=" text-sm dark:text-gray-400">

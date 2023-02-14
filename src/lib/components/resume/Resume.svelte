@@ -15,7 +15,11 @@
 
 <!-- добавить ссылку на скачивание резюме для печати -->
 
-<div class="mb-12 mt-6 flex w-full flex-row flex-wrap xl:justify-start lg:justify-start md:justify-start justify-center">
+<div data-aos="fade-up"
+		data-aos-delay="220"
+		data-aos-duration="1200"
+		data-aos-once="true"
+		data-aos-mirror="true"  class="mb-12 mt-6 flex w-full flex-row flex-wrap xl:justify-start lg:justify-start md:justify-start justify-center">
 	{#each languages as lang}
 		<div class="m-2 flex flex-col items-center ">
 			<h2 class="text-3xl text-gray-800 ">{lang.title}</h2>
@@ -28,7 +32,11 @@
 		</div>
 	{/each}
 </div>
-<div class="bg-gray-700 mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
+<div data-aos="fade-up"
+		data-aos-delay="300"
+		data-aos-duration="2000"
+		data-aos-once="true"
+		data-aos-mirror="true"  class="bg-gray-700 mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
 	<SkillsTabs />
 </div>
 <div class="bg-gray-700 mt-6 flex flex-col rounded-xl  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
