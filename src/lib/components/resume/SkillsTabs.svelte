@@ -1,8 +1,9 @@
 <script>
-  import resumeData from '../../data/resume/resume';
+	import { skillsTools } from '../../data/resume/resumeData';
 
-  let active = 0;
+	let active = 0;
 </script>
+
 <h2
 	class="mb-4 rounded-xl bg-gray-800 p-4 text-5xl font-bold text-white md:w-8/12 lg:w-8/12 xl:w-8/12"
 >
@@ -10,21 +11,21 @@
 </h2>
 <div class="tabs">
 	<a
-		class="tab tab-lifted tab-lg hover:text-info {active
+		class="tab tab-lifted tab-lg hover:text-info {
+    active
 			? 'text-gray-800'
-			: 'tab-active text-white'}"
+			: 'tab-active text-white'
+    }"
 		on:click={() => (active = 0)}>My Skills</a
 	>
 	<a
-		class="tab tab-lifted tab-lg hover:text-info {active
-			? 'tab-active text-white'
-			: 'text-white'}"
+		class="tab tab-lifted tab-lg hover:text-info {active ? 'tab-active text-white' : 'text-white'}"
 		on:click={() => (active = 1)}>My stack</a
 	>
 </div>
 
 <div class="container relative mb-20 flex w-full flex-row flex-wrap ">
-	{#each active ? resumeData.toolsList : resumeData.skillsList as item}
+	{#each active ? skillsTools.toolsList : skillsTools.skillsList as item}
 		<div class="box relative m-2 mb-10 rounded-lg bg-gray-800 hover:border hover:border-2">
 			<div class="imgBx">
 				<img src={item.img} />
@@ -40,7 +41,7 @@
 </div>
 
 <style>
-  .container {
+	.container {
 		transform-style: preserve-3d;
 		perspective: 500px;
 		margin: auto;

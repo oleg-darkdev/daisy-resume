@@ -5,12 +5,15 @@
 	import Volunteerism from './Volunteerism.svelte';
 
 	import statisticsData from '../../data/statistics';
-	import activismGallery from '../../data/activism/gallery';
+	import { gallery } from '../../data/activism/activismData';
 </script>
 
 <Statistics statisticsData={statisticsData.social} />
 
-<div class="mt-6 flex flex-col rounded-xl bg-gray-700  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
+<div
+	id="activism"
+	class="mt-6 flex flex-col rounded-xl bg-gray-700  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12"
+>
 	<SocialProjects />
 </div>
 
@@ -23,7 +26,7 @@
 </div>
 
 <div class="mt-6 flex flex-col rounded-xl bg-gray-700  p-4 md:w-10/12 lg:w-10/12 xl:w-10/12">
-	{#each activismGallery as photo}
+	{#each gallery as photo}
 		<div style="max-height: 450px;" class="card mb-4 max-w-3xl bg-base-100 shadow-xl lg:card-side">
 			<figure><img async src={photo.img} alt="Sopot goverment" /></figure>
 			<div class="card-body">

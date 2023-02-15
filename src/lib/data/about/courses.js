@@ -37,7 +37,7 @@ const coursesData = [
 		],
 		institution: 'Fundacja RC',
 		profession: 'The Fundraiser',
-		dates: ['04.10.2022', '15.01.2022'],
+		dates: ['04.10.2022', '15.01.2023'],
 		id: 10
 	},
 	{

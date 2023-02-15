@@ -1,10 +1,8 @@
 <script>
-  import Header from '../lib/components/Header.svelte';
+	import Header from '../lib/components/Header.svelte';
 	import Nav from '../lib/components/Nav.svelte';
 	import Hello from '../lib/components/Hello.svelte';
 	import Resume from '../lib/components/resume/Resume.svelte';
-	// import GamesList from "../lib/components/GamesList.svelte";
-	import { fade } from 'svelte/transition';
 	import Activism from '../lib/components/activism/Activism.svelte';
 	import Contact from '../lib/components/Contact.svelte';
 	import About from '../lib/components/about/About.svelte';
@@ -13,7 +11,6 @@
 		{
 			text: 'Hello',
 			color: 'bg-primary text-primary-content'
-			// #E91E63
 		},
 		{
 			text: 'About',
@@ -44,10 +41,10 @@
 	<title>Oleg DarkDev</title>
 </svelte:head>
 
-<Header bind:selectedSection {sections}/>
+<Header bind:selectedSection {sections} />
 {#if selectedSection.text == sections[0].text}
 	<section class="hero flex w-full flex-wrap justify-center  p-4  ">
-		<div class="xl:w-8/12 lg:w-7/12 md:w-7/12 w-full">
+		<div class="w-full md:w-7/12 lg:w-7/12 xl:w-8/12">
 			<Hello bind:selectedSection {sections} />
 		</div>
 		<div style="width: 300px;" class="nav flex items-center  ">
@@ -56,7 +53,13 @@
 	</section>
 {:else}
 	<section class="flex w-full flex-wrap justify-center p-4 {selectedSection.color}  ">
-		<div style="height: 100%;" class="flex xl:w-8/12 lg:w-7/12 md:w-7/12 w-full flex-col  justify-start">
+		<div
+			style="height: 100%;"
+			class="flex w-full flex-col justify-start md:w-7/12 lg:w-7/12  xl:w-8/12"
+		>
+			<a name="about" /> <a name="resume" />
+			<a name="activism" />
+
 			{#if selectedSection.text == sections[1].text}
 				<About />
 			{:else if selectedSection.text == sections[2].text}
@@ -76,6 +79,10 @@
 <style>
 	section {
 		min-height: 100vh;
+	}
+
+	.hidden {
+		display: none;
 	}
 	@media (max-width: 780px) {
 		.nav {

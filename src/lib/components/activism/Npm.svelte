@@ -1,5 +1,5 @@
 <script>
-	import npmPackages from '../../data/activism/npm';
+	import { npmPackages } from '../../data/activism/activismData';
 
 	let showFullNpm = false;
 </script>
@@ -13,14 +13,14 @@
 	<div class="mb-6 flex flex-row flex-wrap">
 		{#each !showFullNpm ? npmPackages.slice(0, 6) : npmPackages as npm}
 			<a href={npm.link} target="_blank" rel="noopener noreferrer">
-				<div class="card m-1 w-64 hover:bg-gray-900 bg-gray-800 shadow-xl">
+				<div class="card m-1 w-64 bg-gray-800 shadow-xl hover:bg-gray-900">
 					<figure><img async src={npm.img} alt={npm.title} /></figure>
 					<div class="card-body">
 						<h2 class="card-title -mt-6 text-gray-200">
 							{npm.title}
 							<div class="badge-error badge">{npm.stack}</div>
 						</h2>
-						<p class=" text-sm text-2xl mb-2 text-white">
+						<p class=" mb-2 text-sm text-2xl text-white">
 							~{npm.downloads} downloads per week
 						</p>
 						<div class="card-actions justify-end">

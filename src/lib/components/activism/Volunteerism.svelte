@@ -1,7 +1,7 @@
 <script>
-  	import volunteerismData from '../../data/activism/volunteerism';
+	import { volunteerism } from '../../data/activism/activismData';
 
-    let showFullVol = false;
+	let showFullVol = false;
 </script>
 
 <h2
@@ -22,7 +22,7 @@
 	data-aos-mirror="true"
 	class="mb-6 flex flex-row flex-wrap "
 >
-	{#each !showFullVol ? volunteerismData.slice(0, 2) : volunteerismData as vol (vol.id)}
+	{#each !showFullVol ? volunteerism.slice(0, 2) : volunteerism as vol (vol.id)}
 		<div
 			class="card m-1 w-96 bg-gray-800 hover:bg-gray-900 {vol.showFullDesc
 				? 'h-auto'

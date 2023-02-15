@@ -1,4 +1,4 @@
-const volunteerismData = [
+const volunteerism = [
 	// <a href="http://" target="_blank" class="link link-info" rel="noopener noreferrer"></a>
 	{
 		title: '',
@@ -50,4 +50,4 @@ const volunteerismData = [
 	}
 ];
 
-export default volunteerismData;
+export default volunteerism;

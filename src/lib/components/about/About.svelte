@@ -1,49 +1,11 @@
 <script>
-	import SocialProjects from '../activism/SocialProjects.svelte';
 	import Statistics from '../Statistics.svelte';
 	import statisticsData from '../../data/statistics';
-	import interests from '../../data/about/interests';
-	import educationData from '../../data/about/educationData';
-	import coursesData from '../../data/about/coursesData';
-
-	// добавить фото с хакатонов, выступлений и т.д.
-	// const gallery = [
-	// 	{
-	// 		img: '',
-	// 		title: '',
-	// 		desc: ''
-	// 	},
-	// 	{
-	// 		img: '',
-	// 		title: '',
-	// 		desc: ''
-	// 	},
-	// 	{
-	// 		img: '',
-	// 		title: '',
-	// 		desc: ''
-	// 	},
-	// 	{
-	// 		img: '',
-	// 		title: '',
-	// 		desc: ''
-	// 	},
-	// 	{
-	// 		img: '',
-	// 		title: '',
-	// 		desc: ''
-	// 	},
-	// 	{
-	// 		img: '',
-	// 		title: '',
-	// 		desc: ''
-	// 	}
-	// ];
+	import { interests, education, courses } from '../../data/about/aboutData';
 
 	let showFullCourses = false;
 </script>
 
-<a name="resume"></a>
 <Statistics statisticsData={statisticsData.personal} />
 
 <div
@@ -55,7 +17,7 @@
 	class="mt-4 mb-4 flex flex-col rounded-xl bg-gray-700  p-4 md:w-8/12 lg:w-8/12 xl:w-9/12"
 >
 	<div class="flex flex-row flex-wrap">
-		<div style="width: 340px;" class="flex flex-col mb-6">
+		<div style="width: 340px;" class="mb-6 flex flex-col">
 			<h2
 				class="mb-2 rounded-xl bg-gray-800 p-4 text-4xl  text-white md:w-8/12 lg:w-8/12 xl:w-8/12"
 			>
@@ -64,16 +26,20 @@
 			<p class="m-1 text-start  text-2xl  text-white hover:text-error">Engineer 🛠</p>
 			<p class="m-1 text-start  text-2xl  text-white hover:text-error">Javascript developer 📟</p>
 			<p class="m-1 text-start  text-2xl  text-white hover:text-error">
-				<a href="https://yellow-elephant.vercel.app/" class=" link">Mistrz szachowy </a>Białorusi
+				Belarus <a href="https://yellow-elephant.vercel.app/" class=" link">
+					national chess champion
+				</a>
 			</p>
 
-			<p class="m-1 text-start  text-2xl  text-white hover:text-error">Boardgames creator 🎲</p>
 			<p class="m-1 text-start  text-2xl  text-white hover:text-error">
-				Supporter <a href="https://github.com/oleg-darkdev" class="link">open-source</a> 👍
+				Certified kanban master 😎
 			</p>
-			<p class="m-1 text-start   text-2xl  text-white hover:text-error">
-				Social Activist
+			<p class="m-1 text-start  text-2xl  text-white hover:text-error">Boardgames creator 🎲</p>
+
+			<p class="m-1 text-start  text-2xl  text-white hover:text-error">
+				Contributer <a href="https://github.com/oleg-darkdev" class="link">open-source</a> 👍
 			</p>
+			<p class="m-1 text-start   text-2xl  text-white hover:text-error">Social Activist</p>
 			<p class="m-1 text-start  text-2xl text-white hover:text-error">
 				Founder of startups: <a href="https://44hackerspace.vercel.app/" class="link-primary link"
 					>@44FabLab</a
@@ -129,7 +95,7 @@
 		data-aos-mirror="true"
 		class="flex flex-row flex-wrap"
 	>
-		{#each educationData as edu}
+		{#each education as edu}
 			<div class="card  m-1 w-96 bg-gray-800 shadow-xl hover:bg-gray-900">
 				<div class="card-body">
 					<h2 class="card-title text-error">{edu.title}</h2>
@@ -165,7 +131,7 @@
 		data-aos-mirror="true"
 		class="mb-4 flex flex-row flex-wrap"
 	>
-		{#each !showFullCourses ? coursesData.slice(0, 2) : coursesData as course}
+		{#each !showFullCourses ? courses.slice(0, 2) : courses as course}
 			<div class="card  m-1 w-96 bg-gray-800 shadow-xl hover:bg-gray-900">
 				<div class="card-body">
 					<h2 class="card-title text-error">{course.title}</h2>
@@ -186,15 +152,3 @@
 		>{!showFullCourses ? 'Show' : 'Hide'} full cources</button
 	>
 </div>
-
-<!-- <div class="mb-8 flex max-w-2xl flex-row flex-wrap">
-		{#each gallery as photo}
-			<div class="card-compact card m-1 w-80 bg-base-100 shadow-xl">
-				<figure><img src={photo.img} alt={photo.title} /></figure>
-				<div class="card-body">
-					<h2 class="card-title">{photo.title}</h2>
-					<p>{photo.desc}</p>
-				</div>
-			</div>
-		{/each}
-	</div> -->

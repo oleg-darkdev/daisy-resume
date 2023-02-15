@@ -45,18 +45,12 @@ const statistics = {
 
 			<a href="https://yellow-elephant.vercel.app" class="link-warning link">@Yellow Elephant</a>`
 		},
-		// <a href="" class="link-success link">@darkdev.games</a>,
-		// <a href="" class="link-success link">@kanbanel</a>,
 		{
 			title: 'Volunteer years',
 			value: 8,
 			desc: 'Nominated for "Sopot Volunteer of the Year 2022".'
 		}
-		// {
-		// 	title: '',
-		// 	value: 0,
-		// 	desc: ''
-		// }
+
 	]
 };
 

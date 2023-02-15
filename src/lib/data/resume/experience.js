@@ -79,15 +79,7 @@ const experienceData = [
 			'Repair and modernization of 3D printers',
 			`Designing UI/UX for the project's website`
 		],
-		stack: [
-			'SvelteJS',
-			'NodeJS',
-			'MongoDB',
-			'Adobe Illustrator',
-			'3D',
-			'FlowbiteCSS',
-			'UX/UI'
-		],
+		stack: ['SvelteJS', 'NodeJS', 'MongoDB', 'Adobe Illustrator', '3D', 'FlowbiteCSS', 'UX/UI'],
 		dates: ['15.06.2022', 'present'],
 		id: 6
 	},
@@ -136,7 +128,7 @@ const experienceData = [
 			'Led a 4-persons team as a scrum master'
 		],
 		stack: ['BootstrapCSS', 'VueJs', 'C#', 'Cryptocurrencies', 'CSS3', 'Figma', 'Scrum', 'NodeJS'],
-		dates: ['17.10.2020', '20.06.2020'],
+		dates: ['17.10.2019', '20.06.2020'],
 		id: 9
 	},
 	{
@@ -164,13 +156,13 @@ const experienceData = [
 	{
 		title: 'StartUp: DarkDev.games',
 		desc: [
-			'Managed two teams of 5 people each, using Agile methodology and Scrum framework for 4 months',
-			'Organized a booth with educational board games in collaboration with event organizers at LVEE conference',
+			'Managed two teams of 5 people each, using Agile methodology and Scrum framework',
 			'Designed game mechanics for 17 educational board games',
 			'Created graphic designs in Adobe Illustrator for 12 educational board games',
 			'Developed UX/UI for 12 web applications complementing educational board games',
 			'Established a collaboration with a printing company "Listovka" for printing games with more favorable conditions',
-			'Developed 4 Telegram bots, using NodeJS, C#, TelegrafJS technologies and Development of 12 web applications using technologies: VueJs, SvelteJS, TailwindCSS, Material Design System, SocketIO'
+			'Organized a booth with educational board games in collaboration with event organizers at LVEE conference',
+			'Development of 12 web applications using technologies: VueJs, SvelteJS, TailwindCSS, Material Design System, SocketIO and developed 4 Telegram bots, using NodeJS, C#, TelegrafJS'
 		],
 		stack: ['Material Design System', 'SvelteJS', 'NodeJS', 'Adobe Illustrator', 'TelegrafJs'],
 		dates: ['17.01.2019', 'present'],
@@ -180,12 +172,12 @@ const experienceData = [
 		title:
 			'<a href="https://falanster.by/" target="_blank" class="link link-info" rel="noopener noreferrer">Falanster</a>',
 		desc: [
-			`Developed several critical components of the ecosystem, created a chat widget for the organization's homepage using stack: SocketIO, VueJs, HTML5, CSS3 `,
+			`Developed several critical components of the ecosystem, created a chat widget using stack: SocketIO, VueJs, HTML5, CSS3`,
 			'Assisted in creating and mentoring a team of 6 IT volunteers.',
 			'Prepared a course with educational materials for volunteers',
 			'Developed UX/UI and product design for an IT volunteer project using Figma.',
 			'Assisted in setting up Ci/CD',
-			'Development of  several NPM packages for NodeJs'
+			'Development of several NPM packages for NodeJs'
 		],
 		stack: [
 			'HTML5',
@@ -197,7 +189,7 @@ const experienceData = [
 			'Figma',
 			'SocketIO'
 		],
-		dates: ['10.09.2017', '10.08.2018'],
+		dates: ['10.09.2017', '10.05.2018'],
 		id: 12
 	},
 	{
@@ -209,7 +201,7 @@ const experienceData = [
 			`Designed UX/UI for clients' web pages using Figma, resulting in more user-friendly and visually appealing websites.`
 		],
 		stack: ['Adobe Illustrator', 'Figma', 'BootstrapCSS', 'CSS3', 'HTML5', 'GulpJS', 'SCSS'],
-		dates: ['10.09.2017', '10.05.2018'],
+		dates: ['10.01.2017', '10.06.2017'],
 		id: 13
 	},
 	{
@@ -222,7 +214,7 @@ const experienceData = [
 			'Repair and adjustment of equipment for the production of micro-circuits and radio elements according to the qualification of the 6th category'
 		],
 		stack: ['Fortran', 'BASIC', 'Electricity'],
-		dates: ['02.09.2011', '16.09.2017'],
+		dates: ['02.09.2012', '16.09.2016'],
 		id: 14
 	}
 ];

@@ -1,38 +1,48 @@
 <script>
-	import experienceData from '../../data/resume/experience';
+	import { experience } from '../../data/resume/resumeData';
 
-	let showFullExp = false, showFullDesc = false;
+	let showFullExp = false;
 </script>
 
-<h2 data-aos="fade-up"
-		data-aos-delay="80"
-		data-aos-duration="400"
-		data-aos-once="true"
-		data-aos-mirror="true"
+<h2
+	data-aos="fade-up"
+	data-aos-delay="80"
+	data-aos-duration="400"
+	data-aos-once="true"
+	data-aos-mirror="true"
 	class="mb-2 rounded-xl bg-gray-800 p-4 text-5xl font-bold text-white md:w-8/12 lg:w-8/12 xl:w-8/12"
 >
 	My experience
 </h2>
-<div data-aos="fade-up"
-		data-aos-delay="80"
-		data-aos-duration="800"
-		data-aos-once="true"
-		data-aos-mirror="true"  class="mb-6 flex flex-row flex-wrap ">
-	{#each !showFullExp ? experienceData.slice(0, 2) : experienceData as experience (experience.id)}
-		<div class="card m-1 w-96 hover:bg-gray-900 bg-gray-800 {experience.showFullDesc ? 'h-auto': 'max-h-630'}  shadow-xl">
+<div
+	data-aos="fade-up"
+	data-aos-delay="80"
+	data-aos-duration="800"
+	data-aos-once="true"
+	data-aos-mirror="true"
+	class="mb-6 flex flex-row flex-wrap "
+>
+	{#each !showFullExp ? experience.slice(0, 2) : experience as exp (exp.id)}
+		<div
+			class="card m-1 w-96 bg-gray-800 hover:bg-gray-900 {exp.showFullDesc
+				? 'h-auto'
+				: 'max-h-630'}  shadow-xl"
+		>
 			<div class="card-body">
-				<h2 class="card-title text-gray-200">{@html experience.title}</h2>
+				<h2 class="card-title text-gray-200">{@html exp.title}</h2>
 				<p class=" text-sm dark:text-gray-400">
-					{experience.dates[0]} - {experience.dates[1]}
+					{exp.dates[0]} - {exp.dates[1]}
 				</p>
-				{#each experience.showFullDesc ?  experience.desc :  experience.desc.slice(0, 2) as desc}
+				{#each exp.showFullDesc ? exp.desc : exp.desc.slice(0, 2) as desc}
 					<p class="text-gray-200">{@html desc}</p>
 				{/each}
-        <button class="btn-info btn-md btn max-w-md mb-4" on:click={() => (experience.showFullDesc = !experience.showFullDesc)}
-	>{!experience.showFullDesc ? 'Show' : 'Hide'} full description</button
->
-				<div class="card-actions justify-end mt-2">
-					{#each experience.stack as stack}
+				<button
+					class="btn-info btn-md btn mb-4 max-w-md"
+					on:click={() => (exp.showFullDesc = !exp.showFullDesc)}
+					>{!exp.showFullDesc ? 'Show' : 'Hide'} full description</button
+				>
+				<div class="card-actions mt-2 justify-end">
+					{#each exp.stack as stack}
 						<button class="btn  gap-2 hover:bg-info hover:text-gray-800"> {stack} </button>
 					{/each}
 				</div>
@@ -45,7 +55,7 @@
 >
 
 <style>
-  .max-h-630 {
-    max-height: 650px;
-  }
+	.max-h-630 {
+		max-height: 650px;
+	}
 </style>
