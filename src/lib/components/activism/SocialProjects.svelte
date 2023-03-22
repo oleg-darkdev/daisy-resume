@@ -10,12 +10,8 @@
 	</h2>
 	<div class="mb-20 flex max-w-2xl flex-row flex-wrap">
 		{#each socialProjects as project}
-			<div class="card image-full m-1 w-80 bg-base-100 shadow-xl">
-				<figure><img src={project.img} alt={project.title} /></figure>
-				<div class="card-body">
-					<h2 class="card-title">{project.title}</h2>
-					<p>{project.desc}</p>
-				</div>
+			<div class="image-full m-1 w-80 shadow-xl">
+				<img class="rounded rounded-lg" src={project.img} alt={project.title} />
 			</div>
 		{/each}
 	</div>
