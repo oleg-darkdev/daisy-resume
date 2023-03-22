@@ -35,6 +35,8 @@
 	];
 
 	let selectedSection = sections[0];
+
+
 </script>
 
 <svelte:head>
