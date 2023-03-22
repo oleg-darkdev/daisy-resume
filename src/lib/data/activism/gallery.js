@@ -1,23 +1,23 @@
 const photosList = [
 	{
-		title: '',
-		desc: '',
+		title: 'Lorem ipsum is placeholder',
+		desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		img: '/images/activism/sopot_gov.png'
 	},
 	{
-		title: '',
-		desc: '',
+		title: 'Lorem ipsum is placeholder',
+		desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		img: '/images/activism/sopot_fest.png'
 	},
 	{
-		title: '',
-		desc: '',
+		title: 'Lorem ipsum is placeholder',
+		desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		img: '/images/activism/archeology.JPG'
 	},
 
 	{
-		title: '',
-		desc: '',
+		title: 'Lorem ipsum is placeholder',
+		desc: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
 		img: '/images/activism/waw.jpg'
 	}
 	// {
