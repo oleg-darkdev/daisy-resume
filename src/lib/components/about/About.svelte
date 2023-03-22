@@ -41,10 +41,12 @@
 			</p>
 			<p class="m-1 text-start   text-2xl  text-white hover:text-error">Social Activist</p>
 			<p class="m-1 text-start  text-2xl text-white hover:text-error">
-				Founder of startups: <a href="https://44hackerspace.vercel.app/" class="link-primary link"
-					>@44FabLab</a
-				>, <a href="https://itingo.vercel.app/" class="link-secondary link">@ITingo</a>,
-				<a href="https://darkdev.games" class="link-success link">@darkdev.games</a>,
+				Founder of startups:
+
+				<a href="https://44fablab.vercel.app/" class="link-primary link">@44FabLab</a>,
+				<a href="https://itingo.vercel.app/" class="link-secondary link">@ITingo</a>,
+				<a href="https://darkdev-progect.vercel.app/" class="link-success link">@DarkDev.progect</a
+				>,
 				<a href="https://kanbanel.vercel.app/" class="link-success link">@kanbanel</a>,
 				<a href="https://yellow-elephant.vercel.app" class="link-warning link">@Yellow Elephant</a>
 			</p>
