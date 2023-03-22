@@ -2,8 +2,8 @@
 	export let selectedSection, sections;
 </script>
 
-<header>
-	<div class="navbar bg-base-100">
+<!-- <header> -->
+	<header class="navbar bg-base-100">
 		<div class="navbar-start">
 			<div class="dropdown">
 				<label tabindex="0" class="btn-ghost btn-circle btn">
@@ -92,7 +92,6 @@
 				</div>
 			</button>
 		</div> -->
-	</div>
 </header>
 
 <style>
