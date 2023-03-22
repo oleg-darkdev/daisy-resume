@@ -13,13 +13,13 @@
 	<a
 		class="tab tab-lifted tab-lg hover:text-info {
     active
-			? 'text-gray-800'
+			? 'text-gray-400'
 			: 'tab-active text-white'
     }"
 		on:click={() => (active = 0)}>My Skills</a
 	>
 	<a
-		class="tab tab-lifted tab-lg hover:text-info {active ? 'tab-active text-white' : 'text-white'}"
+		class="tab tab-lifted tab-lg hover:text-info {active ? 'tab-active text-white' : 'text-gray-400'}"
 		on:click={() => (active = 1)}>My stack</a
 	>
 </div>
