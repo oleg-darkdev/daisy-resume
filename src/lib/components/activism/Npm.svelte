@@ -4,7 +4,7 @@
 	let showFullNpm = false;
 </script>
 
-<div class="mt-6 mb-20 flex w-full flex-col ">
+<div class="mt-6 flex w-full flex-col ">
 	<h2
 		class="mb-2 rounded-xl bg-gray-800 p-4 text-5xl font-bold text-white md:w-8/12 lg:w-8/12 xl:w-8/12"
 	>
