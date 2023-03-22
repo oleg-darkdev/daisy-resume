@@ -26,7 +26,7 @@
 		<div
 			class="card m-1 w-96 bg-gray-800 hover:bg-gray-900 {exp.showFullDesc
 				? 'h-auto'
-				: 'max-h-630'}  shadow-xl"
+				: 'max-h-700'}  shadow-xl"
 		>
 			<div class="card-body">
 				<h2 class="card-title text-gray-200">{@html exp.title}</h2>
