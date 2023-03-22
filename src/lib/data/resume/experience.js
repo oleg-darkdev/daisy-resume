@@ -8,7 +8,7 @@ const experienceData = [
 			'Writted 25 educational lessons that covered the following topics: Git System, Scrum, Kanban Method, Agile methodology, Linux OS, and the role of the Product Owner.',
 			'Created a visually appealing graphic design  on Adobe Illustrator  and designed 7 educational boardgames with engaging gameplay mechanics.',
 			'Designed the user interface UI / UX for the 7 websites and 7 desktop applications for the boardgames, used SvelteJS, TailwindCSS, and NodeJS',
-			'Developed 7 desktop applications used SvelteJS, TailwindCSS, and NodeJS'
+			'Developed 7 web applications for boardgames, used SvelteJS, TailwindCSS, and NodeJS'
 		],
 		stack: ['Adobe Illustrator', 'SvelteJS', 'TailwindCSS', 'UI/UX'],
 		dates: ['02.02.2023', '30.09.2023 (present)'],
@@ -31,9 +31,9 @@ const experienceData = [
 		title:
 			'The project <a href="https://emic.com.pl/" target="_blank" class="link link-info" rel="noopener noreferrer">"EduMigracje"</a>  ',
 		desc: [
-			'Created and managed an educational project called "EduMigracje" for the organization Emic',
-			'Designed the graphics for an educational board game using Adobe Illustrator and created the game mechanics for the game.',
-			`Designed the UI/UX for the project's website and the web-based application for the board game.`,
+			'Created and managed an educational project "EduMigracje" for the Emic organization',
+			'Designed the graphics for an educational board game using Adobe Illustrator and created the game mechanic',
+			`Designed the UI/UX for the project's website and the web-based application for the board game`,
 			'Developed the <a href="https://by-pl.vercel.app/" target="_blank" class="link link-info" rel="noopener noreferrer"> main page of the project</a>, and <a href="https://by-pl.vercel.app/app" target="_blank" class="link link-info" rel="noopener noreferrer">the web application</a>, using the SvelteJS, TailwindCSS, and NodeJS technologies.'
 		],
 		stack: ['Adobe Illustrator', 'TailwindCSS', 'SvelteJS'],
@@ -59,10 +59,10 @@ const experienceData = [
 			'Project  <a href="https://krokpokroku.dlaodmiany.org.pl/" target="_blank" class="link link-info" rel="noopener noreferrer">"Odmienianie Krok po Kroku"</a>',
 		desc: [
 			'Completed graphic design using Adobe Illustrator and designed the gameplay mechanics for an educational board game about LGBTQIA+ flags and vexillology as part of the "Odmienianie Krok po Kroku" https://krokpokroku.dlaodmiany.org.pl/ project, funded by the "Fundusz dla Odmiany" foundation.',
-			'Led the collection and organization of information on LGBTQIA+ flag vexillology.',
+			'Led the collection and organization of information on LGBTQIA+ flag vexillology',
 			'Developed the <a href="https://lgbt-tree.vercel.app/" target="_blank" class="link link-info" rel="noopener noreferrer">web page of the project</a>  and a  <a href="https://lgbt-tree.vercel.app/app" target="_blank" class="link link-info" rel="noopener noreferrer">web-based application</a> for the board game utilizing technologies such as NFC, SvelteJS, TailwindCSS, and NodeJS.'
 		],
-		stack: ['Adobe Illustrator', 'SvelteJS', 'TailwindCSS'],
+		stack: ['Adobe Illustrator', 'SvelteJS', 'MAterial System Design', 'NFC'],
 		dates: ['22.10.2022', '15.12.2022'],
 		id: 5
 	},
