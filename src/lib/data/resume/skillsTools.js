@@ -30,12 +30,29 @@ const resume = {
 			text: 'Linux',
 			link: 'https://en.wikipedia.org/wiki/Linux'
 		},
+		// {
+		// 	img: '/images/resume/linux.svg',
+		// 	text: 'Management',
+		// 	link: ''
+		// },
 		{
-			img: '/images/resume/linux.svg',
-			text: 'Management',
-			link: ''
+			img: '/images/resume/scrum.svg',
+			text: 'Scrum',
+			link: 'https://www.scrum.org/',
+			description: ''
 		},
-
+		{
+			img: '/images/resume/m-3.svg',
+			text: 'M 3.0',
+			link: 'https://management30.com/',
+			description: ''
+		},
+		{
+			img: '/images/resume/holacracy.svg',
+			text: 'Holacracy',
+			link: 'https://www.holacracy.org/',
+			description: ''
+		},
 		{
 			img: '/images/resume/design.svg',
 			text: 'Design',
@@ -71,24 +88,6 @@ const resume = {
 			img: '/images/resume/material.svg',
 			text: 'Material Design System',
 			link: 'https://m2.material.io/design',
-			description: ''
-		},
-		{
-			img: '/images/resume/scrum.svg',
-			text: 'Scrum',
-			link: 'https://www.scrum.org/',
-			description: ''
-		},
-		{
-			img: '/images/resume/m-3.svg',
-			text: 'M 3.0',
-			link: 'https://management30.com/',
-			description: ''
-		},
-		{
-			img: '/images/resume/holacracy.svg',
-			text: 'Holacracy',
-			link: 'https://www.holacracy.org/',
 			description: ''
 		},
 
