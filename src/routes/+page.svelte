@@ -4,39 +4,59 @@
 	import Hello from '../lib/components/Hello.svelte';
 	import Resume from '../lib/components/resume/Resume.svelte';
 	import Activism from '../lib/components/activism/Activism.svelte';
+	import Portfolio from '../lib/components/Portfolio.svelte';
+	import Boardgames from '../lib/components/Boardgames.svelte';
+	import Chess from '../lib/components/Chess.svelte';
 	import Contact from '../lib/components/Contact.svelte';
 	import About from '../lib/components/about/About.svelte';
 
 	let sections = [
-		{
-			text: 'Hello',
-			color: 'bg-primary text-primary-content'
-		},
+		// {
+		// 	text: 'Hello',
+		// 	anchor: 'hello',
+		// 	color: 'bg-primary text-primary-content'
+		// },
 		{
 			text: 'About',
+			anchor: 'about',
 			color: 'bg-secondary text-secondary-content '
 		},
 		{
 			text: 'Resume',
+			anchor: 'resume',
 			color: 'bg-success text-success-content'
 		},
+		{
+			text: 'Portfolio',
+			anchor: 'portfolio',
+			color: 'bg-warning text-warning-content'
+		},
+		{
+			text: 'Boardgames',
+			anchor: 'boardgames',
+			color: 'text-info-content bg-info '
+		},
 		// {
-		// 	text: 'Portfolio',
-		// 	color: 'bg-warning text-warning-content'
+		// 	text: 'Chess career',
+		// 	anchor: 'chess',
+		// 	color: 'text-info-content bg-info '
 		// },
 		{
 			text: 'Activism',
+			anchor: 'activism',
 			color: 'text-info-content bg-info '
 		},
+
 		{
 			text: 'Contact',
+			anchor: 'contact',
 			color: 'bg-error text-error-content'
 		}
 	];
 
-	let selectedSection = sections[0];
-
-
+	let selectedSection = {
+		text: 'start'
+	};
 </script>
 
 <svelte:head>
@@ -44,7 +64,7 @@
 </svelte:head>
 
 <Header bind:selectedSection {sections} />
-{#if selectedSection.text == sections[0].text}
+{#if selectedSection.text == 'start'}
 	<section class="hero flex w-full flex-wrap justify-center  p-4  ">
 		<div class="w-full md:w-7/12 lg:w-7/12 xl:w-8/12">
 			<Hello bind:selectedSection {sections} />
@@ -54,21 +74,28 @@
 		</div>
 	</section>
 {:else}
-	<section class="flex w-full flex-wrap justify-center p-4 {selectedSection.color}  ">
+	<section class="flex w-full flex-wrap justify-center bg-gray-900 p-4 ">
 		<div
 			style="height: 100%;"
 			class="flex w-full flex-col justify-start md:w-7/12 lg:w-7/12  xl:w-8/12"
 		>
 			<a name="about" /> <a name="resume" />
-			<a name="activism" />
+			<a name="activism" /> <a name="portfolio" /> <a name="chess" />
+			<a name="contact" />
 
-			{#if selectedSection.text == sections[1].text}
+			{#if selectedSection.text == sections[0].text}
 				<About />
-			{:else if selectedSection.text == sections[2].text}
+			{:else if selectedSection.text == sections[1].text}
 				<Resume />
+			{:else if selectedSection.text == sections[2].text}
+				<Portfolio />
 			{:else if selectedSection.text == sections[3].text}
-				<Activism />
+				<Boardgames />
 			{:else if selectedSection.text == sections[4].text}
+				<!-- <Chess />
+			{:else if selectedSection.text == sections[5].text} -->
+				<Activism />
+			{:else if selectedSection.text == sections[5].text}
 				<Contact />
 			{/if}
 		</div>

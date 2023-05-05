@@ -25,9 +25,9 @@
 >
 	{#each languages as lang}
 		<div class="m-2 flex flex-col items-center ">
-			<h2 class="text-3xl text-gray-800 ">{lang.title}</h2>
+			<h2 class="text-3xl text-gray-100 mb-1">{lang.title}</h2>
 			<div
-				class="hover:bg-text-gray-800 radial-progress bg-success  text-gray-800 hover:text-white"
+				class="hover:bg-text-gray-800 radial-progress bg-gray-100  text-gray-800 hover:text-white"
 				style="--value: {lang.value}; --size:8rem; --thickness: 1.0rem; "
 			>
 				<span class="text-5xl">{lang.label}</span>
