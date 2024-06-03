@@ -23,7 +23,7 @@
 
 <section class="flex flex-col justify-center p-10">
 	{#each portfolio as portfolioData}
-		<div class="mx-auto mt-20">
+		<div class="mx-auto mt-20 ">
 			<div class="mb-10 flex flex-shrink-0 flex-col border-b border-[#44149c] px-4 pb-6 md:w-64">
 				<strong
 					class="text-thin flex text-left text-3xl font-thin leading-none text-[#44149c] lg:text-4xl"
@@ -32,7 +32,7 @@
 				</strong>
 				<!-- <span class="mt-1 text-xs font-normal leading-relaxed text-gray-700">{portfolioData.subTitle}</span> -->
 			</div>
-			<div class="grid grid-cols-2 gap-x-8 pt-16">
+			<div class="grid grid-cols-2 gap-x-8 ">
 				{#each portfolioData.progects as progect}
 					<ProgectCard {progect} />
 				{/each}

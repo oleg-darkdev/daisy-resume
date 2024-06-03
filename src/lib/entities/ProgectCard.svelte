@@ -8,8 +8,8 @@
 
 export let progect;
 </script>
-
-<div class="item-even flex flex-col items-center mx-auto max-w-xl lg:-my-10 md:-my-10 xl:-my-10">
+<!-- lg:-my-10 md:-my-10 xl:-my-10 -->
+<div class="item-even flex flex-col mb-20 items-center mx-auto max-w-xl ">
   
         <div class="flex flex-col w-full  mx-auto prose-sm text-left prose-blue">
           <span class="text-xs font-bold tracking-widest text-[#44149c] uppercase"> {#each progect.tags as tag} <span>#{tag} </span> {/each} </span>
