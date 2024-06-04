@@ -41,49 +41,58 @@ const boardgamesProgects = [
   // 12312, fnb, hackerspaces, ror etc
   graffiti,
     mks,
-ddGames,
+ddGames, 
 historyOfAnarchy, ecocide, byPl, lgbtTree, agileFans,
 ];
 
 const portfolio = [
 	{
 		year: 2024,
-		subTitle: 'Lorem ipsum is placeholder text commonly used.',
-		progects: [antySystems, graffiti, ecocide, voteWise]
+    subTitle: 'Lorem ipsum is placeholder text commonly used.',
+		progects: [
+			antySystems,
+      ecocide,
+      voteWise
+		]
 	},
 	{
 		year: 2023,
-		subTitle: 'Lorem ipsum is placeholder text commonly used.',
+    subTitle: 'Lorem ipsum is placeholder text commonly used.',
 
 		progects: [
 			bejahi,
-			footprintsFate,
-			mks,
-			lgbtTree
-
-			//   agileFans,
+      footprintsFate,
+      graffiti,
+    //   mks,
+    //   agileFans,
 		]
 	},
 	{
 		year: 2022,
-		subTitle: 'Lorem ipsum is placeholder text commonly used.',
-		progects: [darkDevFoundation, ddGames, itingo, byPl]
+    subTitle: 'Lorem ipsum is placeholder text commonly used.',
+		progects: [
+		    darkDevFoundation,
+	        ddGames,
+        	itingo,
+        	byPl,
+			lgbtTree,
+		]
 	},
 	{
 		year: 2021,
-		subTitle: 'Lorem ipsum is placeholder text commonly used.',
+    subTitle: 'Lorem ipsum is placeholder text commonly used.',
 		progects: [
 			yellowElephant,
-			historyOfAnarchy
-			//   techSopot,
-			//   ds5,
+      historyOfAnarchy,
+    //   techSopot,
+    //   ds5,
 		]
-	}
+	},
 	// {
 	// 	year: 2020,
-	// subTitle: 'Lorem ipsum is placeholder text commonly used.',
+    // subTitle: 'Lorem ipsum is placeholder text commonly used.',
 	// 	progects: [
-
+			
 	// 	]
 	// },
 ];

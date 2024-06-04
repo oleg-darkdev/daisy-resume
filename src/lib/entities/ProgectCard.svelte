@@ -1,55 +1,60 @@
 <script>
-    // import {Carousel} from '$lib/entities';
-    import { browser } from '$app/environment'
-    import Carousel from 'svelte-carousel'
-    import { PlayFilledAlt, PauseOutlineFilled  } from '$lib/shared';
+	// import {Carousel} from '$lib/entities';
+	import { browser } from '$app/environment';
+	import Carousel from 'svelte-carousel';
+	import { PlayFilledAlt, PauseOutlineFilled } from '$lib/shared';
 
-  let showVideo = false;
+	let showVideo = false;
 
-export let progect;
+	export let progect;
 </script>
-<!-- lg:-my-10 md:-my-10 xl:-my-10 -->
-<div class="item-even flex flex-col mb-20 items-center mx-auto max-w-xl ">
-  
-        <div class="flex flex-col w-full  mx-auto prose-sm text-left prose-blue">
-          <span class="text-xs font-bold tracking-widest text-[#44149c] uppercase"> {#each progect.tags as tag} <span>#{tag} </span> {/each} </span>
-          
-            <div class="w-full mx-auto">
-                <h2 class='text-gray-600'>{progect.title}</h2>
-                <p class='text-gray-600'>
-                  {progect.shortDesc}</p>
-  
 
+<div class="item-even mx-auto flex max-w-xl flex-col items-center md:-my-10 lg:-my-10 xl:-my-10">
+	<div  class="prose-sm prose-blue mx-auto flex w-full flex-col text-left">
+		<span class="text-xs font-bold uppercase tracking-widest text-[#44149c]">
+			{#each progect.tags as tag} <span>#{tag} </span> {/each}
+		</span>
 
-            </div>
-        </div>
-                        <div class="card w-96 bg-neutral-100 shadow-md">
+		<div class="mx-auto w-full xl:-mt-0 md:mt-0  lg:-mt-0 -mt-4">
+			<h2 class="text-gray-600">{progect.title}</h2>
+			<p class="text-gray-600">
+				{progect.shortDesc}
+			</p>
+		</div>
+    	
+	</div>
 
-        <div class="card-body ">
-     <div class="flex flex-row  bg-neutral-200 rounded-xl pt-4 pb-2">
-      {#if browser}
-      <!--   duration={3000}
- -->
-      <Carousel
-  particlesToShow={2}
-  autoplay
-  arrows={false}
->
-  {#each progect.screenshotes as screenshot, i}
-    <!-- <Color {color} {text} /> -->
-      <figure class='rounded-xl   mx-1'><img src="{screenshot}" class='min-h-20 min-w-96' alt="Screenshot #{i} of {progect.title}" /></figure>
-
-  {/each}
-</Carousel>
-{/if}
-        <!-- <figure class='rounded-xl   mx-1'><img src="{images[0]}" class='min-h-20 min-w-96' alt="" /></figure> -->
-
-     </div>
-      <!-- <h2 class="card-title">Shoes!</h2>
+	<div class="flex flex-row card-sm rounded-t-box lg:card-body  bg-neutral-200 pb-2 pt-4">
+				<!-- <figure class='rounded-xl   mx-1'><img src="{images[0]}" class='min-h-20 min-w-96' alt="" /></figure> -->
+        <div class="wrap  py-4 lg:py-10 md:py-10">
+            {#if browser}
+                <!--   duration={3000} -->
+                <Carousel particlesToShow={2} autoplay arrows={false}>
+                  {#each progect.screenshotes as screenshot, i}
+                    <!-- <Color {color} {text} /> -->
+                    <!-- <span>{i}</span> -->
+                    <!-- mx-1  -->
+                    <figure class="rounded-xl mx-1">
+                      <!--  -->
+                      <img
+                        src={screenshot}
+                        class="rounded-xl  w-10 lg:min-w-96 h-20 w-40"
+                        alt="Screenshot #{i} of {progect.title}"
+                      />
+                    </figure>
+                    <!-- <figure class='rounded-xl   mx-1'><img src="{screenshot}" class='min-h-20 lg:min-w-96 w-20' alt="Screenshot #{i} of {progect.title}" /></figure> -->
+                  {/each}
+                </Carousel>
+              {/if}
+          </div>
+			</div>
+      
+			<!-- <h2 class="card-title">Shoes!</h2>
       <p>If a dog chews shoes whose shoes does he choose?</p> -->
-  </div>
-  <figure>
-    <!-- <div class="z-30 absolute left-30 ">
+		<!-- </div> -->
+		<figure>
+
+			<!-- <div class="z-30 absolute left-30 ">
     <button class='opacity-50 delay-200 duration-700 ease-in-out hover:opacity-100' title='Show demo video from youtube' on:click={()=> showVideo = !showVideo}>
       {#if showVideo}
             <PauseOutlineFilled  size={88} />
@@ -62,19 +67,17 @@ export let progect;
       {/if}
     </button>
 </div> -->
-{#if showVideo}
-<iframe class='w-full h-48'
-src="{progect.video}">
-</iframe>       {:else}
-    <img src="{progect.gif}" class='h-48' alt="{progect.title} gif" />
-      {/if}
+			{#if showVideo}
+				<iframe class="h-48 w-full rounded-b-box" src={progect.video} />
+			{:else}
+				<img src={progect.gif} class="h-48 rounded-b-box" alt="{progect.title} gif" />
+			{/if}
+		</figure>
+	</div>
+<!-- </div> -->
+
  
-
-  </figure>
-</div>
-    </div>
-
-  <!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
+<!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
     <div class="relative mx-auto">
       <div class="group relative flex cursor-pointer after:shadow-lg after:shadow-black">
         <div class="relative -left-16 top-0 z-10 w-96 rounded-xl bg-[#3d348b] px-5 py-3 text-base font-semibold leading-7 transition-all duration-700 group-hover:-left-14">
@@ -122,6 +125,21 @@ src="{progect.video}">
   </div> -->
 
 <style>
+@media screen and (max-width: 480px) {
+	.wrap {
+    max-width: 330px;
+    
+	}
 
 
+  	.card-sm {
+    padding: -10px;
+	}
+}
+@media screen and (min-width: 480px) {
+
+}
+
+
+  
 </style>
