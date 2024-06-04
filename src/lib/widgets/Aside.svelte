@@ -28,27 +28,31 @@
 	<!-- <div class="topnav-name">
 		<h1><a href="/" class='text-4xl font-black hover:text-white transition duration-300 ease-in-out delay-150 transform hover:scale-105 relative'>44Games</a></h1>
 	</div> -->
-	<div class="topnav-links">
+	<div class="topnav-links flex lg:flex-col flex-row justify-between">
 		<!-- on:click={()=>{selectedMenu = menu[1]; selectedBoardgame = boardgame}} -->
 		<a
-			href="#about"
+			href="#cv"
 			class="my-2 transform text-neutral-400 transition delay-150 duration-300 ease-in-out hover:scale-125 hover:text-white"
 			title="About me"
 		>
 			<UserProfile size={32} />
 		</a>
-		<button
+		<a
+			href="#cv"
 			class="my-2 transform text-neutral-400 transition delay-150 duration-300 ease-in-out hover:scale-125 hover:text-white"
 			title="Boardgames projects"
 		>
 			<GameConsole size={32} />
-		</button>
-		<button
+		</a>
+		<!-- on:click={()=>selectedMenu = menu[2]} -->
+		<a
+			href="#cv"
 			class="my-2 transform text-neutral-400 transition delay-150 duration-300 ease-in-out hover:scale-125 hover:text-white"
 			title="Other projects"
 		>
 			<Code size={32} />
-  </button>
+		</a>
+		<!--  on:click={()=>selectedMenu = menu[3]} -->
 		<a
 			href="#cv"
 			class="my-2 transform text-neutral-400 transition delay-150 duration-300 ease-in-out hover:scale-125 hover:text-white"
@@ -119,17 +123,31 @@
 		--abigailimg: url(https://a.l3n.co/i/7TE5ur.png);
 	}
 
+  @media screen and (max-width: 480px) {
 	.topnav {
+		width: 100%;
+		flex-direction: row;
+    justify-content: space-between;
+	}
+}
+@media screen and (min-width: 480px) {
+	.topnav {
+		height: 100vh;
+    width: 80px;
+		flex-direction: column;
+	}
+}
+
+.topnav {
 		position: fixed;
 		z-index: 10;
 		top: 0;
 		left: 0;
-		width: 80px;
+
 		padding: 20px 15px;
 		background-color: var(--dark1);
 		color: var(--dark2);
-		height: 100vh;
-		display: flex;
+
 		flex-direction: column;
 	}
 	.topnav-icon {
@@ -176,8 +194,8 @@
 	}
 	.topnav-links {
 		margin: -5px auto;
-		display: flex;
-		flex-direction: column;
+		/* display: flex;
+		flex-direction: column; */
 		position: relative;
 	}
 	.topnav-links button {
