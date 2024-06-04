@@ -10,13 +10,14 @@ export let progect;
 </script>
 <!-- lg:-my-10 md:-my-10 xl:-my-10 -->
 
-<div class="item-even mx-auto flex max-w-xl flex-col items-center md:-my-10 lg:-my-10 xl:-my-10">
+<!-- md:-my-10 lg:-my-10 xl:-my-10 -->
+<div class="item-even mx-auto flex max-w-xl lg:-mb-16 md:-mb-16 xl:-mb-16 mb-10 mt-10  flex-col items-center ">
 	<div  class="prose-sm prose-blue mx-auto flex w-full flex-col text-left">
 		<span class="text-xs font-bold uppercase tracking-widest text-[#44149c]">
 			{#each progect.tags as tag} <span>#{tag} </span> {/each}
 		</span>
 
-		<div class="mx-auto w-full xl:-mt-0 md:mt-0  lg:-mt-0 -mt-4">
+		<div class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0  lg:-mt-0 -mt-4">
 			<h2 class="text-gray-600">{progect.title}</h2>
 			<p class="text-gray-600">
 				{progect.shortDesc}
@@ -25,9 +26,9 @@ export let progect;
 
 	</div>
 
-	<div class="flex flex-row card-sm rounded-t-box lg:card-body  bg-neutral-200 pb-2 pt-4">
+	<div style='max-height:380px;' class="card-sm rounded-t-box lg:card-body  pb-2 pt-4">
 				<!-- <figure class='rounded-xl   mx-1'><img src="{images[0]}" class='min-h-20 min-w-96' alt="" /></figure> -->
-        <div class="wrap  py-4 lg:py-10 md:py-10">
+        <div class="wrap -mt-4 ">
             {#if browser}
                 <!--   duration={3000} -->
                 <Carousel particlesToShow={2} autoplay arrows={false}>
@@ -39,7 +40,7 @@ export let progect;
                       <!--  -->
                       <img
                         src={screenshot}
-                        class="rounded-xl  w-10 lg:min-w-96 h-20 w-40"
+                        class="rounded-xl  h-20 lg:w-56 md:w-56 w-40 xl:w-56"
                         alt="Screenshot #{i} of {progect.title}"
                       />
                     </figure>
@@ -48,7 +49,7 @@ export let progect;
                 </Carousel>
               {/if}
           </div>
-			</div>
+
 
 			<!-- <h2 class="card-title">Shoes!</h2>
       <p>If a dog chews shoes whose shoes does he choose?</p> -->
@@ -74,6 +75,7 @@ export let progect;
 				<img src={progect.gif} class="h-48 rounded-b-box" alt="{progect.title} gif" />
 			{/if}
 		</figure>
+    </div>
 	</div>
 <!-- </div> -->
 
@@ -130,14 +132,15 @@ export let progect;
   @media screen and (max-width: 480px) {
     .wrap {
       max-width: 330px;
-
     }
     .card-sm {
       padding: -10px;
     }
   }
   @media screen and (min-width: 480px) {
-
+    .wrap {
+      max-width: 400px;
+    }
   }
 
 </style>

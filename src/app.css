@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@media screen and (max-width: 480px) {
+	.item-even:nth-child(even) {
+		margin-top: 0; /* Смещение каждого четного элемента вниз на 200 пикселей */
+	}
+}
+@media screen and (min-width: 480px) {
+	.item-even:nth-child(even) {
+		margin-top: 100px; /* Смещение каждого четного элемента вниз на 200 пикселей */
+	}
+}

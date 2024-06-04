@@ -21,10 +21,10 @@
 
 <a name="about"></a>
 
-<section class="flex flex-col justify-center lg:p-10 p-4">
+<section class="flex flex-col justify-between items-center px-4 mb-10">
 	{#each portfolio as portfolioData}
-		<div class="mx-auto mt-20">
-			<div class="mb-10 flex flex-shrink-0 flex-col border-b border-[#44149c] px-4 pb-6 md:w-64">
+		<div class="mx-auto ">
+			<div class="mb-8 lg:mt-10 xl:mt-10 md:mt-10 mt-16 lg:ml-40 flex flex-shrink-0 flex-col border-b border-[#44149c] px-4 pb-6 md:w-64">
 				<strong
 					class="text-thin flex text-left text-3xl font-thin leading-none text-[#44149c] lg:text-4xl"
 				>
@@ -32,7 +32,8 @@
 				</strong>
 				<!-- <span class="mt-1 text-xs font-normal leading-relaxed text-gray-700">{portfolioData.subTitle}</span> -->
 			</div>
-			<div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-x-8 gap-x-2 gap-y-20 xl:pt-16 lg:pt-16 pt-4">
+      <!-- grid lg:grid-cols-2 grid-cols-1 lg:gap-x-8 gap-x-2 lg:gap-y-1 md:gap-y-1 gap-y-20 xl:pt-16 lg:pt-6 pt-4-->
+			<div class="flex flex-row justify-between flex-wrap lg:w-10/12 md:w-10/12 xl:w-10/12 mx-auto ">
 				{#each portfolioData.progects as progect}
 					<ProgectCard {progect} />
 				{/each}
@@ -60,7 +61,7 @@
 </section>
 
 
-<section class='py-16'>
+<section class='py-20 mb-10'>
 	<div class="mb-10 flex flex-shrink-0 flex-col border-b border-[#44149c] px-4 pb-6 mx-auto max-w-4xl">
 		<strong
 			class="mx-auto flex text-center text-3xl font-thin leading-none text-[#44149c] lg:text-4xl"
