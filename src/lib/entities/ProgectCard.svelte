@@ -21,7 +21,7 @@
 				{progect.shortDesc}
 			</p>
 		</div>
-
+    	
 	</div>
 
 	<div class="flex flex-row card-sm rounded-t-box lg:card-body  bg-neutral-200 pb-2 pt-4">
@@ -48,7 +48,7 @@
               {/if}
           </div>
 			</div>
-
+      
 			<!-- <h2 class="card-title">Shoes!</h2>
       <p>If a dog chews shoes whose shoes does he choose?</p> -->
 		<!-- </div> -->
@@ -76,7 +76,7 @@
 	</div>
 <!-- </div> -->
 
-
+ 
 <!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
     <div class="relative mx-auto">
       <div class="group relative flex cursor-pointer after:shadow-lg after:shadow-black">
@@ -128,9 +128,10 @@
 @media screen and (max-width: 480px) {
 	.wrap {
     max-width: 330px;
-
+    
 	}
 
+	}
 
   	.card-sm {
     padding: -10px;
@@ -141,5 +142,5 @@
 }
 
 
-
+  
 </style>
