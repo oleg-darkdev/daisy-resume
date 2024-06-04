@@ -22,7 +22,7 @@ export let progect;
 				{progect.shortDesc}
 			</p>
 		</div>
-    	
+
 	</div>
 
 	<div class="flex flex-row card-sm rounded-t-box lg:card-body  bg-neutral-200 pb-2 pt-4">
@@ -49,7 +49,7 @@ export let progect;
               {/if}
           </div>
 			</div>
-      
+
 			<!-- <h2 class="card-title">Shoes!</h2>
       <p>If a dog chews shoes whose shoes does he choose?</p> -->
 		<!-- </div> -->
@@ -77,7 +77,7 @@ export let progect;
 	</div>
 <!-- </div> -->
 
- 
+
 <!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
     <div class="relative mx-auto">
       <div class="group relative flex cursor-pointer after:shadow-lg after:shadow-black">
@@ -127,7 +127,6 @@ export let progect;
 
 
 <style>
-<<<<<<< HEAD
   @media screen and (max-width: 480px) {
     .wrap {
       max-width: 330px;
@@ -140,24 +139,5 @@ export let progect;
   @media screen and (min-width: 480px) {
 
   }
-=======
-@media screen and (max-width: 480px) {
-	.wrap {
-    max-width: 330px;
-    
-	}
 
-	}
-
-  	.card-sm {
-    padding: -10px;
-	}
-}
-@media screen and (min-width: 480px) {
-
-}
-
-
-  
->>>>>>> parent of 45cce4e (fix css bug)
 </style>
