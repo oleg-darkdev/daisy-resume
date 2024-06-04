@@ -1,13 +1,14 @@
 <script>
-	// import {Carousel} from '$lib/entities';
-	import { browser } from '$app/environment';
-	import Carousel from 'svelte-carousel';
-	import { PlayFilledAlt, PauseOutlineFilled } from '$lib/shared';
+    // import {Carousel} from '$lib/entities';
+    import { browser } from '$app/environment'
+    import Carousel from 'svelte-carousel'
+    import { PlayFilledAlt, PauseOutlineFilled  } from '$lib/shared';
 
-	let showVideo = false;
+  let showVideo = false;
 
-	export let progect;
+export let progect;
 </script>
+<!-- lg:-my-10 md:-my-10 xl:-my-10 -->
 
 <div class="item-even mx-auto flex max-w-xl flex-col items-center md:-my-10 lg:-my-10 xl:-my-10">
 	<div  class="prose-sm prose-blue mx-auto flex w-full flex-col text-left">
@@ -21,7 +22,7 @@
 				{progect.shortDesc}
 			</p>
 		</div>
-
+    	
 	</div>
 
 	<div class="flex flex-row card-sm rounded-t-box lg:card-body  bg-neutral-200 pb-2 pt-4">
@@ -48,7 +49,7 @@
               {/if}
           </div>
 			</div>
-
+      
 			<!-- <h2 class="card-title">Shoes!</h2>
       <p>If a dog chews shoes whose shoes does he choose?</p> -->
 		<!-- </div> -->
@@ -76,7 +77,7 @@
 	</div>
 <!-- </div> -->
 
-
+ 
 <!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
     <div class="relative mx-auto">
       <div class="group relative flex cursor-pointer after:shadow-lg after:shadow-black">
@@ -124,13 +125,31 @@
     </div>
   </div> -->
 
+
 <style>
+<<<<<<< HEAD
+  @media screen and (max-width: 480px) {
+    .wrap {
+      max-width: 330px;
+
+    }
+    .card-sm {
+      padding: -10px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+
+  }
+=======
 @media screen and (max-width: 480px) {
 	.wrap {
     max-width: 330px;
+    
+	}
 
 	}
- 	.card-sm {
+
+  	.card-sm {
     padding: -10px;
 	}
 }
@@ -139,5 +158,6 @@
 }
 
 
-
+  
+>>>>>>> parent of 45cce4e (fix css bug)
 </style>

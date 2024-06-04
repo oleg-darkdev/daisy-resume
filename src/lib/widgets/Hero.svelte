@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import { TweenMax } from 'gsap';
 </script>
 
 <section class=" flex lg:h-screen md:h-screen xl:h-screen  w-full items-center justify-center overflow-hidden">
