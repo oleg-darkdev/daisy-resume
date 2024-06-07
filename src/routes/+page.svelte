@@ -1,6 +1,6 @@
 <script>
 	import { Hero, Footer, Aside, Feedback, PdfViewer } from '$widgets';
-	import { ProgectCard, ServiceCard, FaqCard } from '$entities';
+	import { ProgectCard, ServiceCard, FaqCard, CurverNav } from '$entities';
 	import { portfolio, skillsTools } from '$shared';
 </script>
 
@@ -216,26 +216,26 @@
             <div class="grid-large">
               <div id="intro" class="home-about-block w-node-_268712a1-d5ba-90dc-2dd1-5152fb162c24-019ada71">
                 <div class="curve-block-center">
-                  <a id="right" href="#intro" class="curve-link w-inline-block">
-                    <div class="curve-arrow">
+                  <a id="right" href="#services" class="curve-link w-inline-block">
+                  <div class="curve-arrow">
                       <div class="clip">
-                        <div class="hover-arrow top">
+                      <div class="hover-arrow top">
                           <div class="icon w-embed">
-                            <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                            </svg>
+                          </svg>
                           </div>
-                        </div>
-                        <div class="hover-arrow">
-                          <div class="icon w-embed">
-                            <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                            </svg>
-                          </div>
-                        </div>
                       </div>
-                    </div>
-                    <img src="" loading="lazy" alt="">
+                      <div class="hover-arrow">
+                          <div class="icon w-embed">
+                          <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+                          </svg>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  <img src="/images/curver.svg" loading="lazy" alt="Curver img">
                   </a>
                 </div>
                 <div class="padding-horizontal padding-medium">
@@ -387,49 +387,49 @@
         <section class="home-about">
           <div class="padding-horizontal padding-small">
             <div class="grid-large">
-              <div id="services" class="home-service-block w-node-_54a6c794-4338-ce36-32f9-a99b700b0724-019ada71">
-                <div class="curve-block-center">
+              <div id="services" class="home-service-block services-wrap">
+               <div class="curve-block-center">
                   <a id="right" href="#services" class="curve-link w-inline-block">
-                    <div class="curve-arrow">
+                  <div class="curve-arrow">
                       <div class="clip">
-                        <div class="hover-arrow top">
+                      <div class="hover-arrow top">
                           <div class="icon w-embed">
-                            <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                            </svg>
+                          </svg>
                           </div>
-                        </div>
-                        <div class="hover-arrow">
-                          <div class="icon w-embed">
-                            <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                            </svg>
-                          </div>
-                        </div>
                       </div>
-                    </div>
-                    <img src="" loading="lazy" alt="">
+                      <div class="hover-arrow">
+                          <div class="icon w-embed">
+                          <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+                          </svg>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  <img src="/images/curver.svg" loading="lazy" alt="Curver img">
                   </a>
                 </div>
+
                 <div class="padding-top padding-huge">
                   <div class="padding-horizontal padding-medium">
                     <div class="home-service-top">
                       <div class="home-service-intro">
                         <div class="text-size-large text-align-center">I have worked with businesses of all sizes to create stunning websites and designs that capture their brand's identity.</div>
                         <a href="#contact" class="button is-light w-inline-block">
-                          <!-- <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                            <div class="hover-text"> -->
+                     
                               <div class="text-size-xsmall">Contact</div>
-                            <!-- </div> -->
-                            
-                          <!-- </div> -->
+                
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="home-service">
-                    <div data-w-id="e9a2ec01-af72-96b6-50cd-acf9ec3cde84" class="row-title-block">
+                    <div class="font-optiker">
 
+                            Services
+                        
                       <!-- <div class="letter-animation">
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
@@ -494,7 +494,7 @@
                         -->
                           </div>
                         </div>
-                        <div id="w-node-e2d1d4ff-3daa-4a24-661b-de15c7bf01c6-019ada71" class="home-faq-block">
+                        <div id="faq-wrap" class="home-faq-block">
                           <div class="home-faq-list radius-regular">
                               <FaqCard />
                           </div>
@@ -507,10 +507,12 @@
             </div>
           </div>
         </section>
+
+        
         <footer class="section-footer1">
           <div class="padding-horizontal padding-small">
             <div class="grid-large">
-              <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15a6-e83c15a3" class="footer-block">
+              <div id="footer-wrap" class="footer-block">
                 <div class="padding-vertical padding-huge">
                   <div class="footer-intro">
                     <div class="text-size-large text-align-center text-color-white">Whether you need design or tweak some code, I have the skills and creativity needed to take your project to the next level.</div>
@@ -521,9 +523,9 @@
                 </div>
                 <div class="padding-horizontal padding-medium">
                   <div class="footer-bottom">
-                    <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15b0-e83c15a3" class="text-size-tiny text-style-allcaps text-color-white">© 2024 <a href="" target="_blank" class="text-style-link light"></a>
+                    <div id="footer-copyright" class="text-size-tiny text-style-allcaps text-color-white">© 2024 <a href="" target="_blank" class="text-style-link light"></a>
                     </div>
-                    <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15b2-e83c15a3" class="footer-menu">
+                    <div id="footer-nav" class="footer-menu">
                       <a href="/" aria-current="page" class="footer-link w-inline-block w--current">
                         <div class="text-size-tiny text-style-allcaps">Home</div>
                       </a>
