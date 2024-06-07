@@ -9,7 +9,7 @@
 </script>
 
 
-<div class="overflow-hidden bg-neutral-200">
+<div class="body overflow-x-hidden">
   <slot />
 </div>
 

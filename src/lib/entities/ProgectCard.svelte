@@ -11,19 +11,21 @@ export let progect;
 <!-- lg:-my-10 md:-my-10 xl:-my-10 -->
 
 <!-- md:-my-10 lg:-my-10 xl:-my-10 -->
-<div class="item-even mx-auto flex max-w-xl lg:-mb-16 md:-mb-16 xl:-mb-16 mb-10 mt-10  flex-col items-center ">
+<!-- -->
+<div class="mx-auto border-2 rounded-box flex max-w-xl mb-16 mt-10 px-6 pt-6 flex-col items-center ">
 	<div  class="prose-sm prose-blue mx-auto flex w-full flex-col text-left">
-		<span class="text-xs font-bold uppercase tracking-widest text-[#44149c]">
+		<span class="text-xs text-style-allcaps  uppercase tracking-widest ">
 			{#each progect.tags as tag} <span>#{tag} </span> {/each}
 		</span>
 
 		<div class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0  lg:-mt-0 -mt-4">
-			<h2 class="text-gray-600">{progect.title}</h2>
-			<p class="text-gray-600">
+			<!-- <h2 class="text-gray-600">{progect.title}</h2> -->
+      <h3 class=" text-color-white text-size-xlarge">{progect.title}</h3>
+      <div class="text-size-tiny text-style-allcaps text-color-white">{progect.shortDesc}</div>
+			<!-- <p class="text-gray-600">
 				{progect.shortDesc}
-			</p>
+			</p> -->
 		</div>
-
 	</div>
 
 	<div style='max-height:380px;' class="card-sm rounded-t-box lg:card-body  pb-2 pt-4">
