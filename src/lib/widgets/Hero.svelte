@@ -1,15 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
 </script>
-
-<section class=" flex lg:h-screen md:h-screen xl:h-screen  w-full items-center justify-center overflow-hidden">
+<!-- lg:h-screen md:h-screen xl:h-screen  -->
+<section class=" flex  w-full items-center justify-center overflow-hidden">
 	<div class="header flex flex-col items-center justify-center">
 		<h1 class="header__initials font-black">Oleg <br /> Medvedev</h1>
 
-		<div class="header__title">
+		<div class="header__title ">
 			<!-- DarkDEV -->
-			<!-- <h2 class='font-black text-6xl'>Oleg Medvedev</h2> -->
-			<p>Creative front-end developer &amp; Boardgames creator</p>
+			<p>Product Web Engineer <br /> &amp; Boardgames creator</p>
 		</div>
 	</div>
 </section>
@@ -17,41 +16,43 @@
 <style>
 	@media screen and (max-width: 480px) {
 		.header__initials {
-			font-size: 8vh;
+			font-size: 10vh;
 			line-height: 1.2em;
 			letter-spacing: 1.2px;
-      text-align: center;
-      padding-top: 10rem;
+			text-align: center;
+			padding-top: 10rem;
 		}
 
 		.header__title p {
-			font-size: 14px;
+			font-size: 2rem;
 			letter-spacing: 0.7px;
-      text-align: center;
+			text-align: center;
 		}
 
 		.header__title {
-      margin-top: 14px;
-      max-width: 240px;
-      text-align: center;
+			margin-top: 14px;
+			max-width: 240px;
+			text-align: center;
 
 		}
 	}
 	@media screen and (min-width: 480px) {
 		.header__initials {
-			font-size: 20vh;
+			font-size: 26vh;
 			line-height: 1.2em;
 			letter-spacing: 1.2px;
 		}
 
 		.header__title p {
-			font-size: 14px;
+			font-size: 2rem;
 			letter-spacing: 0.7px;
+			text-align: center;
 		}
 
 		.header__title {
-			right: 25%;
-      position: absolute;
+			right: 0%;
+			bottom: 63%;
+			position: absolute;
 		}
 	}
 	.header__initials {
