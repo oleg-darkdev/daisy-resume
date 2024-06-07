@@ -1,6 +1,6 @@
 <script>
-	import { Hero, Footer, Aside, PdfViewer } from '$widgets';
-	import { ProgectCard, ServiceCard } from '$entities';
+	import { Hero, Footer, Aside, Feedback, PdfViewer } from '$widgets';
+	import { ProgectCard, ServiceCard, FaqCard } from '$entities';
 	import { portfolio, skillsTools } from '$shared';
 </script>
 
@@ -416,22 +416,21 @@
                     <div class="home-service-top">
                       <div class="home-service-intro">
                         <div class="text-size-large text-align-center">I have worked with businesses of all sizes to create stunning websites and designs that capture their brand's identity.</div>
-                        <a href="/contact" class="button is-light w-inline-block">
-                          <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                            <div class="hover-text">
-                              <div class="text-size-xsmall">Schedule a call</div>
-                            </div>
-                            <div class="hover-text bottom-hover-text">
-                              <div class="text-size-xsmall">Schedule a call</div>
-                            </div>
-                          </div>
+                        <a href="#contact" class="button is-light w-inline-block">
+                          <!-- <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
+                            <div class="hover-text"> -->
+                              <div class="text-size-xsmall">Contact</div>
+                            <!-- </div> -->
+                            
+                          <!-- </div> -->
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="home-service">
                     <div data-w-id="e9a2ec01-af72-96b6-50cd-acf9ec3cde84" class="row-title-block">
-                      <div class="letter-animation">
+
+                      <!-- <div class="letter-animation">
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3"></div>
@@ -442,22 +441,7 @@
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-10"></div>
-                      </div>
-                      <div class="row-title">
-                        <div class="row-title-clip">
-                          <div class="row-title-text text-align-center">
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1">M</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2">y</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3">S</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-4">e</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-5">r</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-6">v</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-7">i</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8">c</span>
-                            <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9">e</span>
-                          </div>
-                        </div>
-                      </div>
+                      </div> -->
                     </div>
                     <div class="padding-horizontal padding-large">
                       <div class="home-service_base">
@@ -484,114 +468,18 @@
                       </div>
                     </div>
                   </div>
-                  <div class="home-banner">
-                    <div class="padding-horizontal padding-small">
-                      <div class="home-banner_com">
-                        <div class="home-banner_bkg">
-                          <img src="" loading="lazy" alt="" class="image-fill">
-                          <div class="overlay light-overlay"></div>
-                        </div>
-                        <div class="home-banner_content slider-component">
-                          <div class="swiper">
-                            <div class="home-banner_slider swiper-wrapper">
-                              <div class="home-banner_slide swiper-slide">
-                                <div>
-                                  <div class="text-size-large text-align-center">Her custom website designs, coding solutions, branding strategies, graphic design and app design were all top notch.</div>
-                                </div>
-                                <div class="home-banner_credit">
-                                  <div class="home-banner_avatar">
-                                    <img src="" loading="lazy" alt="" class="image-fill">
-                                  </div>
-                                  <div>
-                                    <div class="text-size-small">Emily Humphry</div>
-                                    <div class="text-size-small text-style-muted">Airtable</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="home-banner_slide swiper-slide">
-                                <div>
-                                  <div class="text-size-large text-align-center">I highly recommend her to anyone looking for a creative freelancer who can provide comprehensive services tailored specifically to their needs!</div>
-                                </div>
-                                <div class="home-banner_credit">
-                                  <div class="home-banner_avatar">
-                                    <img src="" loading="lazy" alt="" class="image-fill">
-                                  </div>
-                                  <div>
-                                    <div class="text-size-small">Molly Wilson</div>
-                                    <div class="text-size-small text-style-muted">Facebook</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="home-banner_slide swiper-slide">
-                                <div>
-                                  <div class="text-size-large text-align-center">She provided an incredible package of web design and development services that helped us increase our digital presence by 50%.</div>
-                                </div>
-                                <div class="home-banner_credit">
-                                  <div class="home-banner_avatar">
-                                    <img src="" loading="lazy" alt="" class="image-fill">
-                                  </div>
-                                  <div>
-                                    <div class="text-size-small">Karla Gordon</div>
-                                    <div class="text-size-small text-style-muted">Google</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="home-banner_nav">
-                            <div id="w-node-a837a935-dca2-a76c-9b94-a9cb3179e530-019ada71" data-w-id="a837a935-dca2-a76c-9b94-a9cb3179e530" class="slider-arrow swiper-prev">
-                              <div class="clip">
-                                <div class="hover-arrow right">
-                                  <div class="icon-1x1-tiny w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M10.828 12L15.778 16.95L14.364 18.364L8 12L14.364 5.63599L15.778 7.04999L10.828 12Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div class="hover-arrow">
-                                  <div class="icon-1x1-tiny w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M10.828 12L15.778 16.95L14.364 18.364L8 12L14.364 5.63599L15.778 7.04999L10.828 12Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="slider-arrow_text">
-                                <div class="text-size-small">prev</div>
-                              </div>
-                            </div>
-                            <div id="w-node-_8b9b0a96-ccd8-223c-687e-06fbe0610f98-019ada71" data-w-id="8b9b0a96-ccd8-223c-687e-06fbe0610f98" class="slider-arrow swiper-next">
-                              <div class="slider-arrow_text">
-                                <div class="text-size-small">next</div>
-                              </div>
-                              <div class="clip">
-                                <div class="hover-arrow left">
-                                  <div class="icon-1x1-tiny w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                                <div class="hover-arrow">
-                                  <div class="icon-1x1-tiny w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
+                  
+                  <!-- <Feedback /> -->
+
+
                   <div class="padding-horizontal padding-large">
                     <div class="padding-bottom padding-large">
                       <div class="home-service_grid">
                         <div class="padding-top">
-                          <div data-w-id="09cc2264-e26a-5070-b27f-86bb62b63af6" class="row-title-block">
-                            <div class="letter-animation">
+                          <div  class="font-optiker">
+                            QUESTIONS
+                            <!-- <div class="letter-animation">
                               <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
                               <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
                               <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3"></div>
@@ -603,182 +491,12 @@
                               <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9"></div>
                               <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-10"></div>
                             </div>
-                            <div class="row-title">
-                              <div class="row-title-clip">
-                                <div class="row-title-text text-align-center">
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1">Q</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2">u</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3">e</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-4">s</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-5">t</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-6">i</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-7">o</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8">n</span>
-                                  <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9">s</span>
-                                </div>
-                              </div>
-                            </div>
+                        -->
                           </div>
                         </div>
                         <div id="w-node-e2d1d4ff-3daa-4a24-661b-de15c7bf01c6-019ada71" class="home-faq-block">
                           <div class="home-faq-list radius-regular">
-                            <div data-w-id="635eb179-85f7-067d-94b1-dffe60beb2a9" class="home-faq-item no-border">
-                              <div class="home-faq-top">
-                                <div id="w-node-_635eb179-85f7-067d-94b1-dffe60beb2ab-60beb2a9" class="home-faq-number">
-                                  <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                                    <div class="hover-text">
-                                      <div class="text-size-small text-style-muted">001</div>
-                                    </div>
-                                    <div class="hover-text bottom-hover-text">
-                                      <div class="text-size-small text-style-muted">001</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="text-size-large">How long do projects typically take?</div>
-                                <div class="home-faq-icon">
-                                  <div class="icon-1x1-small w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="hame-faq-bottom">
-                                <div class="home-faq-content radius-regular">
-                                  <div class="home-faq-text">
-                                    <div class="text-size-regular text-color-white">This involves creating a custom solution for clients who want an online presence tailored to their specific needs. The process involves understanding the client's requirements, analyzing existing solutions, and then designing, coding, and testing the web application.</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="line">
-                                <div class="line-fill light-line-fill"></div>
-                              </div>
-                            </div>
-                            <div data-w-id="635eb179-85f7-067d-94b1-dffe60beb2a9" class="home-faq-item no-border">
-                              <div class="home-faq-top">
-                                <div id="w-node-_635eb179-85f7-067d-94b1-dffe60beb2ab-60beb2a9" class="home-faq-number">
-                                  <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                                    <div class="hover-text">
-                                      <div class="text-size-small text-style-muted">002</div>
-                                    </div>
-                                    <div class="hover-text bottom-hover-text">
-                                      <div class="text-size-small text-style-muted">002</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="text-size-large">How long do projects typically take?</div>
-                                <div class="home-faq-icon">
-                                  <div class="icon-1x1-small w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="hame-faq-bottom">
-                                <div class="home-faq-content radius-regular">
-                                  <div class="home-faq-text">
-                                    <div class="text-size-regular text-color-white">This involves creating a custom solution for clients who want an online presence tailored to their specific needs. The process involves understanding the client's requirements, analyzing existing solutions, and then designing, coding, and testing the web application.</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="line">
-                                <div class="line-fill light-line-fill"></div>
-                              </div>
-                            </div>
-                            <div data-w-id="635eb179-85f7-067d-94b1-dffe60beb2a9" class="home-faq-item no-border">
-                              <div class="home-faq-top">
-                                <div id="w-node-_635eb179-85f7-067d-94b1-dffe60beb2ab-60beb2a9" class="home-faq-number">
-                                  <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                                    <div class="hover-text">
-                                      <div class="text-size-small text-style-muted">003</div>
-                                    </div>
-                                    <div class="hover-text bottom-hover-text">
-                                      <div class="text-size-small text-style-muted">003</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="text-size-large">How long do projects typically take?</div>
-                                <div class="home-faq-icon">
-                                  <div class="icon-1x1-small w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="hame-faq-bottom">
-                                <div class="home-faq-content radius-regular">
-                                  <div class="home-faq-text">
-                                    <div class="text-size-regular text-color-white">This involves creating a custom solution for clients who want an online presence tailored to their specific needs. The process involves understanding the client's requirements, analyzing existing solutions, and then designing, coding, and testing the web application.</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="line">
-                                <div class="line-fill light-line-fill"></div>
-                              </div>
-                            </div>
-                            <div data-w-id="635eb179-85f7-067d-94b1-dffe60beb2a9" class="home-faq-item no-border">
-                              <div class="home-faq-top">
-                                <div id="w-node-_635eb179-85f7-067d-94b1-dffe60beb2ab-60beb2a9" class="home-faq-number">
-                                  <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                                    <div class="hover-text">
-                                      <div class="text-size-small text-style-muted">004</div>
-                                    </div>
-                                    <div class="hover-text bottom-hover-text">
-                                      <div class="text-size-small text-style-muted">004</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="text-size-large">How long do projects typically take?</div>
-                                <div class="home-faq-icon">
-                                  <div class="icon-1x1-small w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="hame-faq-bottom">
-                                <div class="home-faq-content radius-regular">
-                                  <div class="home-faq-text">
-                                    <div class="text-size-regular text-color-white">This involves creating a custom solution for clients who want an online presence tailored to their specific needs. The process involves understanding the client's requirements, analyzing existing solutions, and then designing, coding, and testing the web application.</div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="line">
-                                <div class="line-fill light-line-fill"></div>
-                              </div>
-                            </div>
-                            <div data-w-id="635eb179-85f7-067d-94b1-dffe60beb2a9" class="home-faq-item no-border">
-                              <div class="home-faq-top">
-                                <div id="w-node-_635eb179-85f7-067d-94b1-dffe60beb2ab-60beb2a9" class="home-faq-number">
-                                  <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                                    <div class="hover-text">
-                                      <div class="text-size-small text-style-muted">005</div>
-                                    </div>
-                                    <div class="hover-text bottom-hover-text">
-                                      <div class="text-size-small text-style-muted">005</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="text-size-large">How long do projects typically take?</div>
-                                <div class="home-faq-icon">
-                                  <div class="icon-1x1-small w-embed">
-                                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z" fill="currentColor"></path>
-                                    </svg>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="hame-faq-bottom">
-                                <div class="home-faq-content radius-regular">
-                                  <div class="home-faq-text">
-                                    <div class="text-size-regular text-color-white">This involves creating a custom solution for clients who want an online presence tailored to their specific needs. The process involves understanding the client's requirements, analyzing existing solutions, and then designing, coding, and testing the web application.</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                              <FaqCard />
                           </div>
                         </div>
                       </div>
@@ -789,51 +507,44 @@
             </div>
           </div>
         </section>
-        <section class="section-footer1">
+        <footer class="section-footer1">
           <div class="padding-horizontal padding-small">
             <div class="grid-large">
               <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15a6-e83c15a3" class="footer-block">
                 <div class="padding-vertical padding-huge">
                   <div class="footer-intro">
                     <div class="text-size-large text-align-center text-color-white">Whether you need design or tweak some code, I have the skills and creativity needed to take your project to the next level.</div>
-                    <a href="/contact" class="button w-inline-block">
-                      <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                        <div class="hover-text">
-                          <div class="text-size-xsmall">Schedule a call</div>
-                        </div>
-                        <div class="hover-text bottom-hover-text">
-                          <div class="text-size-xsmall">Schedule a call</div>
-                        </div>
-                      </div>
-                    </a>
+                    
+                    <a name='contact' />
+         
                   </div>
                 </div>
                 <div class="padding-horizontal padding-medium">
                   <div class="footer-bottom">
-                    <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15b0-e83c15a3" class="text-size-tiny text-style-allcaps text-color-white">© 2023 <a href="https://twitter.com/Tycreated" target="_blank" class="text-style-link light">Webflow Template</a>
+                    <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15b0-e83c15a3" class="text-size-tiny text-style-allcaps text-color-white">© 2024 <a href="" target="_blank" class="text-style-link light"></a>
                     </div>
                     <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15b2-e83c15a3" class="footer-menu">
                       <a href="/" aria-current="page" class="footer-link w-inline-block w--current">
                         <div class="text-size-tiny text-style-allcaps">Home</div>
                       </a>
-                      <a href="/about" class="footer-link w-inline-block">
+                      <a href="#about" class="footer-link w-inline-block">
                         <div class="text-size-tiny text-style-allcaps">About</div>
                       </a>
                       <a href="/works" class="footer-link w-inline-block">
                         <div class="text-size-tiny text-style-allcaps">Projects</div>
                       </a>
-                      <a href="/contact" class="footer-link w-inline-block">
+                      <a href="#contact" class="footer-link w-inline-block">
                         <div class="text-size-tiny text-style-allcaps">Contact</div>
                       </a>
                     </div>
-                    <div id="w-node-f17c5aa6-ff54-9c14-64f2-750ce83c15bf-e83c15a3" class="text-size-tiny text-style-allcaps text-color-white">Created by <a href="https://twitter.com/Tycreated" target="_blank" class="text-style-link light">Tycreated</a>
+                    <div class="text-size-tiny text-style-allcaps text-color-white">Created by <a href="" target="_blank" class="text-style-link light">DarkDEV</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </footer>
       </main>
     </div>
 
