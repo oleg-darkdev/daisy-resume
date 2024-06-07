@@ -37,6 +37,8 @@
                   <a href="/" aria-current="page" class="brand w-nav-brand w--current">
                     <div>Portfolio</div>
                   </a>
+
+                  
                   <nav role="navigation" class="navbar_menu w-nav-menu">
                     <a href="#" class="navlink w-inline-block">
                       <div>Hire me</div>
@@ -75,16 +77,7 @@
           <div class="padding-horizontal padding-medium">
             <div class="grid-large">
               <div id="hero-wrap" class="home-hero-block">
-                <div  class="hero-rotate-base">
-                  <div  style="opacity:0;-webkit-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-rotate-image">
-                    <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);transform-style:preserve-3d" class="hero-rotate-item radius-regular">
-                      <div class="hero-rotate-height"></div>
-                      <img src="" loading="lazy" alt="" class="image-fill">
-                    </div>
-                  </div>
-                </div>
                 <div id="hero-intro-wrap" class="home-hero-intro">
-                  <!-- <h1 split-text="" class="heading-style-huge text-color-white text-align-center">Oleg Medvedev</h1> -->
                   <Hero />
                 </div>
               </div>
@@ -96,7 +89,7 @@
             <div class="grid-large">
               <div id="intro" class="home-about-block about-wrap">
                 <div class="curve-block-center">
-                  <a id="right" href="#services" class="curve-link w-inline-block">
+                  <a id="right" href="#about" class="curve-link w-inline-block">
                   <div class="curve-arrow">
                       <div class="clip">
                       <div class="hover-arrow top">
