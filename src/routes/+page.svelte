@@ -123,7 +123,7 @@
                     <div class="padding-vertical padding-xlarge">
                       <div class="home-about-intro">
                         <div split-text=" " class="text-size-xlarge text-align-center">With years of experience in the industry, I have worked with businesses of all sizes.</div>
-                        <a href="#about" class="button is-light w-inline-block">
+                        <a name="about" class="button is-light w-inline-block">
 
                           <!-- сдеть появляется меню обо мне -->
                            <div class="text-size-xsmall">Explore my story</div>
