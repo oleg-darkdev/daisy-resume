@@ -3125,7 +3125,9 @@ figcaption {
   font-weight: 500;
   line-height: 1.2;
 }
-
+.header__title {
+   font-family: Satoshi, sans-serif;
+}
 .page-wrapper {
   background-color: #0b0c0f;
   font-family: Satoshi, sans-serif;

@@ -84,7 +84,8 @@
                   </div>
                 </div>
                 <div id="hero-intro-wrap" class="home-hero-intro">
-                  <h1 split-text="" class="heading-style-huge text-color-white text-align-center">Oleg Medvedev</h1>
+                  <!-- <h1 split-text="" class="heading-style-huge text-color-white text-align-center">Oleg Medvedev</h1> -->
+                  <Hero />
                 </div>
               </div>
             </div>
@@ -122,7 +123,7 @@
                   <div class="home-about-top">
                     <div class="padding-vertical padding-xlarge">
                       <div class="home-about-intro">
-                        <div split-text=" " class="text-size-xlarge text-align-center">With years of experience in the industry, I have worked with businesses of all sizes.</div>
+                        <div class="text-size-xlarge text-align-center">With years of experience in the industry, I have worked with businesses of all sizes.</div>
                         <a name="about" class="button is-light w-inline-block">
 
                           <!-- сдеть появляется меню обо мне -->
@@ -130,7 +131,12 @@
                         </a>
                       </div>
                     </div>
-                    <div data-w-id="45d2a386-614e-c243-8e80-f59ea4859d64" class="row-title-block">
+                    <div  class="font-optiker">
+                      Since 2019
+              
+                    </div>
+
+                    <!-- <div data-w-id="45d2a386-614e-c243-8e80-f59ea4859d64" class="row-title-block">
                       <div class="letter-animation">
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
@@ -159,7 +165,7 @@
                         </div>
                         <div class="row-title-bottom"></div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
