@@ -12,7 +12,7 @@ export let progect;
 
 <!-- md:-my-10 lg:-my-10 xl:-my-10 -->
 <!-- -->
-<div class="mx-auto border-2 rounded-box flex max-w-xl mb-16 mt-10 px-6 pt-6 flex-col items-center ">
+<div class="mx-auto border-2 rounded-box flex max-w-xl mb-16 mt-10 lg:px-6 xl:px-6 md:px-6 px-3 xl:pt-6 lg:pt-6 md:pt-6 pt-3 flex-col items-center ">
 	<div  class="prose-sm prose-blue mx-auto flex w-full flex-col text-left">
 		<span class="text-xs text-style-allcaps  uppercase tracking-widest ">
 			{#each progect.tags as tag} <span>#{tag} </span> {/each}

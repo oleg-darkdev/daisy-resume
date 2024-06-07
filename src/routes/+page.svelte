@@ -38,7 +38,7 @@
                     <div>Portfolio</div>
                   </a>
 
-                  
+
                   <nav role="navigation" class="navbar_menu w-nav-menu">
                     <a href="#" class="navlink w-inline-block">
                       <div>Hire me</div>
@@ -166,7 +166,7 @@
           </div>
         </section>
         <section class="home-about">
-          <div class="padding-horizontal padding-small">
+          <div class="padding-horizontal lg:padding-small md:padding-small xl:padding-small">
             <div class="grid-large">
               <div id="servicet-wrap" class="padding-vertical padding-xlarge">
                 <div id="home-work-wrap" class="home-work-block">
@@ -188,7 +188,7 @@
                           {#each portfolio as portfolioData}
                           <!-- year  -->
                           <div class="mx-auto ">
-                            <div class="mb-8 lg:mt-10 xl:mt-10 md:mt-10 mt-16 lg:ml-40 flex flex-shrink-0 flex-col border-b border-[#44149c] px-4 pb-6 md:w-64">
+                            <div class="mb-8 lg:mt-10 xl:mt-10 md:mt-10 mt-16 lg:ml-40 flex flex-shrink-0 flex-col  border-[#44149c] px-4 pb-6 lg:w-96 xl:w-96 md:w-96 w-64 border-b-4">
                               <strong
                                 class="text-thin heading-style-h3 flex text-left text-3xl font-thin leading-none  lg:text-4xl"
                               >
@@ -205,7 +205,7 @@
                                   </div>
                                 {/each}
                                 </div>
-                                <div class="flex flex-col pt-40">
+                                <div class="flex flex-col lg:pt-40 xl:pt-40 md:pt-0 md:pt-0"> 
                               {#each portfolioData.progects.slice( portfolioData.progects.length / 2, portfolioData.progects.length) as progect}
                                 <div  class=" w-dyn-item">
                                   <ProgectCard {progect} />

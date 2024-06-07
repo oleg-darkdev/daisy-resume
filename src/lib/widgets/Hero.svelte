@@ -8,7 +8,7 @@
 
 		<div class="header__title ">
 			<!-- DarkDEV -->
-			<p>Product Web Engineer <br /> &amp; Boardgames creator</p>
+			<p class=''>Product Web Engineer <br /> &amp; Boardgames creator</p>
 		</div>
 	</div>
 </section>
@@ -16,7 +16,7 @@
 <style>
 	@media screen and (max-width: 480px) {
 		.header__initials {
-			font-size: 10vh;
+			font-size: 9vh;
 			line-height: 1.2em;
 			letter-spacing: 1.2px;
 			text-align: center;
@@ -24,16 +24,14 @@
 		}
 
 		.header__title p {
-			font-size: 2rem;
+			font-size: 1.8rem;
 			letter-spacing: 0.7px;
 			text-align: center;
 		}
 
 		.header__title {
 			margin-top: 14px;
-			max-width: 240px;
 			text-align: center;
-
 		}
 	}
 	@media screen and (min-width: 480px) {

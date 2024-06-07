@@ -6277,6 +6277,14 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
+  
+
+.font-optiker {
+  font-family: Optiker k;
+  font-size: 17em;
+  margin-bottom: -130px;
+  text-align: center;
+}
   #w-node-_33a40b8b-70fe-856d-a5d5-400b2b14b0a5-a49ada69 {
     grid-row: 1 / 2;
   }
@@ -6332,6 +6340,12 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
+.font-optiker {
+  font-family: Optiker k;
+  font-size: 17em;
+  margin-bottom: -130px;
+  text-align: center;
+}
   #footer-nav {
     justify-self: center;
   }
@@ -6369,16 +6383,16 @@ figcaption {
   #w-node-_6e7df872-1444-4c27-ae3c-6b4673aeb1d3-af9ada84 {
     grid-area: 1 / 1 / 2 / 4;
   }
+
+  .font-optiker {
+    font-family: Optiker k;
+    font-size: 3.5em;
+    margin-bottom: 2px;
+    text-align: center;
+  }
 }
 
 
-
-.font-optiker {
-  font-family: Optiker k;
-  font-size: 17em;
-  margin-bottom: -130px;
-  text-align: center;
-}
 
 @font-face {
   font-family: 'Satoshi';
