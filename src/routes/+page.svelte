@@ -1,6 +1,6 @@
 <script>
 	import { Hero, Footer, Aside, Feedback, PdfViewer } from '$widgets';
-	import { ProgectCard, ServiceCard, FaqCard, CurverNav } from '$entities';
+	import { ProgectCard, ServiceCard, FaqCard, CurverNav, NavBarLink } from '$entities';
 	import { portfolio, skillsTools } from '$shared';
 </script>
 
@@ -29,10 +29,11 @@
       <main class="main-wrapper">
         <div class="about-hero_navbar">
           <div class="padding-horizontal padding-medium">
-            <div id="w-node-_9990f78a-f294-0c8f-0b66-9928e91f9a1e-e91f9a1e" data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+            <div id="nav-bar-component-wrap" role="banner" class="navbar w-nav">
               <div class="padding-horizontal">
                 <div class="navbar_overlay"></div>
-                <div id="w-node-_9990f78a-f294-0c8f-0b66-9928e91f9a1f-e91f9a1e" class="navbar_component">
+                <div id="nav-bar-component" class="navbar_component">
+                  <!-- "#portfolio -->
                   <a href="/" aria-current="page" class="brand w-nav-brand w--current">
                     <div>Portfolio</div>
                   </a>
@@ -45,17 +46,10 @@
                     <div class="w-icon-nav-menu"></div>
                   </div>
                   <div class="navbar_right">
-                    <a href="/contact" class="button hide-mobile-portrait w-inline-block">
-                      <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                        <div class="hover-text">
-                          <div class="text-size-xsmall text-style-allcaps">Schedule a call</div>
-                        </div>
-                        <div class="hover-text bottom-hover-text">
-                          <div class="text-size-xsmall text-style-allcaps">Schedule a call</div>
-                        </div>
-                      </div>
+                    <a href="#contact" class="button hide-mobile-portrait w-inline-block">
+                      <div class="text-size-xsmall text-style-allcaps">Contact</div>
                     </a>
-                    <div data-hover="false" data-delay="1000" data-w-id="e4acc428-f7d4-40fd-2558-71aa586d4308" class="navbar_dropdown w-dropdown">
+                    <div class="navbar_dropdown w-dropdown">
                       <div class="navbar_toggle w-dropdown-toggle">
                         <div class="navbar_line navbar-line-top"></div>
                         <div class="navbar_line navbar-line-bottom"></div>
@@ -63,98 +57,10 @@
                       <nav class="navbar_dropdown-list w-dropdown-list">
                         <div class="navbar_drop-content radius-regular">
                           <div class="navbar_link-wrapper">
-                            <div id="w-node-dcf96600-dc67-46aa-b261-5e18bb914b2c-e91f9a1e" class="into-view-1">
-                              <a href="/about" class="navbar_link w-inline-block">
-                                <div class="heading-style-h5 text-style-allcaps">About</div>
-                                <div>
-                                  <div class="clip">
-                                    <div class="hover-arrow left">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                    <div class="hover-arrow">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div id="w-node-_801ff30e-95ab-85cf-050c-dad43c1ea620-e91f9a1e" class="into-view-2">
-                              <a href="/works" class="navbar_link w-inline-block">
-                                <div class="heading-style-h5 text-style-allcaps">Work</div>
-                                <div>
-                                  <div class="clip">
-                                    <div class="hover-arrow left">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                    <div class="hover-arrow">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div id="w-node-de31a87d-6672-b57b-39d9-182a3bf92ebb-e91f9a1e" class="into-view-3">
-                              <a href="/contact" class="navbar_link w-inline-block">
-                                <div class="heading-style-h5 text-style-allcaps">Contact</div>
-                                <div>
-                                  <div class="clip">
-                                    <div class="hover-arrow left">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                    <div class="hover-arrow">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            </div>
-                            <div id="w-node-_453bff1a-05a7-bbb8-3bd2-c2cdafdb1f3a-e91f9a1e" class="into-view-4">
-                              <a href="https://webflow.com/made-in-webflow/website/creative-person" target="_blank" class="navbar_link w-inline-block">
-                                <div class="heading-style-h5 text-style-allcaps">Clone me</div>
-                                <div>
-                                  <div class="clip">
-                                    <div class="hover-arrow left">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                    <div class="hover-arrow">
-                                      <div class="icon-1x1-tiny w-embed">
-                                        <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M13.1722 12L8.22217 7.04999L9.63617 5.63599L16.0002 12L9.63617 18.364L8.22217 16.95L13.1722 12Z" fill="currentColor"></path>
-                                        </svg>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </a>
-                            </div>
+                            <NavBarLink />
+                            <!-- /works  Work -->
+                            <!-- /contact  Contact -->
+                            <!--  Clone me -->                            
                           </div>
                         </div>
                       </nav>
@@ -165,47 +71,20 @@
             </div>
           </div>
         </div>
-        <section data-w-id="ac4cfc0d-3e39-4290-be56-9510ca35bfb4" class="home-hero">
+        <section  class="home-hero">
           <div class="padding-horizontal padding-medium">
             <div class="grid-large">
-              <div id="w-node-_6e7df872-1444-4c27-ae3c-6b4673aeb1d3-019ada71" class="home-hero-block">
-                <div data-w-id="f9229dca-976e-f012-f753-4e2d139b6694" class="hero-rotate-base">
-                  <div data-w-id="bb2ebf59-e0b0-aea3-b323-f5c440cb98b2" style="opacity:0;-webkit-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-rotate-image">
+              <div id="hero-wrap" class="home-hero-block">
+                <div  class="hero-rotate-base">
+                  <div  style="opacity:0;-webkit-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 85%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-rotate-image">
                     <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.65, 0.65, 1) rotateX(0) rotateY(180deg) rotateZ(25deg) skew(0, 0);transform-style:preserve-3d" class="hero-rotate-item radius-regular">
                       <div class="hero-rotate-height"></div>
                       <img src="" loading="lazy" alt="" class="image-fill">
                     </div>
                   </div>
                 </div>
-                <div id="w-node-d74ddeb5-c20c-63ef-8fb2-00407a060d1e-019ada71" class="home-hero-intro">
-                  <div class="clip">
-                    <div data-w-id="6d70cae9-6fa2-0bca-a40d-ceb75c4678a0" class="loader-step-one">
-                      <h1 split-text="" class="heading-style-huge text-color-white text-align-center">
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1">S</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2">a</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3">m</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-4">a</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-5">n</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-6">t</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-7">h</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8">a</span>
-                        <br>
-                      </h1>
-                    </div>
-                  </div>
-                  <div class="clip">
-                    <div data-w-id="b495770d-3ec1-918e-d71f-33340b2f0a35" class="loader-step-two">
-                      <h1 split-text="" class="heading-style-huge text-color-white text-align-center">
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1">H</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2">u</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3">m</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-4">p</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-5">h</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-6">r</span>
-                        <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-7">y</span>
-                      </h1>
-                    </div>
-                  </div>
+                <div id="hero-intro-wrap" class="home-hero-intro">
+                  <h1 split-text="" class="heading-style-huge text-color-white text-align-center">Oleg Medvedev</h1>
                 </div>
               </div>
             </div>
@@ -214,7 +93,7 @@
         <section class="home-about">
           <div class="padding-horizontal padding-small">
             <div class="grid-large">
-              <div id="intro" class="home-about-block w-node-_268712a1-d5ba-90dc-2dd1-5152fb162c24-019ada71">
+              <div id="intro" class="home-about-block about-wrap">
                 <div class="curve-block-center">
                   <a id="right" href="#services" class="curve-link w-inline-block">
                   <div class="curve-arrow">
@@ -238,20 +117,16 @@
                   <img src="/images/curver.svg" loading="lazy" alt="Curver img">
                   </a>
                 </div>
+
                 <div class="padding-horizontal padding-medium">
                   <div class="home-about-top">
                     <div class="padding-vertical padding-xlarge">
                       <div class="home-about-intro">
                         <div split-text=" " class="text-size-xlarge text-align-center">With years of experience in the industry, I have worked with businesses of all sizes.</div>
-                        <a href="/about" class="button is-light w-inline-block">
-                          <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                            <div class="hover-text">
-                              <div class="text-size-xsmall">Explore my story</div>
-                            </div>
-                            <div class="hover-text bottom-hover-text">
-                              <div class="text-size-xsmall">Explore my story</div>
-                            </div>
-                          </div>
+                        <a href="#about" class="button is-light w-inline-block">
+
+                          <!-- сдеть появляется меню обо мне -->
+                           <div class="text-size-xsmall">Explore my story</div>
                         </a>
                       </div>
                     </div>
@@ -299,47 +174,18 @@
                   <div class="home-work-top">
                     <div class="home-service-intro">
                       <div class="text-size-large text-align-center">I have worked with businesses of all sizes to create stunning websites and designs that capture their brand's identity.</div>
-                      <a href="/works" class="button w-inline-block">
-                        <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip">
-                          <div class="hover-text">
-                            <div class="text-size-xsmall">View my portfolio</div>
-                          </div>
-                          <div class="hover-text bottom-hover-text">
-                            <div class="text-size-xsmall">View my portfolio</div>
-                          </div>
-                        </div>
+                      <a href="#contact" class="button w-inline-block">
+                        <div class="text-size-xsmall">Contact</div>
+
                       </a>
                     </div>
                   </div>
                   <div class="home-work-bottom">
                     <div class="home-work-list w-dyn-list">
-                      <div data-w-id="1942688e-2c45-8d2b-5bec-1c1493592355" role="list" class="home-work-cms w-dyn-items">
+                      <div role="list" class="home-work-cms w-dyn-items">
                         
-                          <!-- <a data-w-id="54eb8553-1f76-4eab-2c33-f3a2b2f13857" href="/projects/airtable" class="work-list-item w-inline-block">
-                            <div class="work-list-grid">
-                              <div id="nowThis" thattextsplit="hoverTarget" base="100%" class="work-list-title w-node-_01521a5e-18ee-4a67-e5ed-a483cfb6ffb0-019ada71">
-                                <h3 class="heading-style-h3 text-color-white">Airtable</h3>
-                              </div>
-                              <div id="nowThis" thattextsplit="hoverTarget" base="20%" class="clip w-node-a7ada0ce-0806-a150-89a5-c3732ea87a1e-019ada71">
-                                <div style="-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hover-text">
-                                  <div class="text-size-tiny text-style-allcaps text-color-white">Graphic design</div>
-                                </div>
-                                <div class="hover-text bottom-hover-text">
-                                  <div class="text-size-tiny text-style-allcaps text-color-white">Graphic design</div>
-                                </div>
-                              </div>
-                              <div id="w-node-_24cff470-c792-5f36-a823-d03f369a595f-019ada71" class="list-image">
-                                <div class="list-image-item">
-                                  <div data-w-id="d3eda697-e370-26c6-3aa2-dd1bdc02ade0" class="list-image-height">
-                                    <img loading="lazy" data-w-id="c5f91401-47e6-6701-dc02-daf3e6f613a3" alt="" src="" class="image-fill">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="line">
-                              <div style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="line-fill"></div>
-                            </div>
-                          </a> -->
+
+                        <a name="portfolio" />
                           {#each portfolio as portfolioData}
                           <!-- year  -->
                           <div class="mx-auto ">
@@ -375,7 +221,7 @@
 
 
                     </div>
-                    <div data-w-id="fa0d9330-b467-34c3-6a7e-e37a46349075" class="line line-wrap_topleft">
+                    <div  class="line line-wrap_topleft">
                       <div style="-webkit-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="line-fill"></div>
                     </div>
                   </div>
@@ -532,7 +378,7 @@
                       <a href="#about" class="footer-link w-inline-block">
                         <div class="text-size-tiny text-style-allcaps">About</div>
                       </a>
-                      <a href="/works" class="footer-link w-inline-block">
+                      <a href="#portfolio" class="footer-link w-inline-block">
                         <div class="text-size-tiny text-style-allcaps">Projects</div>
                       </a>
                       <a href="#contact" class="footer-link w-inline-block">
