@@ -1,17 +1,40 @@
 <script>
-	import { Hero, Footer, Aside, Feedback, PdfViewer } from '$widgets';
+	import { Hero, Footer, Aside, Feedback, Header, PdfViewer, About } from '$widgets';
 	import { ProgectCard, ServiceCard, FaqCard, CurverNav, NavBarLink } from '$entities';
 	import { portfolio, skillsTools } from '$shared';
+
+  const services = [
+    {
+      id: 1,
+      title: 'Digital design',
+      desc: `Unique design that reflects the personality and goals of your product. Services include corporate design, creating images for website and social media posts, as well as designing presentations, posters and other printed materials.`,
+      img: '/',
+    },
+    {
+      id: 2,
+      title: 'Landing pages and web applications',
+      desc: `Development of landing pages and web applications using modern design systems and the latest UI trends such as Material Design, Carbon Design, NeoBrutalism, Glassmorphism and Neumorphism. I emphasize creating a user-friendly and engaging user experience so that products stand out and interact effectively with the target audience.`,
+      img: '/',
+    },
+    {
+      id: 3,
+      title: 'Gamification and educational products',
+      desc: `Creating educational board games and complementary web applications. I specialize in creating educational board games for business companies and NGOs engaged in educational domain, assisting them in achieving Education 4.0 goals and transfer information in a engaging and interactive form.`,
+      img: '/',
+    }
+  ]
 </script>
 
 <svelte:head>
 	<title>Oleg_DarkDEV</title>
-
 </svelte:head>
 
-<!-- <Hero />
+<!-- <Aside /> -->
 
-<Aside />
+
+<!-- <Footer /> -->
+<!-- 
+
 
 
 <a name="about"></a>
@@ -19,118 +42,63 @@
 
 <a name="cv" />
 
-<Footer /> -->
+ -->
 
-
+<!-- <Header /> -->
     <div class="page-wrapper">
       <div class="global-styles w-embed">
 
       </div>
       <main class="main-wrapper">
-        <div class="about-hero_navbar">
-          <div class="padding-horizontal padding-medium">
-            <div id="nav-bar-component-wrap" role="banner" class="navbar w-nav">
-              <div class="padding-horizontal">
-                <div class="navbar_overlay"></div>
-                <div id="nav-bar-component" class="navbar_component">
-                  <!-- "#portfolio -->
-                  <a href="/" aria-current="page" class="brand w-nav-brand w--current">
-                    <div>Portfolio</div>
-                  </a>
 
-
-                  <nav role="navigation" class="navbar_menu w-nav-menu">
-                    <a href="#" class="navlink w-inline-block">
-                      <div>Hire me</div>
-                    </a>
-                  </nav>
-                  <div class="w-nav-button">
-                    <div class="w-icon-nav-menu"></div>
-                  </div>
-                  <div class="navbar_right">
-                    <a href="#contact" class="button hide-mobile-portrait w-inline-block">
-                      <div class="text-size-xsmall text-style-allcaps">Contact</div>
-                    </a>
-                    <div class="navbar_dropdown w-dropdown">
-                      <div class="navbar_toggle w-dropdown-toggle">
-                        <div class="navbar_line navbar-line-top"></div>
-                        <div class="navbar_line navbar-line-bottom"></div>
-                      </div>
-                      <nav class="navbar_dropdown-list w-dropdown-list">
-                        <div class="navbar_drop-content radius-regular">
-                          <div class="navbar_link-wrapper">
-                            <NavBarLink />
-                            <!-- /works  Work -->
-                            <!-- /contact  Contact -->
-                            <!--  Clone me -->                            
-                          </div>
-                        </div>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section  class="home-hero">
-          <div class="padding-horizontal padding-medium">
-            <div class="grid-large">
-              <div id="hero-wrap" class="home-hero-block">
-                <div id="hero-intro-wrap" class="home-hero-intro">
-                  <Hero />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero />
+        
         <section class="home-about">
           <div class="padding-horizontal padding-small">
             <div class="grid-large">
-              <div id="intro" class="home-about-block about-wrap">
+                <div id="intro" class="home-about-block about-wrap">
                 <div class="curve-block-center">
-                  <a id="right" href="#about" class="curve-link w-inline-block">
-                  <div class="curve-arrow">
-                      <div class="clip">
-                      <div class="hover-arrow top">
-                          <div class="icon w-embed">
-                          <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                          </svg>
-                          </div>
-                      </div>
-                      <div class="hover-arrow">
-                          <div class="icon w-embed">
-                          <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                          </svg>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-                  <img src="/images/curver.svg" loading="lazy" alt="Curver img">
-                  </a>
+                    <a id="right" href="#about" class="curve-link w-inline-block">
+                    <div class="curve-arrow">
+                        <div class="clip">
+                        <div class="hover-arrow top">
+                            <div class="icon w-embed">
+                            <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+                            </svg>
+                            </div>
+                        </div>
+                        <div class="hover-arrow">
+                            <div class="icon w-embed">
+                            <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+                            </svg>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <img src="/images/curver.svg" loading="lazy" alt="Curver img">
+                    </a>
                 </div>
 
                 <div class="padding-horizontal padding-medium">
-                  <div class="home-about-top">
+                    <div class="home-about-top">
                     <div class="padding-vertical padding-xlarge">
-                      <div class="home-about-intro">
-                        <div class="text-size-xlarge text-align-center">With years of experience in the industry, I have worked with businesses of all sizes.</div>
+                        <div class="home-about-intro">
+                        <div class="text-size-xlarge text-align-center">With years of experience in the industry, I have worked with businesses & NGO of all sizes.</div>
                         <a name="about" class="button is-light w-inline-block">
 
-                          <!-- сдеть появляется меню обо мне -->
-                           <div class="text-size-xsmall">Explore my story</div>
+                            <!-- сдеть появляется меню обо мне -->
+                            <div class="text-size-xsmall">Explore my story</div>
                         </a>
-                      </div>
+                        </div>
                     </div>
                     <div  class="font-optiker">
-                      Since 2019
-              
+                        Since 2019
                     </div>
 
                     <!-- <div data-w-id="45d2a386-614e-c243-8e80-f59ea4859d64" class="row-title-block">
-                      <div class="letter-animation">
+                        <div class="letter-animation">
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3"></div>
@@ -141,10 +109,10 @@
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-10"></div>
-                      </div>
-                      <div class="row-title">
+                        </div>
+                        <div class="row-title">
                         <div class="row-title-clip">
-                          <div class="row-title-text text-align-center">
+                            <div class="row-title-text text-align-center">
                             <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1">S</span>
                             <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2">i</span>
                             <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3">n</span>
@@ -154,16 +122,16 @@
                             <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-7">0</span>
                             <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8">1</span>
                             <span style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9">4</span>
-                          </div>
+                            </div>
                         </div>
                         <div class="row-title-bottom"></div>
-                      </div>
+                        </div>
                     </div> -->
-                  </div>
+                    </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
+        </div>
         </section>
         <section class="home-about">
           <div class="padding-horizontal lg:padding-small md:padding-small xl:padding-small">
@@ -172,7 +140,7 @@
                 <div id="home-work-wrap" class="home-work-block">
                   <div class="home-work-top">
                     <div class="home-service-intro">
-                      <div class="text-size-large text-align-center">I have worked with businesses of all sizes to create stunning websites and designs that capture their brand's identity.</div>
+                      <div class="text-size-large text-align-center">I have worked with businesses & NGO  of all sizes to create stunning websites and designs that capture their products identity.</div>
                       <a href="#contact" class="button w-inline-block">
                         <div class="text-size-xsmall">Contact</div>
 
@@ -182,7 +150,7 @@
                   <div class="home-work-bottom">
                     <div class="home-work-list w-dyn-list">
                       <div role="list" class="home-work-cms w-dyn-items">
-                        
+
 
                         <a name="portfolio" />
                           {#each portfolio as portfolioData}
@@ -205,7 +173,7 @@
                                   </div>
                                 {/each}
                                 </div>
-                                <div class="flex flex-col lg:pt-40 xl:pt-40 md:pt-0 md:pt-0"> 
+                                <div class="flex flex-col lg:pt-40 xl:pt-40 md:pt-0 md:pt-0">
                               {#each portfolioData.progects.slice( portfolioData.progects.length / 2, portfolioData.progects.length) as progect}
                                 <div  class=" w-dyn-item">
                                   <ProgectCard {progect} />
@@ -216,7 +184,7 @@
                            </div>
                           {/each}
                         </div>
-                       
+
 
 
                     </div>
@@ -261,11 +229,11 @@
                   <div class="padding-horizontal padding-medium">
                     <div class="home-service-top">
                       <div class="home-service-intro">
-                        <div class="text-size-large text-align-center">I have worked with businesses of all sizes to create stunning websites and designs that capture their brand's identity.</div>
+                        <div class="text-size-large text-align-center">I have worked with businesses & NGO of all sizes to create stunning websites and designs that capture their products identity.</div>
                         <a href="#contact" class="button is-light w-inline-block">
-                     
+
                               <div class="text-size-xsmall">Contact</div>
-                
+
                         </a>
                       </div>
                     </div>
@@ -274,7 +242,7 @@
                     <div class="font-optiker">
 
                             Services
-                        
+
                       <!-- <div class="letter-animation">
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
                         <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
@@ -291,8 +259,9 @@
                     <div class="padding-horizontal padding-large">
                       <div class="home-service_base">
                         <div class="home-service-list">
-
-                          <ServiceCard />
+                          {#each services as service}
+                          <ServiceCard {service} />
+                          {/each}
 
 
                           <!-- <div class="home-service_card end">
@@ -313,8 +282,8 @@
                       </div>
                     </div>
                   </div>
-                  
-                  
+
+
                   <!-- <Feedback /> -->
 
 
@@ -353,7 +322,7 @@
           </div>
         </section>
 
-        
+
         <footer class="section-footer1">
           <div class="padding-horizontal padding-small">
             <div class="grid-large">
@@ -361,9 +330,9 @@
                 <div class="padding-vertical padding-huge">
                   <div class="footer-intro">
                     <div class="text-size-large text-align-center text-color-white">Whether you need design or tweak some code, I have the skills and creativity needed to take your project to the next level.</div>
-                    
+
                     <a name='contact' />
-         
+
                   </div>
                 </div>
                 <div class="padding-horizontal padding-medium">
@@ -398,7 +367,7 @@
 
 
 
-    
+
  <style>
   /* Make text look crisper and more legible in all browsers */
   body {
