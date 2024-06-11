@@ -1,17 +1,34 @@
 <script>
 	import { onMount } from 'svelte';
 </script>
-<!-- lg:h-screen md:h-screen xl:h-screen  -->
-<section class=" flex  w-full items-center justify-center overflow-hidden">
-	<div class="header flex flex-col items-center justify-center">
-		<h1 class="header__initials font-black">Oleg <br /> Medvedev</h1>
 
-		<div class="header__title ">
-			<!-- DarkDEV -->
-			<p class=''>Product Web Engineer <br /> &amp; Boardgames creator</p>
+
+<section  class="home-hero">
+	<div class="padding-horizontal padding-medium">
+	<div class="grid-large">
+		<div id="hero-wrap" class="home-hero-block">
+		<div id="hero-intro-wrap" class="home-hero-intro">
+			<!-- lg:h-screen md:h-screen xl:h-screen  -->
+			<div class=" flex  w-full items-center justify-center overflow-hidden">
+				<div class="header flex flex-col items-center justify-center">
+					<h1 class="header__initials font-black">Oleg <br /> Medvedev</h1>
+
+					<div class="header__title ">
+						<!-- DarkDEV -->
+						<p class='z-10'>Product Web Engineer </p>
+						<span style='text-align: start; color: #44149c; font-size: 9vh; z-index: 0;' class='-left-8 -top-3 absolute z-0' >&amp; </span> 
+						<p class='z-10'>Gamification designer</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
+	</div>
 </section>
+
+
 
 <style>
 	@media screen and (max-width: 480px) {
@@ -66,7 +83,8 @@
 	.header__title {
 
 		text-align: center;
-		color: #44149c;
+		color: #fff;
+		/* #44149c */
 	}
 	.header__title h2 {
 		letter-spacing: 1.2px;
