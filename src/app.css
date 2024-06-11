@@ -395,6 +395,7 @@ html[data-w-dynpage] [data-w-cloak] {
   display: inline-block !important;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   font-weight: bold;
@@ -814,6 +815,18 @@ textarea.w-input, textarea.w-select {
 
 .w-hidden-main {
   display: none !important;
+}
+
+
+
+@media (min-width: 991px) {
+  
+  .font-optiker {
+    font-family: Optiker k;
+    font-size: 17em;
+    margin-bottom: -130px;
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 991px) {
