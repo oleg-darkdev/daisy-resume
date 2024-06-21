@@ -1,28 +1,9 @@
 <script>
-	import { Hero, Footer, Aside, Feedback, Header, PdfViewer, About } from '$widgets';
-	import { ProgectCard, ServiceCard, FaqCard, CurverNav, NavBarLink } from '$entities';
-	import { portfolio, skillsTools } from '$shared';
+	import { Hero, Footer, Aside, Feedback, Faq, Header, PdfViewer, About } from '$widgets';
+	import { ProgectCard, ServiceCard, CurverNav, NavBarLink } from '$entities';
+	import { portfolio, skillsTools, services } from '$shared';
 
-  const services = [
-    {
-      id: 1,
-      title: 'Digital design',
-      desc: `Unique design that reflects the personality and goals of your product. Services include corporate design, creating images for website and social media posts, as well as designing presentations, posters and other printed materials.`,
-      img: '/',
-    },
-    {
-      id: 2,
-      title: 'Landing pages and web applications',
-      desc: `Development of landing pages and web applications using modern design systems and the latest UI trends such as Material Design, Carbon Design, NeoBrutalism, Glassmorphism and Neumorphism. I emphasize creating a user-friendly and engaging user experience so that products stand out and interact effectively with the target audience.`,
-      img: '/',
-    },
-    {
-      id: 3,
-      title: 'Gamification and educational products',
-      desc: `Creating educational board games and complementary web applications. I specialize in creating educational board games for business companies and NGOs engaged in educational domain, assisting them in achieving Education 4.0 goals and transfer information in a engaging and interactive form.`,
-      img: '/',
-    }
-  ]
+  
 </script>
 
 <svelte:head>
@@ -85,17 +66,17 @@
                     <div class="home-about-top">
                     <div class="padding-vertical padding-xlarge">
                         <div class="home-about-intro">
-                        <div class="text-size-xlarge text-align-center">With years of experience in the industry, I have worked with businesses & NGO of all sizes.</div>
+                        <div class="text-size-xlarge text-align-center">Help you with creating gamification of the learning process - on absolutely any topic.</div>
                         <a name="about" class="button is-light w-inline-block">
 
                             <!-- сдеть появляется меню обо мне -->
-                            <div class="text-size-xsmall">Explore my story</div>
+                            <a href='/boardgames' class="text-size-xsmall">Explore my boardgames portfolio</a>
                         </a>
                         </div>
                     </div>
-                    <div  class="font-optiker">
+                    <!-- <div  class="font-optiker">
                         Since 2019
-                    </div>
+                    </div> -->
 
                     <!-- <div data-w-id="45d2a386-614e-c243-8e80-f59ea4859d64" class="row-title-block">
                         <div class="letter-animation">
@@ -140,7 +121,7 @@
                 <div id="home-work-wrap" class="home-work-block">
                   <div class="home-work-top">
                     <div class="home-service-intro">
-                      <div class="text-size-large text-align-center">I have worked with businesses & NGO  of all sizes to create stunning websites and designs that capture their products identity.</div>
+                      <div class="text-size-large text-align-center">I worked with businesses & NGO  of all sizes to create stunning websites and designs that capture their products identity.</div>
                       <a href="#contact" class="button w-inline-block">
                         <div class="text-size-xsmall">Contact</div>
 
@@ -229,7 +210,7 @@
                   <div class="padding-horizontal padding-medium">
                     <div class="home-service-top">
                       <div class="home-service-intro">
-                        <div class="text-size-large text-align-center">I have worked with businesses & NGO of all sizes to create stunning websites and designs that capture their products identity.</div>
+                        <div class="text-size-large text-align-center">I worked with businesses & NGO of all sizes to create stunning websites and designs that capture their products identity.</div>
                         <a href="#contact" class="button is-light w-inline-block">
 
                               <div class="text-size-xsmall">Contact</div>
@@ -287,35 +268,7 @@
                   <!-- <Feedback /> -->
 
 
-                  <div class="padding-horizontal padding-large">
-                    <div class="padding-bottom padding-large">
-                      <div class="home-service_grid">
-                        <div class="padding-top">
-                          <div  class="font-optiker">
-                            QUESTIONS
-                            <!-- <div class="letter-animation">
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-4"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-5"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-6"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-7"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9"></div>
-                              <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-10"></div>
-                            </div>
-                        -->
-                          </div>
-                        </div>
-                        <div id="faq-wrap" class="home-faq-block">
-                          <div class="home-faq-list radius-regular">
-                              <FaqCard />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <Faq />
                 </div>
               </div>
             </div>
@@ -323,44 +276,7 @@
         </section>
 
 
-        <footer class="section-footer1">
-          <div class="padding-horizontal padding-small">
-            <div class="grid-large">
-              <div id="footer-wrap" class="footer-block">
-                <div class="padding-vertical padding-huge">
-                  <div class="footer-intro">
-                    <div class="text-size-large text-align-center text-color-white">Whether you need design or tweak some code, I have the skills and creativity needed to take your project to the next level.</div>
-
-                    <a name='contact' />
-
-                  </div>
-                </div>
-                <div class="padding-horizontal padding-medium">
-                  <div class="footer-bottom">
-                    <div id="footer-copyright" class="text-size-tiny text-style-allcaps text-color-white">© 2024 <a href="" target="_blank" class="text-style-link light"></a>
-                    </div>
-                    <div id="footer-nav" class="footer-menu">
-                      <a href="/" aria-current="page" class="footer-link w-inline-block w--current">
-                        <div class="text-size-tiny text-style-allcaps">Home</div>
-                      </a>
-                      <a href="#about" class="footer-link w-inline-block">
-                        <div class="text-size-tiny text-style-allcaps">About</div>
-                      </a>
-                      <a href="#portfolio" class="footer-link w-inline-block">
-                        <div class="text-size-tiny text-style-allcaps">Projects</div>
-                      </a>
-                      <a href="#contact" class="footer-link w-inline-block">
-                        <div class="text-size-tiny text-style-allcaps">Contact</div>
-                      </a>
-                    </div>
-                    <div class="text-size-tiny text-style-allcaps text-color-white">Created by <a href="" target="_blank" class="text-style-link light">DarkDEV</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
 
@@ -369,183 +285,5 @@
 
 
  <style>
-  /* Make text look crisper and more legible in all browsers */
-  body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  /* Focus state style for keyboard navigation for the focusable elements */
-  *[tabindex]:focus-visible,
-  input[type="file"]:focus-visible {
-    outline: 0.125rem solid #4d65ff;
-    outline-offset: 0.125rem;
-  }
-
-  /* Get rid of top margin on first element in any rich text element */
-  .w-richtext> :not(div):first-child,
-  .w-richtext>div:first-child> :first-child {
-    margin-top: 0 !important;
-  }
-
-  /* Get rid of bottom margin on last element in any rich text element */
-  .w-richtext>:last-child,
-  .w-richtext ol li:last-child,
-  .w-richtext ul li:last-child {
-    margin-bottom: 0 !important;
-  }
-
-  /* Prevent all click and hover interaction with an element */
-  .pointer-events-off {
-    pointer-events: none;
-  }
-
-  /* Enables all click and hover interaction with an element */
-  .pointer-events-on {
-    pointer-events: auto;
-  }
-
-  /* Create a class of .div-square which maintains a 1:1 dimension of a div */
-  .div-square::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
-
-  /* Make sure containers never lose their center alignment */
-  .container-medium,
-  .container-small,
-  .container-large {
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-
-  /* Apply "..." after 3 lines of text */
-  .text-style-3lines {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-
-  /* Apply "..." after 2 lines of text */
-  .text-style-2lines {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-  /* Adds inline flex display */
-  .display-inlineflex {
-    display: inline-flex;
-  }
-
-  /* These classes are never overwritten */
-  .hide {
-    display: none !important;
-  }
-
-  @media screen and (max-width: 991px) {
-
-    .hide,
-    .hide-tablet {
-      display: none !important;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    .hide-mobile-landscape {
-      display: none !important;
-    }
-  }
-
-  @media screen and (max-width: 479px) {
-    .hide-mobile {
-      display: none !important;
-    }
-  }
-
-  .margin-0 {
-    margin: 0rem !important;
-  }
-
-  .padding-0 {
-    padding: 0rem !important;
-  }
-
-  .spacing-clean {
-    padding: 0rem !important;
-    margin: 0rem !important;
-  }
-
-  .margin-top {
-    margin-right: 0rem !important;
-    margin-bottom: 0rem !important;
-    margin-left: 0rem !important;
-  }
-
-  .padding-top {
-    padding-right: 0rem !important;
-    padding-bottom: 0rem !important;
-    padding-left: 0rem !important;
-  }
-
-  .margin-right {
-    margin-top: 0rem !important;
-    margin-bottom: 0rem !important;
-    margin-left: 0rem !important;
-  }
-
-  .padding-right {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
-    padding-left: 0rem !important;
-  }
-
-  .margin-bottom {
-    margin-top: 0rem !important;
-    margin-right: 0rem !important;
-    margin-left: 0rem !important;
-  }
-
-  .padding-bottom {
-    padding-top: 0rem !important;
-    padding-right: 0rem !important;
-    padding-left: 0rem !important;
-  }
-
-  .margin-left {
-    margin-top: 0rem !important;
-    margin-right: 0rem !important;
-    margin-bottom: 0rem !important;
-  }
-
-  .padding-left {
-    padding-top: 0rem !important;
-    padding-right: 0rem !important;
-    padding-bottom: 0rem !important;
-  }
-
-  .margin-horizontal {
-    margin-top: 0rem !important;
-    margin-bottom: 0rem !important;
-  }
-
-  .padding-horizontal {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
-  }
-
-  .margin-vertical {
-    margin-right: 0rem !important;
-    margin-left: 0rem !important;
-  }
-
-  .padding-vertical {
-    padding-right: 0rem !important;
-    padding-left: 0rem !important;
-  }
+ 
 </style>
