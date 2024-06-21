@@ -1,4 +1,4 @@
-import HeadHrefLangs from './ui/HeadHrefLangs.svelte';
+// import HeadHrefLangs from './ui/HeadHrefLangs.svelte';
 import LocaleSwitcher from './ui/LocaleSwitcher.svelte';
 import {
 	Email,
@@ -19,17 +19,19 @@ yellowElephant, ddGames, techSopot
 } from './data/portfolio.js';
 
 // no mine
-import replaceLocaleInUrl from './utils/replaceLocaleInUrl.ts';
+import services from './data/services.js';
 
 export {
-	replaceLocaleInUrl,
+	// replaceLocaleInUrl,
   portfolio,
   boardgamesProgects, ngoProgects, researchesProgects, historyProgects, footprintsFate, ecocide, antySystems, voteWise, byPl, lgbtTree, itingo,
 agileFans, bejahi, graffiti, darkDevFoundation, mks, historyOfAnarchy, ds5,
 yellowElephant, ddGames, techSopot,
 
+
+services,
 	skillsTools,
-	HeadHrefLangs,
+	// HeadHrefLangs,
 	PlayFilledAlt,
 	PauseOutlineFilled,
 	LocaleSwitcher,
