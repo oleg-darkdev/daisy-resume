@@ -2,6 +2,187 @@
 @tailwind components;
 @tailwind utilities;
 
+
+ /* Make text look crisper and more legible in all browsers */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+  }
+
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext> :not(div):first-child,
+  .w-richtext>div:first-child> :first-child {
+    margin-top: 0 !important;
+  }
+
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext>:last-child,
+  .w-richtext ol li:last-child,
+  .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Prevent all click and hover interaction with an element */
+  .pointer-events-off {
+    pointer-events: none;
+  }
+
+  /* Enables all click and hover interaction with an element */
+  .pointer-events-on {
+    pointer-events: auto;
+  }
+
+  /* Create a class of .div-square which maintains a 1:1 dimension of a div */
+  .div-square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  /* Make sure containers never lose their center alignment */
+  .container-medium,
+  .container-small,
+  .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  /* Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Adds inline flex display */
+  .display-inlineflex {
+    display: inline-flex;
+  }
+
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .hide,
+    .hide-tablet {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .hide-mobile {
+      display: none !important;
+    }
+  }
+
+  .margin-0 {
+    margin: 0rem !important;
+  }
+
+  .padding-0 {
+    padding: 0rem !important;
+  }
+
+  .spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+  }
+
+  .margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+  
 @media screen and (max-width: 480px) {
 	.item-even:nth-child(2) {
 		margin-top: 0; /* Смещение каждого четного элемента вниз на 200 пикселей */
@@ -3737,7 +3918,7 @@ figcaption {
   align-items: flex-end;
   display: flex;
   position: absolute;
-  top: .5px;
+  top: -.4px;
   bottom: auto;
   left: 0%;
   right: 0%;
@@ -6409,196 +6590,196 @@ figcaption {
 
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-Bold.woff2') format('woff2'), url('fonts/Satoshi-Bold.eot') format('embedded-opentype'), url('fonts/Satoshi-Bold.woff') format('woff'), url('fonts/Satoshi-Bold.ttf') format('truetype');
+  src: url('/fonts/Satoshi-Bold.woff2') format('woff2'), url('/fonts/Satoshi-Bold.eot') format('embedded-opentype'), url('/fonts/Satoshi-Bold.woff') format('woff'), url('/fonts/Satoshi-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-BoldItalic.woff2') format('woff2'), url('fonts/Satoshi-BoldItalic.eot') format('embedded-opentype'), url('fonts/Satoshi-BoldItalic.woff') format('woff'), url('fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/Satoshi-BoldItalic.woff2') format('woff2'), url('/fonts/Satoshi-BoldItalic.eot') format('embedded-opentype'), url('/fonts/Satoshi-BoldItalic.woff') format('woff'), url('/fonts/Satoshi-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-Italic.woff2') format('woff2'), url('fonts/Satoshi-Italic.eot') format('embedded-opentype'), url('fonts/Satoshi-Italic.woff') format('woff'), url('fonts/Satoshi-Italic.ttf') format('truetype');
+  src: url('/fonts/Satoshi-Italic.woff2') format('woff2'), url('/fonts/Satoshi-Italic.eot') format('embedded-opentype'), url('/fonts/Satoshi-Italic.woff') format('woff'), url('/fonts/Satoshi-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-Medium.woff2') format('woff2'), url('fonts/Satoshi-Medium.eot') format('embedded-opentype'), url('fonts/Satoshi-Medium.woff') format('woff'), url('fonts/Satoshi-Medium.ttf') format('truetype');
+  src: url('/fonts/Satoshi-Medium.woff2') format('woff2'), url('/fonts/Satoshi-Medium.eot') format('embedded-opentype'), url('/fonts/Satoshi-Medium.woff') format('woff'), url('/fonts/Satoshi-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-MediumItalic.woff2') format('woff2'), url('fonts/Satoshi-MediumItalic.eot') format('embedded-opentype'), url('fonts/Satoshi-MediumItalic.woff') format('woff'), url('fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  src: url('/fonts/Satoshi-MediumItalic.woff2') format('woff2'), url('/fonts/Satoshi-MediumItalic.eot') format('embedded-opentype'), url('/fonts/Satoshi-MediumItalic.woff') format('woff'), url('/fonts/Satoshi-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-Regular.woff2') format('woff2'), url('fonts/Satoshi-Regular.eot') format('embedded-opentype'), url('fonts/Satoshi-Regular.woff') format('woff'), url('fonts/Satoshi-Regular.ttf') format('truetype');
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2'), url('/fonts/Satoshi-Regular.eot') format('embedded-opentype'), url('/fonts/Satoshi-Regular.woff') format('woff'), url('/fonts/Satoshi-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Black.woff2') format('woff2'), url('fonts/Switzer-Black.eot') format('embedded-opentype'), url('fonts/Switzer-Black.woff') format('woff'), url('fonts/Switzer-Black.ttf') format('truetype');
+  src: url('/fonts/Switzer-Black.woff2') format('woff2'), url('/fonts/Switzer-Black.eot') format('embedded-opentype'), url('/fonts/Switzer-Black.woff') format('woff'), url('/fonts/Switzer-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-ExtralightItalic.woff2') format('woff2'), url('fonts/Switzer-ExtralightItalic.eot') format('embedded-opentype'), url('fonts/Switzer-ExtralightItalic.woff') format('woff'), url('fonts/Switzer-ExtralightItalic.ttf') format('truetype');
+  src: url('/fonts/Switzer-ExtralightItalic.woff2') format('woff2'), url('/fonts/Switzer-ExtralightItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-ExtralightItalic.woff') format('woff'), url('/fonts/Switzer-ExtralightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-BlackItalic.woff2') format('woff2'), url('fonts/Switzer-BlackItalic.eot') format('embedded-opentype'), url('fonts/Switzer-BlackItalic.woff') format('woff'), url('fonts/Switzer-BlackItalic.ttf') format('truetype');
+  src: url('/fonts/Switzer-BlackItalic.woff2') format('woff2'), url('/fonts/Switzer-BlackItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-BlackItalic.woff') format('woff'), url('/fonts/Switzer-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Bold.woff2') format('woff2'), url('fonts/Switzer-Extrabold.woff2') format('woff2'), url('fonts/Switzer-Bold.eot') format('embedded-opentype'), url('fonts/Switzer-Extrabold.eot') format('embedded-opentype'), url('fonts/Switzer-Bold.woff') format('woff'), url('fonts/Switzer-Extrabold.woff') format('woff'), url('fonts/Switzer-Bold.ttf') format('truetype'), url('fonts/Switzer-Extrabold.ttf') format('truetype');
+  src: url('/fonts/Switzer-Bold.woff2') format('woff2'), url('/fonts/Switzer-Extrabold.woff2') format('woff2'), url('/fonts/Switzer-Bold.eot') format('embedded-opentype'), url('/fonts/Switzer-Extrabold.eot') format('embedded-opentype'), url('/fonts/Switzer-Bold.woff') format('woff'), url('/fonts/Switzer-Extrabold.woff') format('woff'), url('/fonts/Switzer-Bold.ttf') format('truetype'), url('/fonts/Switzer-Extrabold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Italic.woff2') format('woff2'), url('fonts/Switzer-Italic.eot') format('embedded-opentype'), url('fonts/Switzer-Italic.woff') format('woff'), url('fonts/Switzer-Italic.ttf') format('truetype');
+  src: url('/fonts/Switzer-Italic.woff2') format('woff2'), url('/fonts/Switzer-Italic.eot') format('embedded-opentype'), url('/fonts/Switzer-Italic.woff') format('woff'), url('/fonts/Switzer-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-BoldItalic.woff2') format('woff2'), url('fonts/Switzer-ExtraboldItalic.woff2') format('woff2'), url('fonts/Switzer-BoldItalic.eot') format('embedded-opentype'), url('fonts/Switzer-ExtraboldItalic.eot') format('embedded-opentype'), url('fonts/Switzer-BoldItalic.woff') format('woff'), url('fonts/Switzer-ExtraboldItalic.woff') format('woff'), url('fonts/Switzer-BoldItalic.ttf') format('truetype'), url('fonts/Switzer-ExtraboldItalic.ttf') format('truetype');
+  src: url('/fonts/Switzer-BoldItalic.woff2') format('woff2'), url('/fonts/Switzer-ExtraboldItalic.woff2') format('woff2'), url('/fonts/Switzer-BoldItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-ExtraboldItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-BoldItalic.woff') format('woff'), url('/fonts/Switzer-ExtraboldItalic.woff') format('woff'), url('/fonts/Switzer-BoldItalic.ttf') format('truetype'), url('/fonts/Switzer-ExtraboldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Light.woff2') format('woff2'), url('fonts/Switzer-Light.eot') format('embedded-opentype'), url('fonts/Switzer-Light.woff') format('woff'), url('fonts/Switzer-Light.ttf') format('truetype');
+  src: url('/fonts/Switzer-Light.woff2') format('woff2'), url('/fonts/Switzer-Light.eot') format('embedded-opentype'), url('/fonts/Switzer-Light.woff') format('woff'), url('/fonts/Switzer-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Extralight.woff2') format('woff2'), url('fonts/Switzer-Extralight.eot') format('embedded-opentype'), url('fonts/Switzer-Extralight.woff') format('woff'), url('fonts/Switzer-Extralight.ttf') format('truetype');
+  src: url('/fonts/Switzer-Extralight.woff2') format('woff2'), url('/fonts/Switzer-Extralight.eot') format('embedded-opentype'), url('/fonts/Switzer-Extralight.woff') format('woff'), url('/fonts/Switzer-Extralight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Medium.woff2') format('woff2'), url('fonts/Switzer-Medium.eot') format('embedded-opentype'), url('fonts/Switzer-Medium.woff') format('woff'), url('fonts/Switzer-Medium.ttf') format('truetype');
+  src: url('/fonts/Switzer-Medium.woff2') format('woff2'), url('/fonts/Switzer-Medium.eot') format('embedded-opentype'), url('/fonts/Switzer-Medium.woff') format('woff'), url('/fonts/Switzer-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-LightItalic.woff2') format('woff2'), url('fonts/Switzer-LightItalic.eot') format('embedded-opentype'), url('fonts/Switzer-LightItalic.woff') format('woff'), url('fonts/Switzer-LightItalic.ttf') format('truetype');
+  src: url('/fonts/Switzer-LightItalic.woff2') format('woff2'), url('/fonts/Switzer-LightItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-LightItalic.woff') format('woff'), url('/fonts/Switzer-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-MediumItalic.woff2') format('woff2'), url('fonts/Switzer-MediumItalic.eot') format('embedded-opentype'), url('fonts/Switzer-MediumItalic.woff') format('woff'), url('fonts/Switzer-MediumItalic.ttf') format('truetype');
+  src: url('/fonts/Switzer-MediumItalic.woff2') format('woff2'), url('/fonts/Switzer-MediumItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-MediumItalic.woff') format('woff'), url('/fonts/Switzer-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Regular.woff2') format('woff2'), url('fonts/Switzer-Regular.eot') format('embedded-opentype'), url('fonts/Switzer-Regular.woff') format('woff'), url('fonts/Switzer-Regular.ttf') format('truetype');
+  src: url('/fonts/Switzer-Regular.woff2') format('woff2'), url('/fonts/Switzer-Regular.eot') format('embedded-opentype'), url('/fonts/Switzer-Regular.woff') format('woff'), url('/fonts/Switzer-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Semibold.woff2') format('woff2'), url('fonts/Switzer-Semibold.eot') format('embedded-opentype'), url('fonts/Switzer-Semibold.woff') format('woff'), url('fonts/Switzer-Semibold.ttf') format('truetype');
+  src: url('/fonts/Switzer-Semibold.woff2') format('woff2'), url('/fonts/Switzer-Semibold.eot') format('embedded-opentype'), url('/fonts/Switzer-Semibold.woff') format('woff'), url('/fonts/Switzer-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-Thin.woff2') format('woff2'), url('fonts/Switzer-Thin.eot') format('embedded-opentype'), url('fonts/Switzer-Thin.woff') format('woff'), url('fonts/Switzer-Thin.ttf') format('truetype');
+  src: url('/fonts/Switzer-Thin.woff2') format('woff2'), url('/fonts/Switzer-Thin.eot') format('embedded-opentype'), url('/fonts/Switzer-Thin.woff') format('woff'), url('/fonts/Switzer-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-SemiboldItalic.woff2') format('woff2'), url('fonts/Switzer-SemiboldItalic.eot') format('embedded-opentype'), url('fonts/Switzer-SemiboldItalic.woff') format('woff'), url('fonts/Switzer-SemiboldItalic.ttf') format('truetype');
+  src: url('/fonts/Switzer-SemiboldItalic.woff2') format('woff2'), url('/fonts/Switzer-SemiboldItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-SemiboldItalic.woff') format('woff'), url('/fonts/Switzer-SemiboldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Switzer';
-  src: url('fonts/Switzer-ThinItalic.woff2') format('woff2'), url('fonts/Switzer-ThinItalic.eot') format('embedded-opentype'), url('fonts/Switzer-ThinItalic.woff') format('woff'), url('fonts/Switzer-ThinItalic.ttf') format('truetype');
+  src: url('/fonts/Switzer-ThinItalic.woff2') format('woff2'), url('/fonts/Switzer-ThinItalic.eot') format('embedded-opentype'), url('/fonts/Switzer-ThinItalic.woff') format('woff'), url('/fonts/Switzer-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Optiker k';
-  src: url('fonts/Optiker-K.woff2') format('woff2'), url('fonts/Optiker-K.woff') format('woff'), url('fonts/Optiker-K.ttf') format('truetype'), url('fonts/Optiker-K.otf') format('opentype');
+  src: url('/fonts/Optiker-K.woff2') format('woff2'), url('/fonts/Optiker-K.woff') format('woff'), url('/fonts/Optiker-K.ttf') format('truetype'), url('/fonts/Optiker-K.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-Black.eot') format('embedded-opentype'), url('fonts/Satoshi-Black.woff') format('woff'), url('fonts/Satoshi-Black.ttf') format('truetype');
+  src: url('/fonts/Satoshi-Black.eot') format('embedded-opentype'), url('/fonts/Satoshi-Black.woff') format('woff'), url('/fonts/Satoshi-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-BlackItalic.eot') format('embedded-opentype'), url('fonts/Satoshi-BlackItalic.woff') format('woff'), url('fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  src: url('/fonts/Satoshi-BlackItalic.eot') format('embedded-opentype'), url('/fonts/Satoshi-BlackItalic.woff') format('woff'), url('/fonts/Satoshi-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-LightItalic.eot') format('embedded-opentype'), url('fonts/Satoshi-LightItalic.woff') format('woff'), url('fonts/Satoshi-LightItalic.ttf') format('truetype');
+  src: url('/fonts/Satoshi-LightItalic.eot') format('embedded-opentype'), url('/fonts/Satoshi-LightItalic.woff') format('woff'), url('/fonts/Satoshi-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Satoshi';
-  src: url('fonts/Satoshi-Light.eot') format('embedded-opentype'), url('fonts/Satoshi-Light.woff') format('woff'), url('fonts/Satoshi-Light.ttf') format('truetype');
+  src: url('/fonts/Satoshi-Light.eot') format('embedded-opentype'), url('/fonts/Satoshi-Light.woff') format('woff'), url('/fonts/Satoshi-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Big river sample';
-  src: url('fonts/big_river_sample.ttf') format('truetype'), url('fonts/big_river_sample.otf') format('opentype');
+  src: url('/fonts/big_river_sample.ttf') format('truetype'), url('/fonts/big_river_sample.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
