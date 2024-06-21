@@ -41,7 +41,7 @@ const boardgamesProgects = [
   // 12312, fnb, hackerspaces, ror etc
   graffiti,
     mks,
-ddGames,
+// ddGames,
 historyOfAnarchy, ecocide, byPl, lgbtTree, agileFans,
 ];
 
