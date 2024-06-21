@@ -12,7 +12,39 @@ export let progect;
 
 <!-- md:-my-10 lg:-my-10 xl:-my-10 -->
 <!-- -->
-<div class="mx-auto border-2 rounded-box flex max-w-xl mb-16 mt-10 lg:px-6 xl:px-6 md:px-6 px-3 xl:pt-6 lg:pt-6 md:pt-6 pt-3 flex-col items-center ">
+<!--
+.home-service-block {
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+} -->
+
+<div   class="border-2 rounded-box relative mt-10 max-w-xl mb-16  mx-auto">
+  <div class="curve-block-center">
+      <a  href="#{progect.anchor}" class="curve-link w-inline-block">
+      <!-- <div class="curve-arrow">
+          <div class="clip">
+          <div class="hover-arrow top">
+              <div class="icon w-embed">
+              <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+              </svg>
+              </div>
+          </div>
+          <div class="hover-arrow">
+              <div class="icon w-embed">
+              <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+              </svg>
+              </div>
+          </div>
+          </div>
+      </div> -->
+      <img src="/images/curver.svg" loading="lazy" alt="Curver img">
+      </a>
+  </div>
+
+<div class="mx-auto  flex  flex-col items-center lg:px-6 xl:px-6 md:px-6 px-3 xl:pt-6 lg:pt-6 md:pt-6 pt-3">
 	<div  class="prose-sm prose-blue mx-auto flex w-full flex-col text-left">
 		<span class="text-xs text-style-allcaps  uppercase tracking-widest ">
 			{#each progect.tags as tag} <span>#{tag} </span> {/each}
@@ -20,7 +52,13 @@ export let progect;
 
 		<div class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0  lg:-mt-0 -mt-4">
 			<!-- <h2 class="text-gray-600">{progect.title}</h2> -->
+
+              <a name="{progect.anchor}" />
+
+
       <h3 class=" text-color-white text-size-xlarge">{progect.title}</h3>
+
+
       <div class="text-size-tiny text-style-allcaps text-color-white">{progect.shortDesc}</div>
 			<!-- <p class="text-gray-600">
 				{progect.shortDesc}
@@ -80,7 +118,7 @@ export let progect;
     </div>
 	</div>
 <!-- </div> -->
-
+</div>
 
 <!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
     <div class="relative mx-auto">
