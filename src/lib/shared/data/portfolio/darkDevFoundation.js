@@ -4,6 +4,7 @@ const progect = {
     logo: '',
 	link: 'https://darkdev-foundation.vercel.app/',
 	stack: [],
+    anchor: 'darkdev-foundation',
 	title: 'DarkDEV Foundation',
 	shortDesc: 'Official Website of the DarkDEV Foundation.',
 	screenshotes: ['/images/screenshotes/darkdevFoundation/1.webp', '/images/screenshotes/darkdevFoundation/2.webp', '/images/screenshotes/darkdevFoundation/3.webp', '/images/screenshotes/darkdevFoundation/4.webp', '/images/screenshotes/darkdevFoundation/5.webp', '/images/screenshotes/darkdevFoundation/6.webp'],

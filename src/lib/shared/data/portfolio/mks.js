@@ -5,6 +5,8 @@ const progect = {
 	link: 'https://mks-14-app.vercel.app/en',
 	stack: [],
 	title: 'MKS-14',
+	  anchor: 'mnks',
+
 	shortDesc:
 		'Educational project comprising a web application and a board game aimed at helping users learn about the work of astronauts on the International Space Station and the experiments conducted there.',
 	screenshotes: [

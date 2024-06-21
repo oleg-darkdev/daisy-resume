@@ -3,7 +3,9 @@ const progect = {
 	githubRepo: 'https://github.com/oleg-darkdev/anti-system',
 	logo: '',
 	link: 'https://anti-system.vercel.app/',
-	stack: [],
+  stack: [],
+  anchor: 'antisystem-fenomens',
+
 	title: 'Anti-system fenomens',
 	shortDesc:
 		'Research project exploring social movements that have emerged in anti-systemic, decolonial, and countercultural forms in states with high levels of control and censorship. The project includes community research and educational boardgames based on the results of 8 big researches.',

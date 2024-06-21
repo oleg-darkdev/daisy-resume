@@ -4,6 +4,8 @@ const progect = {
 	logo: '',
 	link: 'https://yellow-elephant.vercel.app/',
 	stack: [],
+	anchor: 'yellowelephant',
+
 	title: 'Yellow elephant',
 	shortDesc: 'The Yellow Elephant monthly chess tournament in classical chess, for amateurs and advanced players.',
 	screenshotes: ['/images/screenshotes/yellowElephant/1.webp', '/images/screenshotes/yellowElephant/2.webp', '/images/screenshotes/yellowElephant/4.webp', '/images/screenshotes/yellowElephant/5.webp', '/images/screenshotes/yellowElephant/6.webp', '/images/screenshotes/yellowElephant/7.webp', '/images/screenshotes/yellowElephant/8.webp','/images/screenshotes/yellowElephant/9.webp','/images/screenshotes/yellowElephant/10.webp','/images/screenshotes/yellowElephant/11.webp'],

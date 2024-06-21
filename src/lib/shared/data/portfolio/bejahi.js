@@ -4,6 +4,8 @@ const progect = {
 	logo: '',
 	link: 'https://bejahi.vercel.app/',
 	stack: [],
+	  anchor: 'bejahi',
+
 	title: 'Bejahi',
 	shortDesc:
 		'Historical quiz that helps users learn about the tragic repression of Jews in the Minsk Ghetto during World War II through interactive questions and historical materials.',

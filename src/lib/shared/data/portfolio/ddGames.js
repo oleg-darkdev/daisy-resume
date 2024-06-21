@@ -4,6 +4,8 @@ const progect = {
 	logo: '',
 	link: 'https://44games.vercel.app/',
 	stack: [],
+    anchor: '44Games',
+
 	title: '44Games - shop',
 	shortDesc: 'E-commerce store of educational hybrid boardgames.',
 	screenshotes: [

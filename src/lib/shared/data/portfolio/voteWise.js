@@ -4,6 +4,8 @@ const progect = {
 	logo: '',
 	link: 'https://vote-wise.vercel.app/',
 	stack: [],
+	  anchor: 'vote-wise',
+
 	title: 'VoteWise',
 	shortDesc: 'The VoteWise is not a voting recommendation, but rather an information offering about elections and politics in Georgia.',
 	screenshotes: ['/images/screenshotes/voteWise/1.webp', '/images/screenshotes/voteWise/2.webp', '/images/screenshotes/voteWise/3.webp', '/images/screenshotes/voteWise/4.webp', '/images/screenshotes/voteWise/5.webp'],

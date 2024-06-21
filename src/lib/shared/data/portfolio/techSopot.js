@@ -5,6 +5,8 @@ const progect =
     githubRepo: '',
     logo: '',
     stack: [],
+      anchor: 'tech-sopot',
+
     title: 'TechSopot',
     shortDesc: 'Lorem ipsum is placeholder text commonly used.',
     screenshotes: ['', '', '', '', ''],

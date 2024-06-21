@@ -5,6 +5,8 @@ const progect = {
     logo: '',
 	link: 'https://ecocide.vercel.app/en',
 	stack: [],
+	  anchor: 'ecocide',
+
 	title: 'Ecocide',
 	shortDesc: 'A research project consisting of a web application and a boardgame, about ecological organizations radical and moderate, their methods of activism for ecological.',
 	screenshotes: ['', '', '', '', ''],
