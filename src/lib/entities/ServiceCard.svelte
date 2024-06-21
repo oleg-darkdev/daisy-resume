@@ -12,9 +12,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="home-service_image">
+	<!-- <div class="home-service_image">
 		<div class="home-service_height">
 			<img src="{service.img}" loading="lazy" alt="" class="image-fill" />
 		</div>
-	</div>
+	</div> -->
 </div>
