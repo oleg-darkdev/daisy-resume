@@ -54,7 +54,7 @@
 								</div>
 								<a name="about" class="button is-light w-inline-block">
 									<!-- сдеть появляется меню обо мне -->
-									<a href="/boardgames" class="text-size-xsmall">Explore my boardgames portfolio</a>
+									<a href="#boardgames" class="text-size-xsmall">Explore my boardgames portfolio</a>
 								</a>
 							</div>
 						</div>
