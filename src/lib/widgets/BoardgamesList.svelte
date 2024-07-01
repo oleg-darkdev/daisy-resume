@@ -106,32 +106,26 @@
 	});
 
 
-export let boardgamesProgects;
+	export let boardgamesProgects, startPosition;
 </script>
 
-<!-- <div class="spray" /> -->
-<!-- 
-<div class="video-container">
-	<video playsinline autoplay muted loop>
-		<source src="/videos/big.mp4" type="video/mp4" />
-	</video>
-</div> -->
 
-<!-- https://graffstorm.com/graffiti-styles -->
 <section class="mb-20 md:py-20 lg:py-20 xl:py-20 ">
-	<div class="graffity-list max-w-6xl mx-auto text-white">
-		<!-- <h2 class="title font-optiker text-5xl">
-            Latest boardgames
-        </h2> -->
+	<div class="graffity-list w-10/12 mx-auto text-white">
+		<h2 class="title font-optiker text-5xl">
+            {boardgamesProgects.title}
+        </h2>
 		<ul>
-			
-
-			{#each  boardgamesProgects  as boardgame, i}
+			{#each  boardgamesProgects.boardgames  as boardgame, i}
 				<li
 					class="hover:delay-550 group transform border-b-2 border-neutral-700 hover:-translate-y-4 hover:border-[#44149c] hover:transition  hover:duration-1000 hover:ease-in-out hover:ease-in-out"
 				>
+				<div class="">
+						<img src="{boardgame.icon}" class='w-32 h-32' alt=""/>
+					</div>
+
 					<div class="index text-[#44149c] ">
-						<span class="text-6xl font-optiker">{i + 1}</span>
+						<span class="text-6xl font-optiker">{startPosition + i + 1}</span>
 					</div>
 					<div class="graffity-style group-hover:text-white">
 						<h2 class="z-30 text-xl md:text-4xl lg:text-4xl xl:text-4xl" data-value={boardgame.title}>
