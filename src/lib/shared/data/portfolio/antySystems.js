@@ -1,10 +1,11 @@
 const progect = {
-	id: 0,
+	id: 0, icon: '',
 	githubRepo: 'https://github.com/oleg-darkdev/anti-system',
-	logo: '',
+	logo: '/images/logos/boardgames/anti-systems/core/logo.svg',
+	icon: '/images/logos/boardgames/anti-systems/core/icon.svg',
 	link: 'https://anti-system.vercel.app/',
-  stack: [],
-  anchor: 'antisystem-fenomens',
+	stack: [],
+	anchor: 'antisystem-fenomens',
 
 	title: 'Anti-system fenomens',
 	shortDesc:
