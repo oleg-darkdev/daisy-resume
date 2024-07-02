@@ -8,7 +8,8 @@ const progect = {
 
 	id: 0,
 	githubRepo: 'https://github.com/oleg-darkdev/LGBTQIA-tree_app',
-	logo: 'lgbtqia-logo.svg',
+    logo: '/images/logos/boardgames/anti-systems/lgbtqia-tree/logo.svg',
+    icon: '/images/logos/boardgames/anti-systems/lgbtqia-tree/icon.svg',
 	link: 'https://lgbt-tree.vercel.app/',
 	stack: [],
 	title: 'Tree of LGBTQIA+ Flags',

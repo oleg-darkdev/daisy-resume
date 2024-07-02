@@ -2,7 +2,8 @@
 const progect = {
 	id: 0,
 	githubRepo: 'https://github.com/oleg-darkdev/ecocide_app',
-    logo: '',
+    logo: '/images/logos/boardgames/anti-systems/ecocide/logo.svg',
+    icon: '/images/logos/boardgames/anti-systems/ecocide/icon.svg',
 	link: 'https://ecocide.vercel.app/en',
 	stack: [],
 	  anchor: 'ecocide',

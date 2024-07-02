@@ -2,7 +2,8 @@ const progect =
   {
     id: 0,
     githubRepo: 'https://github.com/oleg-darkdev/graffity-cultute_appw',
-    logo: '',
+    logo: '/images/logos/boardgames/anti-systems/graffiti-chronicles/logo.svg',
+    icon: '/images/logos/boardgames/anti-systems/graffiti-chronicles/icon.svg',
     link: 'https://graffity-chronicles.vercel.app/',
     stack: [],
       anchor: 'graffiti-chronicles',

@@ -1,8 +1,9 @@
 const progect =
   {
-    id: 0, icon: '',
+    id: 0, 
     githubRepo: 'https://github.com/oleg-darkdev/agile.fans_app',
     logo: '/images/logos/boardgames/agile-fans/core/logo.svg',
+    icon: '/images/logos/boardgames/agile-fans/core/icon.svg',
     link: 'https://agile-fans.vercel.app/',
     stack: [],
     anchor: 'agile-fans',

@@ -33,6 +33,7 @@ import lgbtTree from './portfolio/lgbtTree';
 import historyOfAnarchy from './portfolio/historyOfAnarchy';
 import graffiti from './portfolio/graffiti';
 import ecocide from './portfolio/ecocide';
+import hackerspaces from './portfolio/hackerspaces';
 
 // other boardgames
 import mks from './portfolio/mks';
@@ -76,6 +77,7 @@ const researchesProgects = {
 	bejahi,
 	graffiti,
 	historyOfAnarchy,
+	
 	ecocide,
 	byPl,
 	lgbtTree
@@ -140,6 +142,7 @@ const antiSystemsBoardgames = {
 	// anti-systems
 	antySystems,
 	graffiti,
+	hackerspaces,
 	historyOfAnarchy,
 	ecocide,
 	lgbtTree,

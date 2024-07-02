@@ -1,12 +1,13 @@
 const progect =
   {
     id: 0,
-    link: '',
-    githubRepo: '',
-    logo: '',
+    link: 'https://archaeo-stories.vercel.app/',
+    logo: '/images/logos/boardgames/the-stories/archaeo-stories/logo.svg',
+    icon: '/images/logos/boardgames/the-stories/archaeo-stories/icon.svg',
+    githubRepo: 'https://github.com/oleg-darkdev/archaeo-stories_app',
     stack: [],
     title: 'Archaeo Stories',
-    shortDesc: 'Lorem ipsum is placeholder text commonly used.',
+    shortDesc: 'educational boardgame, enhanced by an interactive web application, offers you to explore ancient grounds, unearth artifacts, and become a real archaeologist!',
     screenshotes: ['', '', '', '', ''],
     video: '',
     gif: '/gif/eco.gif',
