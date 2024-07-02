@@ -79,29 +79,29 @@
 		let interval = null;
 		const list = document.querySelectorAll('.graffity-list li');
 
-		list.forEach((el) => {
-			el.addEventListener('mouseenter', function (event) {
-				const target_element = event.target.querySelector('h2');
-				let iteration = 0;
-				const interval = setInterval(() => {
-					target_element.innerText = target_element.dataset.value
-						.split('')
-						.map((letter, index) => {
-							if (index < iteration) {
-								return target_element.dataset.value[index];
-							}
+		// list.forEach((el) => {
+		// 	el.addEventListener('mouseenter', function (event) {
+		// 		const target_element = event.target.querySelector('h2');
+		// 		let iteration = 0;
+		// 		const interval = setInterval(() => {
+		// 			target_element.innerText = target_element.dataset.value
+		// 				.split('')
+		// 				.map((letter, index) => {
+		// 					if (index < iteration) {
+		// 						return target_element.dataset.value[index];
+		// 					}
 
-							return letters[Math.floor(Math.random() * 26)];
-						})
-						.join('');
+		// 					return letters[Math.floor(Math.random() * 26)];
+		// 				})
+		// 				.join('');
 
-					if (iteration >= target_element.dataset.value.length) {
-						clearInterval(interval);
-					}
-					iteration += 1 / 3;
-				}, 20);
-			});
-		});
+		// 			if (iteration >= target_element.dataset.value.length) {
+		// 				clearInterval(interval);
+		// 			}
+		// 			iteration += 1 / 3;
+		// 		}, 20);
+		// 	});
+		// });
 		// });
 	});
 
@@ -112,19 +112,24 @@
 
 <section class="mb-20 md:py-20 lg:py-20 xl:py-20 ">
 	<div class="graffity-list w-10/12 mx-auto text-white">
-		<h2 class="title font-optiker text-5xl">
+		<!-- <h2 class=" font-optiker ">
             {boardgamesProgects.title}
-        </h2>
+        </h2> -->
+			<div class="h-full w-full {boardgamesProgects.bg ? '' : 'hidden'}">
+              <img class="object-contain h-full w-full object-center rounded-lg shadow-2xl" alt="bg image {boardgamesProgects.title} project" src="{boardgamesProgects.bg}">
+            </div>
+
 		<ul>
 			{#each  boardgamesProgects.boardgames  as boardgame, i}
 				<li
-					class="hover:delay-550 group transform border-b-2 border-neutral-700 hover:-translate-y-4 hover:border-[#44149c] hover:transition  hover:duration-1000 hover:ease-in-out hover:ease-in-out"
+					class="hover:delay-550 group transform border-b-2 border-neutral-700 hover:-translate-y-4  hover:transition  hover:duration-1000 hover:ease-in-out hover:ease-in-out"
 				>
-				<div class="">
+					<div class="">
 						<img src="{boardgame.icon}" class='w-32 h-32' alt=""/>
 					</div>
-
-					<div class="index text-[#44149c] ">
+<!-- brandColor -->
+<!--  -->
+					<div class="index  " style='color: {boardgamesProgects.brandColor};'>
 						<span class="text-6xl font-optiker">{startPosition + i + 1}</span>
 					</div>
 					<div class="graffity-style group-hover:text-white">
@@ -153,21 +158,21 @@
 								width="1.25rem"
 								height="1.25rem"
 								viewBox="0 0 16 16"
-								fill="none"
+								fill=""
 								name="iconArrow"
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
 									d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM11.25 10C11.25 10.4142 11.5858 10.75 12 10.75C12.4142 10.75 12.75 10.4142 12.75 10H11.25ZM11.25 4V10H12.75V4H11.25Z"
-									fill="currentColor"
+									fill="{boardgamesProgects.brandColor}"
 								/>
 								<path
 									d="M12 4.75C12.4142 4.75 12.75 4.41421 12.75 4C12.75 3.58579 12.4142 3.25 12 3.25L12 4.75ZM6 3.25C5.58579 3.25 5.25 3.58579 5.25 4C5.25 4.41421 5.58579 4.75 6 4.75L6 3.25ZM12 3.25L6 3.25L6 4.75L12 4.75L12 3.25Z"
-									fill="currentColor"
+									fill="{boardgamesProgects.brandColor}"
 								/>
 								<path
 									d="M12.5303 4.53033C12.8232 4.23744 12.8232 3.76256 12.5303 3.46967C12.2374 3.17678 11.7626 3.17678 11.4697 3.46967L12.5303 4.53033ZM3.46967 11.4697C3.17678 11.7626 3.17678 12.2374 3.46967 12.5303C3.76256 12.8232 4.23744 12.8232 4.53033 12.5303L3.46967 11.4697ZM11.4697 3.46967L3.46967 11.4697L4.53033 12.5303L12.5303 4.53033L11.4697 3.46967Z"
-									fill="currentColor"
+									fill="{boardgamesProgects.brandColor}"
 								/>
 							</svg>
 						</a>
@@ -176,7 +181,7 @@
 						<!-- /images/styles/{boardgame.example} -->
                         <img
 							src=""
-							alt="Example of a {boardgame.title} style graffiti"
+							alt="Promo image {boardgame.title}"
 							class="img-fluid"
 						/>
 					</div>
