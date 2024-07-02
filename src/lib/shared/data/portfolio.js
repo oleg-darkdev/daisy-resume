@@ -64,6 +64,8 @@ const ngoProgects = [footprintsFate, voteWise, itingo, darkDevFoundation, ds5, t
 
 const researchesProgects = {
 	title: 'Agile.fans',
+		brandColor: '',
+
 	desc: 
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
@@ -86,6 +88,9 @@ const researchesProgects = {
 // history / culture
 const theStoriesBoardgames = {
 	title: 'THE Stories',
+	bg: '/images/logos/boardgames/the-stories/bg.svg',
+	brandColor: '#5f3919',
+
 	desc: 
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
@@ -105,6 +110,9 @@ const theStoriesBoardgames = {
 
 const agileFansBoardgames = {
 	title: 'Agile Fans',
+	bg: '/images/logos/boardgames/agile-fans/bg.png',
+	brandColor: '#fd4d8b',
+
 	desc: 
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
@@ -131,6 +139,8 @@ const agileFansBoardgames = {
 
 const antiSystemsBoardgames = {
 	title: 'Anti Systems',
+	bg: '/images/logos/boardgames/anti-systems/bg.png',
+	brandColor: '#3a3a3a',
 	desc: 
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
@@ -151,6 +161,10 @@ const antiSystemsBoardgames = {
 
 const otherBoardgames = {
 	title: 'Other',
+	// /images/logos/boardgames/other/bg.svg
+	bg: '',
+	brandColor: '#44149c',
+
 	desc: 
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
