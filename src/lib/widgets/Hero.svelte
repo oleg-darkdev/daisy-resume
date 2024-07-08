@@ -11,7 +11,7 @@
 			<!-- lg:h-screen md:h-screen xl:h-screen  -->
 			<div class=" flex  w-full items-center justify-center overflow-hidden">
 				<div class="header flex flex-col items-center justify-center">
-					<h1 class="header__initials font-black">Oleg <br /> Medvedev</h1>
+					<h1 class="header__initials font-black text-[#e2e6ee]">Oleg <br /> Dark <span class='text-violet-800 '>DEV</span> </h1>
 
 					<div class="header__title ">
 						<!-- DarkDEV -->
@@ -72,12 +72,12 @@
 	}
 	.header__initials {
 		display: inline-block;
-		color: #e2e6ee;
 		background: url('/images/bg-purple.gif');
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
 		background-size: contain;
 		background-position: center;
+		font-size: 26vh;
 	}
 
 	.header__title {
