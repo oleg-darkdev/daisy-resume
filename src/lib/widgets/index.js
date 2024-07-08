@@ -9,7 +9,12 @@ import BoardgamesList from './BoardgamesList.svelte';
 import Faq from './Faq.svelte';
 import Services from './Services.svelte';
 import Gamification from './Gamification.svelte';
+import Gallery from './Gallery.svelte';
+import TextDivider from './TextDivider.svelte';
+// import Gamification from './Gamification.svelte';
+// import Gamification from './Gamification.svelte';
+// import Gamification from './Gamification.svelte';
 
 
 
-export { Hero, Footer, Aside, PdfViewer, Services, Gamification, Header, Feedback, About, Faq, BoardgamesList };
+export { Hero, Footer, Aside, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
