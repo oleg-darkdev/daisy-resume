@@ -5,6 +5,7 @@ const progect =
     icon: '/images/logos/boardgames/the-stories/by-pl-stories/icon.svg',
     logo: '/images/logos/boardgames/the-stories/by-pl-stories/logo.svg',
     link: 'https://by-pl.vercel.app/',
+  	brandColor: '#eb5c55',
     stack: [],
     anchor: 'by-pl',
     title: 'Cultures of Belarus and Poland.',

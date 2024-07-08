@@ -1,10 +1,12 @@
 const progect = {
 	id: 0,
 	githubRepo: 'https://github.com/oleg-darkdev/44games-store',
-	logo: '',
+    logo: '/images/logos/44games/logo.svg',
+    icon: '/images/logos/44games/icon.svg',
 	link: 'https://44games.vercel.app/',
 	stack: [],
     anchor: '44Games',
+  	brandColor: '#000000',
 
 	title: '44Games - shop',
 	shortDesc: 'E-commerce store of educational hybrid boardgames.',

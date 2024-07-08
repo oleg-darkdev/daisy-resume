@@ -1,10 +1,12 @@
 const progect =
   {
     id: 0,
-    link: '',
+	link: 0,
     githubRepo: '',
     logo: '',
+    icon: '',
     stack: [],
+  	brandColor: '#44149c',
     title: 'Lorem ipsum is',
     shortDesc: 'Lorem ipsum is placeholder text commonly used.',
     screenshotes: ['', '', '', '', ''],

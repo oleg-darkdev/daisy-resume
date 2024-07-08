@@ -6,6 +6,7 @@ const progect =
     logo: '/images/logos/boardgames/the-stories/paleo-stories/logo.svg',
     icon: '/images/logos/boardgames/the-stories/paleo-stories/icon.svg',
     stack: [],
+  	brandColor: '#44149c',
     title: 'Paleo Stories',
     shortDesc: 'Educational boardgame, enhanced by the interactive web application, that introduces players to the world of paleontological expeditions and the science of paleontology.',
     screenshotes: ['', '', '', '', ''],

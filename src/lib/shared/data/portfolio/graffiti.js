@@ -7,6 +7,7 @@ const progect =
     link: 'https://graffity-chronicles.vercel.app/',
     stack: [],
       anchor: 'graffiti-chronicles',
+  	brandColor: '#facc15',
 
     title: 'Graffiti Chronicles',
     shortDesc: 'A research project consisting of a web application and a board game dedicated to graffiti culture, street art artists from over 40 countries and the styles they employ.',

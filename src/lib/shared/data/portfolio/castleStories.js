@@ -6,6 +6,7 @@ const progect = {
     icon: '/images/logos/boardgames/the-stories/castle-stories/icon.svg',
 	stack: [],
 	title: 'Castle Stories',
+  	brandColor: '#44149c',
 	shortDesc: 'educational boardgame, enhanced by an interactive web application, which will take you to the world of grand castles and ancient fortifications! Collect historical facts, complete tasks and unlock the secrets of ancient buildings to become a true connoisseur of medieval architecture.',
 	screenshotes: ['', '', '', '', ''],
 	video: '',

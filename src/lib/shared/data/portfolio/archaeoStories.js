@@ -7,6 +7,7 @@ const progect =
     githubRepo: 'https://github.com/oleg-darkdev/archaeo-stories_app',
     stack: [],
     title: 'Archaeo Stories',
+  	brandColor: '#44149c',
     shortDesc: 'educational boardgame, enhanced by an interactive web application, offers you to explore ancient grounds, unearth artifacts, and become a real archaeologist!',
     screenshotes: ['', '', '', '', ''],
     video: '',

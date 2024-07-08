@@ -6,6 +6,7 @@ const progect =
     icon: '/images/logos/boardgames/anti-systems/chaos-theory/icon.svg',
     link: 'https://chaos-theory.vercel.app/en',
     stack: [],
+  	brandColor: '#000000',
     anchor: 'сhaos-theory',
     title: 'Chaos Theory',
     shortDesc: 'A research project consisting of a web application and a boardgame, about anarchist political movement, including its activists and philosophers, and their stories.',

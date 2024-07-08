@@ -1,7 +1,10 @@
 const progect =
   {
     id: 0,
-    link: 'https://12262-stories.vercel.app/',
+    	link: 0,
+
+  	brandColor: '#44149c',
+    // link: 'https://12262-stories.vercel.app/',
     githubRepo: 'https://github.com/oleg-darkdev/12262-stories_app',
     logo: '/images/logos/boardgames/the-stories/kdh-stories/logo.svg',
     icon: '/images/logos/boardgames/the-stories/kdh-stories/icon.svg',

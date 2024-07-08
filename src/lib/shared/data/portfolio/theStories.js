@@ -7,6 +7,7 @@ const progect =
     logo: '/images/logos/boardgames/the-stories/core/logo.svg',
     icon: '/images/logos/boardgames/the-stories/core/icon.svg',
     stack: [],
+  	brandColor: '#44149c',
     title: 'THE Stories',
     shortDesc: 'Researches-based educational project in the form of series of educational board games and open data base.',
     screenshotes: ['', '', '', '', ''],

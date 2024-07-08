@@ -1,12 +1,13 @@
 const progect =
   {
     id: 0,
-    link: '',
+	link: 0,
     githubRepo: '',
     logo: '/images/logos/boardgames/agile-fans/kanbanism/logo.svg',
     icon: '/images/logos/boardgames/agile-fans/kanbanism/icon.svg',
     stack: [],
     title: 'Kanbanism',
+  	brandColor: '#44149c',
     shortDesc: 'Zaawansowana symulacja systemu Kanban, która pomaga zrozumieć jego zasady i metryki.',
     screenshotes: ['', '', '', '', ''],
     video: '',

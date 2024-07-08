@@ -1,7 +1,8 @@
 const progect = {
 	id: 0,
-	link: '',
+	link: 0,
 	githubRepo: '',
+	brandColor: '#44149c',
 	logo: '/images/logos/boardgames/agile-fans/action-delegation/logo.svg',
 	icon: '/images/logos/boardgames/agile-fans/action-delegation/icon.svg',
 	stack: [],
@@ -13,5 +14,5 @@ const progect = {
 	gif: '/gif/eco.gif',
 	tags: ['', 'landing', 'boardgame-app']
 };
-		
+
 export default progect;

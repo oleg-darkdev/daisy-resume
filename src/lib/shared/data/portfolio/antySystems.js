@@ -6,6 +6,7 @@ const progect = {
 	link: 'https://anti-system.vercel.app/',
 	stack: [],
 	anchor: 'antisystem-fenomens',
+  	brandColor: '#7a7a7a',
 
 	title: 'Anti-system fenomens',
 	shortDesc:

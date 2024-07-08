@@ -1,12 +1,13 @@
 const progect =
   {
     id: 0,
-    link: '',
+	link: 0,
     githubRepo: '',
     logo: '',
     stack: [],
       anchor: 'tech-sopot',
 
+  	brandColor: '#44149c',
     title: 'TechSopot',
     shortDesc: 'Lorem ipsum is placeholder text commonly used.',
     screenshotes: ['', '', '', '', ''],

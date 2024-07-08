@@ -1,7 +1,8 @@
 const progect =
   {
     id: 0,
-    link: '',
+	link: 0,
+  	brandColor: '#44149c',
     githubRepo: '',
     logo: '/images/logos/boardgames/agile-fans/lean-coffee/logo.svg',
     icon: '/images/logos/boardgames/agile-fans/lean-coffee/icon.svg',

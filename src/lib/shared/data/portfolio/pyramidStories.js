@@ -5,6 +5,7 @@ const progect = {
     logo: '/images/logos/boardgames/the-stories/pyramid-stories/logo.svg',
     icon: '/images/logos/boardgames/the-stories/pyramid-stories/icon.svg',
 	stack: [],
+  	brandColor: '#44149c',
 	title: 'Pyramid Stories',
 	shortDesc: '',
 	screenshotes: ['', '', '', '', ''],

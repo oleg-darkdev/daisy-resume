@@ -8,6 +8,7 @@ const progect = {
 	title: 'MKS-14',
 	anchor: 'mnks',
 
+  	brandColor: '#642bd5',
 	shortDesc:
 		'Educational project comprising a web application and a board game aimed at helping users learn about the work of astronauts on the International Space Station and the experiments conducted there.',
 	screenshotes: [
