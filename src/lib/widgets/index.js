@@ -11,10 +11,10 @@ import Services from './Services.svelte';
 import Gamification from './Gamification.svelte';
 import Gallery from './Gallery.svelte';
 import TextDivider from './TextDivider.svelte';
-// import Gamification from './Gamification.svelte';
-// import Gamification from './Gamification.svelte';
+import MyStory from './MyStory.svelte';
+import Timeline from './Timeline.svelte';
 // import Gamification from './Gamification.svelte';
 
 
 
-export { Hero, Footer, Aside, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
+export { Hero, Footer, MyStory, Timeline, Aside, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
