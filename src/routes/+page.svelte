@@ -117,6 +117,7 @@
         <img src="" loading="lazy" more="image" alt="" class="c-more-image bit-title-5"> -->
     </TextDivider>
 
+    <a name='boardgames' />
     <!-- <section class="home-about">
       <div class="padding-horizontal lg:padding-small md:padding-small xl:padding-small">
         <div class="grid-large">
