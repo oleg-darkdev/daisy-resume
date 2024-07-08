@@ -153,7 +153,7 @@
 						{/each}
 					</div> -->
 					<div class="redirect-link">
-						<a href='/' target="_blank">
+						<a href='{boardgame.link ? boardgame.link: '/'}' target="_blank">
 							<svg
 								width="1.25rem"
 								height="1.25rem"
