@@ -11,6 +11,7 @@ import {
 } from './ui/icons.js';
 
 import skillsTools from './data/skillsTools.js';
+import timeline from './data/timeline.js';
 
 import {
 	portfolio,
@@ -40,10 +41,13 @@ import {
 	techSopot
 } from './data/portfolio.js';
 
+
+
 // no mine
 import services from './data/services.js';
 
 export {
+	timeline,
 	portfolio,
 	theStoriesBoardgames, 
 	agileFansBoardgames, 
