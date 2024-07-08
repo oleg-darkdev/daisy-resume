@@ -1,12 +1,16 @@
 <script>
-    // import {Carousel} from '$lib/entities';
-    import { browser } from '$app/environment'
-    import Carousel from 'svelte-carousel'
-    import { PlayFilledAlt, PauseOutlineFilled  } from '$lib/shared';
+  // import {Carousel} from '$lib/entities';
+  import { browser } from '$app/environment'
+  import Carousel from 'svelte-carousel'
+  import { PlayFilledAlt, PauseOutlineFilled  } from '$lib/shared';
+  import LogoGithub from "carbon-icons-svelte/lib/LogoGithub.svelte";
+  import ArrowUpRight from "carbon-icons-svelte/lib/ArrowUpRight.svelte";
+  import ArrowShiftDown from "carbon-icons-svelte/lib/ArrowShiftDown.svelte";
+
 
   let showVideo = false;
 
-export let progect;
+export let project;
 </script>
 <!-- lg:-my-10 md:-my-10 xl:-my-10 -->
 
@@ -19,60 +23,89 @@ export let progect;
   position: relative;
 } -->
 
-<div   class="border-2 rounded-box relative mt-10 max-w-xl mb-16  mx-auto">
-  <div class="curve-block-center">
-      <a  href="#{progect.anchor}" class="curve-link w-inline-block">
-      <!-- <div class="curve-arrow">
-          <div class="clip">
-          <div class="hover-arrow top">
-              <div class="icon w-embed">
-              <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-              </svg>
-              </div>
-          </div>
-          <div class="hover-arrow">
-              <div class="icon w-embed">
-              <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-              </svg>
-              </div>
-          </div>
-          </div>
+
+<div class="mt-10 mb-16 hover:mt-20 group hover:mb-32 mx-auto lg:hover:scale-125 md:hover:scale-125 hover:scale-110 hover:transition hover:duration-1000  hover:ease-in-out">
+<div class="mb-8">
+  <div class="flex flex-row mx-auto justify-between items-end max-w-[160px]">
+    <div class="avatar">
+      <a href='{project.githubRepo}' target="_blank" class="  hover:scale-125 hover:transition hover:duration-1000  hover:ease-in-out w-10 h-10 rounded-full">
+        <LogoGithub size={32} />
+      </a>
+    </div>
+      <!-- <div class=""> -->
+          <div class="">
+						<img src="{project.icon}" class='w-32 h-32' alt=""/>
+					</div>
+      <!-- <div class="w-18 h-18 mb-10 " style="">
+        <img src="{project.icon}" class='w-18 h-18 mb-10 ' />
       </div> -->
-      <img src="/images/curver.svg" loading="lazy" alt="Curver img">
+    <!-- </div> -->
+    <div class="avatar">
+      <a href='{project.link ? project.link: '/'}' target="_blank"  class=" hover:scale-125  hover:transition hover:duration-400  hover:ease-in-out w-10 h-10 rounded-full">
+        <ArrowUpRight size={32} />
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- shadow-2xl rounded-xl md:w-80 md:-ml-16 md:hover:-translate-x-16 md:hover:-translate-y-8"> -->
+        
+
+<div   class="border-2 rounded-box relative  max-w-xl ">
+  <div class="curve-block-center ">
+      <a  href="#{project.anchor}" on:click={()=> project.showFullInfo = !project.showFullInfo} class=" curve-link w-inline-block">
+        <div style="background-color: {project.brandColor};" class="curve-arrow group-hover:scale-110 group-hover:translate-y-2 group-hover:transition group-hover:duration-1000 group-hover:ease-in-out">
+          <div class="text-white">
+              <!-- <div class="hover-arrow top ">
+                  <div class="icon w-embed">
+                  <svg width="640" height="640" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+                  </svg>
+                  </div>
+              </div>
+              <div class="hover-arrow ">
+                  <div class="icon w-embed">
+                  <svg width="640" height="640" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
+                  </svg>
+                  </div>
+              </div> -->
+              <ArrowShiftDown size={32} class='{project.showFullInfo ? 'rotate-180': ''}' />
+            </div>
+        </div>
+      <img src="/images/curver.svg" loading="lazy" class='' alt="Curver img">
       </a>
   </div>
 
 <div class="mx-auto  flex  flex-col items-center lg:px-6 xl:px-6 md:px-6 px-3 xl:pt-6 lg:pt-6 md:pt-6 pt-3">
-	<div  class="prose-sm prose-blue mx-auto flex w-full flex-col text-left">
-		<span class="text-xs text-style-allcaps  uppercase tracking-widest ">
-			{#each progect.tags as tag} <span>#{tag} </span> {/each}
+	<div  class=" pt-6  mx-auto flex w-full flex-col text-left">
+   <span class="text-xs text-style-allcaps  uppercase tracking-widest mb-6">
+    <a name="{project.anchor}" />
+			{#each project.tags as tag} <span>#{tag} </span> {/each}
 		</span>
 
+
 		<div class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0  lg:-mt-0 -mt-4">
-			<!-- <h2 class="text-gray-600">{progect.title}</h2> -->
 
-              <a name="{progect.anchor}" />
+      <h3 class=" text-color-white text-size-xlarge {project.showFullInfo ? '': '-mt-0 -mb-10'}">{project.title}</h3>
 
+      <!-- <a href="#contact" class="button w-inline-block">
+        <div class="text-size-xsmall">More</div>
+      </a> -->
 
-      <h3 class=" text-color-white text-size-xlarge">{progect.title}</h3>
-
-
-      <div class="text-size-tiny text-style-allcaps text-color-white">{progect.shortDesc}</div>
-			<!-- <p class="text-gray-600">
-				{progect.shortDesc}
-			</p> -->
+      <div class:hidden={!project.showFullInfo} class="text-size-tiny text-style-allcaps text-color-white">{project.shortDesc}</div>
 		</div>
 	</div>
 
-	<div style='max-height:380px;' class="card-sm rounded-t-box lg:card-body  pb-2 pt-4">
+ 
+	<div class="card-sm rounded-t-box  {project.showFullInfo ? 'max-h-[360px]': 'max-h-[180px]'}  lg:card-body  pb-2 pt-4">
 				<!-- <figure class='rounded-xl   mx-1'><img src="{images[0]}" class='min-h-20 min-w-96' alt="" /></figure> -->
-        <div class="wrap -mt-4 ">
+         {#if project.showFullInfo}
+          <div class="wrap -mt-4 ">
             {#if browser}
                 <!--   duration={3000} -->
                 <Carousel particlesToShow={2} autoplay arrows={false}>
-                  {#each progect.screenshotes as screenshot, i}
+                  {#each project.screenshotes as screenshot, i}
                     <!-- <Color {color} {text} /> -->
                     <!-- <span>{i}</span> -->
                     <!-- mx-1  -->
@@ -81,15 +114,15 @@ export let progect;
                       <img
                         src={screenshot}
                         class="rounded-xl  h-20 lg:w-56 md:w-56 w-40 xl:w-56"
-                        alt="Screenshot #{i} of {progect.title}"
+                        alt="Screenshot #{i} of {project.title}"
                       />
                     </figure>
-                    <!-- <figure class='rounded-xl   mx-1'><img src="{screenshot}" class='min-h-20 lg:min-w-96 w-20' alt="Screenshot #{i} of {progect.title}" /></figure> -->
+                    <!-- <figure class='rounded-xl   mx-1'><img src="{screenshot}" class='min-h-20 lg:min-w-96 w-20' alt="Screenshot #{i} of {project.title}" /></figure> -->
                   {/each}
                 </Carousel>
               {/if}
           </div>
-
+        {/if}
 
 			<!-- <h2 class="card-title">Shoes!</h2>
       <p>If a dog chews shoes whose shoes does he choose?</p> -->
@@ -110,16 +143,16 @@ export let progect;
     </button>
 </div> -->
 			{#if showVideo}
-				<iframe class="h-48 w-full rounded-b-box" src={progect.video} />
+				<iframe class="h-48 w-full rounded-b-box" src={project.video} />
 			{:else}
-				<img src={progect.gif} class="h-48 rounded-b-box" alt="{progect.title} gif" />
+				<img src={project.gif} class="h-48 rounded-b-box" alt="{project.title} gif" />
 			{/if}
 		</figure>
     </div>
 	</div>
 <!-- </div> -->
 </div>
-
+</div>
 <!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
     <div class="relative mx-auto">
       <div class="group relative flex cursor-pointer after:shadow-lg after:shadow-black">
@@ -156,8 +189,8 @@ export let progect;
         <div class="absolute -right-16 top-0 z-20 flex w-96 flex-col gap-4 self-end rounded-xl rounded-l-2xl border-none bg-[#7678ed] px-5 py-3 text-base font-semibold leading-7 transition-all duration-700 group-hover:-right-14 group-hover:w-64 group-hover:rounded-l-lg">
   <div class="h-96 w-full"></div>
 
-          <p class="text-[#fff]">{progect.title}</p>
-          <p class="text-[#fff]">{progect.shortDesc}</p>
+          <p class="text-[#fff]">{project.title}</p>
+          <p class="text-[#fff]">{project.shortDesc}</p>
           <p>
             <a href="https://tailwindcss.com/docs" class="text-white/50">Live demo &rarr;</a>
           </p>
