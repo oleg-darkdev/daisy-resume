@@ -1,16 +1,15 @@
 <script>
-	// import { } from '$widgets';
 	import {  ServiceCard, CurverNav, NavBarLink } from '$entities';
-	import { services  } from '$shared';
+	import { services, skillsTools  } from '$shared';
 </script>
 
 <section class="home-about">
     <div class="padding-horizontal padding-small">
       <div class="grid-large">
-        <div id="services" class="home-service-block services-wrap">
+        <div class="home-service-block services-wrap">
           <div class="curve-block-center">
-            <a id="right" href="#services" class="curve-link w-inline-block">
-            <div class="curve-arrow">
+            <a id="right" href="#services" class="curve-link w-inline-block ">
+            <div class="curve-arrow bg-violet-700">
                 <div class="clip">
                 <div class="hover-arrow top">
                     <div class="icon w-embed">
@@ -32,6 +31,7 @@
             </a>
           </div>
 
+
           <div class="padding-top padding-huge">
             <div class="padding-horizontal padding-medium">
               <div class="home-service-top">
@@ -44,6 +44,7 @@
                 </div>
               </div>
             </div>
+            <a name='services' />
             <div class="home-service">
               <div class="font-optiker">
 
@@ -64,12 +65,39 @@
               </div>
               <div class="padding-horizontal padding-large">
                 <div class="home-service_base">
-                  <div class="home-service-list">
+                  <div class="home-service-list pb-0">
                     {#each services as service}
                     <ServiceCard {service} />
                     {/each}
+                    <!-- <div class="home-service_card end">
+                      <div class="home-service_top">
+                        <div class="text-size-small text-style-muted">003</div>
+                        <div class="home-service_intro">
+                          <div class="text-size-large">Web development</div>
+                          <div class="text-size-regular text-style-muted text-style-2lines">This involves designing user interfaces, such as buttons, menus, forms, and other</div>
+                        </div>
+                      </div>
+                      <div class="home-service_image">
+                        <div class="home-service_height">
+                          <img src="" loading="lazy" alt="" class="image-fill">
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
 
-
+            <div class="home-service">
+              <div class="font-optiker">
+                Skills
+              </div>
+              <div class="padding-horizontal padding-large">
+                <div class="home-service_base">
+                  <div class="home-skils-list flex flex-row flex-wrap justify-center pb-20">
+                    {#each skillsTools as skill}
+                      <img src="{skill.img}" class='w-40 mx-4 my-6 grayscale hover:grayscale-0 hover:scale-110 hover:transition hover:duration-1000  hover:ease-in-out' alt="{skill.text} skill"/>
+                    {/each}
                     <!-- <div class="home-service_card end">
                       <div class="home-service_top">
                         <div class="text-size-small text-style-muted">003</div>
@@ -93,3 +121,20 @@
       </div>
     </div>
   </section>
+
+
+
+
+<style>
+  .home-skils-list {
+    border-top: 1px #e7eeee;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding-top: 4rem;
+  }
+
+  .services-wrap {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+</style>
