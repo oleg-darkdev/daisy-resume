@@ -66,7 +66,7 @@ const researchesProgects = {
 	title: 'Agile.fans',
 		brandColor: '',
 
-	desc: 
+	desc:
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
 	],
@@ -79,7 +79,7 @@ const researchesProgects = {
 	bejahi,
 	graffiti,
 	historyOfAnarchy,
-	
+
 	ecocide,
 	byPl,
 	lgbtTree
@@ -91,7 +91,7 @@ const theStoriesBoardgames = {
 	bg: '/images/logos/boardgames/the-stories/bg.svg',
 	brandColor: '#5f3919',
 
-	desc: 
+	desc:
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
 	],
@@ -104,7 +104,7 @@ const theStoriesBoardgames = {
 	castleStories,
 	paleoStories,
 	archaeoStories,
-	kdhStories, 
+	kdhStories,
 	pyramidStories,
 ]};
 
@@ -113,7 +113,7 @@ const agileFansBoardgames = {
 	bg: '/images/logos/boardgames/agile-fans/bg.png',
 	brandColor: '#fd4d8b',
 
-	desc: 
+	desc:
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
 	],
@@ -141,7 +141,7 @@ const antiSystemsBoardgames = {
 	title: 'Anti Systems',
 	bg: '/images/logos/boardgames/anti-systems/bg.png',
 	brandColor: '#3a3a3a',
-	desc: 
+	desc:
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
 	],
@@ -165,7 +165,7 @@ const otherBoardgames = {
 	bg: '',
 	brandColor: '#44149c',
 
-	desc: 
+	desc:
 	[
 		`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
 	],
@@ -181,13 +181,13 @@ const portfolio = [
 	{
 		year: 2024,
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
-		progects: [antySystems, graffiti, ecocide, voteWise]
+		projects: [antySystems, graffiti, ecocide, voteWise]
 	},
 	{
 		year: 2023,
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
 
-		progects: [
+		projects: [
 			bejahi,
 			footprintsFate,
 			mks,
@@ -199,12 +199,12 @@ const portfolio = [
 	{
 		year: 2022,
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
-		progects: [darkDevFoundation, ddGames, itingo, byPl]
+		projects: [darkDevFoundation, ddGames, itingo, byPl]
 	},
 	{
 		year: 2021,
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
-		progects: [
+		projects: [
 			yellowElephant,
 			historyOfAnarchy
 			//   techSopot,
@@ -214,7 +214,7 @@ const portfolio = [
 	// {
 	// 	year: 2020,
 	// subTitle: 'Lorem ipsum is placeholder text commonly used.',
-	// 	progects: [
+	// 	projects: [
 
 	// 	]
 	// },
@@ -222,9 +222,9 @@ const portfolio = [
 
 export {
 	portfolio,
-	theStoriesBoardgames, 
-	agileFansBoardgames, 
-	antiSystemsBoardgames, 
+	theStoriesBoardgames,
+	agileFansBoardgames,
+	antiSystemsBoardgames,
 	otherBoardgames,
 	ngoProgects,
 	researchesProgects,
