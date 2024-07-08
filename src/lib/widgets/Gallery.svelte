@@ -1,4 +1,4 @@
-<section class="c-section  mb-20">
+<section class="c-section">
 <div class="c-container cc-ov">
     <div class="c-hero-wrapper-about">
     <div class="c-title-wrapper-2">
@@ -22,12 +22,12 @@
         </div>
     </div>
     <div class="c-grid-item">
-        <img src="/images/speaker/speaker_1.jpg" loading="lazy" sizes="(max-width: 479px) 45vw, (max-width: 767px) 26vw, (max-width: 991px) 19vw, 15vw"  alt="" class="c-grid-item-img cc-one">
-        <img src="/images/speaker/speaker_6.png" loading="lazy" sizes="(max-width: 479px) 32vw, (max-width: 767px) 19vw, (max-width: 991px) 13vw, 11vw"  alt="" class="c-grid-item-img cc-two">
-        <img src="/images/speaker/speaker_3.jpg" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw"  alt="" class="c-grid-item-img cc-three">
-        <img src="/images/speaker/speaker_4.png" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw" alt="" class="c-grid-item-img cc-four">
-        <img src="/images/speaker/speaker_5.png" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw" alt="" class="c-grid-item-img cc-five">
-        <img src="/images/speaker/speaker_2.jpg" loading="lazy" sizes="(max-width: 479px) 45vw, (max-width: 767px) 26vw, (max-width: 991px) 19vw, 15vw"  alt="" class="c-grid-item-img cc-six">
+        <img src="/images/speaker/speaker_1.jpg" loading="lazy" sizes="(max-width: 479px) 45vw, (max-width: 767px) 26vw, (max-width: 991px) 19vw, 15vw"  alt="Speaker photo #1" class="c-grid-item-img cc-one">
+        <img src="/images/speaker/speaker_6.png" loading="lazy" sizes="(max-width: 479px) 32vw, (max-width: 767px) 19vw, (max-width: 991px) 13vw, 11vw"  alt="Speaker photo #2" class="c-grid-item-img cc-two">
+        <img src="/images/speaker/speaker_3.jpg" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw"  alt="Speaker photo #3" class="c-grid-item-img cc-three">
+        <img src="/images/speaker/speaker_4.png" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw" alt="Speaker photo #4" class="c-grid-item-img cc-four">
+        <img src="/images/speaker/speaker_5.png" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw" alt="Speaker photo #5" class="c-grid-item-img cc-five">
+        <img src="/images/speaker/speaker_2.jpg" loading="lazy" sizes="(max-width: 479px) 45vw, (max-width: 767px) 26vw, (max-width: 991px) 19vw, 15vw"  alt="Speaker photo #6" class="c-grid-item-img cc-six">
         <!-- <img src="/images/bg-purple.gif" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw"  alt="" class="c-grid-item-img cc-seven">
         <img src="/images/bg-purple.gif" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw"  alt="" class="c-grid-item-img cc-eight">
         <img src="/images/bg-purple.gif" loading="lazy" sizes="(max-width: 479px) 30vw, (max-width: 767px) 18vw, (max-width: 991px) 12vw, 10vw"  alt="" class="c-grid-item-img cc-nine">
@@ -63,7 +63,7 @@
   /* padding-top: 8em;
   padding-bottom: 8em; */
   position: relative;
-  height: 120vh;
+  height: 100vh;
 }
 /* html {
   -webkit-text-size-adjust: 100%;
