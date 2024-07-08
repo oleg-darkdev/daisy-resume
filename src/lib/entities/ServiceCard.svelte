@@ -4,10 +4,10 @@
 
 <div class="home-service_card">
 	<div class="home-service_top">
-		<div class="text-size-small text-style-muted">00{service.id}</div>
+		<!-- <div class="text-size-small text-style-muted">00{service.id}</div> -->
 		<div class="home-service_intro">
 			<div class="text-size-large">{service.title}</div>
-			<div class="text-size-regular text-style-muted text-style-2lines">
+			<div class="text-size-regular text-style-muted ">
 				{service.desc}
 			</div>
 		</div>
