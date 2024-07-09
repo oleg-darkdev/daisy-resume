@@ -4890,9 +4890,7 @@ figcaption {
   display: flex;
 }
 
-.home-service_base {
-  border-top: 1px solid #e7eeee;
-}
+
 
 .home-service {
   overflow: hidden;

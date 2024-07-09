@@ -8,7 +8,7 @@
   <div class="padding-horizontal padding-small">
     <div class="grid-large">
       <div class="home-service-block content-wrap">
-        <CurverNav link="#content" bind:showSection/>
+        <CurverNav link="#{anchor}" bind:showSection/>
 
           <div class="{showSection ? 'padding-top padding-huge': ''}">
           <div class="padding-horizontal padding-medium">
