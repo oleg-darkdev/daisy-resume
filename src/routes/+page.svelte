@@ -1,8 +1,10 @@
 <script>
-	import { Hero, Footer, BoardgamesList, Aside, Gallery, Skills, Timeline, MyStory, TextDivider, Feedback, Faq, Gamification, Header, Services, PdfViewer, About } from '$widgets';
-	import { ProgectCard,  NavBarLink } from '$entities';
+	import { Hero, Footer, BoardgamesList, Aside, SectionWrap, Gallery, Skills, Timeline, MyStory, TextDivider, Feedback, Faq, Gamification, Header, Services, PdfViewer, About } from '$widgets';
+	import { ProgectCard,  TextBlock } from '$entities';
 	import { portfolio, theStoriesBoardgames, agileFansBoardgames, antiSystemsBoardgames, otherBoardgames, } from '$shared';
 
+
+let showFaqSection = false, showTimelineSection = false, showAboutSection = false, showServicesSection = false, showSkillsSection = false;
 </script>
 
 <svelte:head>
@@ -30,10 +32,30 @@
 
     <Hero />
 
-    <Services />
+    <!-- <Services /> -->
+   
+    <SectionWrap showSection={showServicesSection} title="Services"  anchor='services'>
+      <div slot='text-block'>
+        <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
+      </div>
 
+      <div slot='content'>
+         <Services />
+      </div>
+    </SectionWrap> 
+ 
 
-    <Skills />
+   
+    <SectionWrap showSection={showSkillsSection} title="Skills"  anchor='skills'>
+      <div slot='text-block'>
+        <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
+      </div>
+
+      <div slot='content'>
+         <Skills />
+      </div>
+    </SectionWrap>
+
 
     <TextDivider title="Work" subTitle="Web Design, Web Development, Creative Development">
         <!-- <img src="/images/screenshotes/voteWise/1.webp" loading="lazy" more="image" alt="" class="c-more-image">
@@ -157,15 +179,44 @@
     </TextDivider>
 
 
+    <SectionWrap showSection={showAboutSection} title="My story" customClasses='mt-20 mb-32' anchor='my-story'>
+      <div slot='text-block'>
+        <TextBlock title='With years of experience in the industry, I have worked with businesses of all sizes.' link='#contact' btnTitle='Get in touch'/>
+      </div>
 
-    <MyStory />
+      <div slot='content'>
+        <MyStory />
+      </div>
+    </SectionWrap>
+    
+    
 
     <Gallery />
  
     
-    <Timeline />
+    
+    <SectionWrap showSection={showTimelineSection} title="Timeline" anchor='timeline'>
+      <div slot='text-block'>
+        <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
+      </div>
 
-     <Faq />
+      <div slot='content'>
+        <Timeline />
+      </div>
+    </SectionWrap>
+
+    <SectionWrap showSection={showFaqSection} title="QUESTIONS" anchor='faq'>
+      <div slot='text-block'>
+        <TextBlock title='If you have any questions, the F.A.Q. below should help you - or you can give them to me personally.' link='#contact' btnTitle='Get in touch'/>
+      </div>
+
+      <div slot='content'>
+        <Faq />
+      </div>
+    </SectionWrap>
+
+
+     <!-- <Faq /> -->
     <!-- <section class="home-about">
       <div class="padding-horizontal padding-small">
         <div class="grid-large">

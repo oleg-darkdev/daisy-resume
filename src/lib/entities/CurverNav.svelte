@@ -1,10 +1,9 @@
 <script>
-
-    export let link;
+    export let link, showSection;
 </script>
 
 
-<div class="curve-block-center">
+<div class="curve-block-center " on:click={()=> showSection = !showSection}>
     <a href="{link}" class="curve-link w-inline-block">
     <div class="curve-arrow">
         <div class="clip">

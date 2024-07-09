@@ -11,9 +11,6 @@
   {/each}
 </div>
 
-
-
-
 <style>
 
 </style>
