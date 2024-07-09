@@ -9,9 +9,7 @@
                 <div class="hover-text">
                     <div class="text-size-small text-style-muted">00{faqData.id}</div>
                 </div>
-                <div class="hover-text bottom-hover-text">
-                    <div class="text-size-small text-style-muted">00{faqData.id}</div>
-                </div>
+
         </div>
     </div>
     <div class="text-size-large">{faqData.title}</div>
@@ -26,7 +24,8 @@
 {#if faqData.show}
     <div class="hame-faq-bottom">
         <div class="home-faq-content radius-regular">
-            <div class="home-faq-text">
+            <div class="hover-text bottom-hover-text">
+                <div class="text-size-small text-style-muted">00{faqData.id}</div>
             </div>
             {#each faqData.desc as desc}
                 <p class='text-size-regular text-white mb-2'>
