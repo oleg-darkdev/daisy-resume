@@ -14,7 +14,10 @@ import TextDivider from './TextDivider.svelte';
 import MyStory from './MyStory.svelte';
 import Timeline from './Timeline.svelte';
 import Skills from './Skills.svelte';
+import SectionWrap from './SectionWrap.svelte';
+// import Skills from './Skills.svelte';
+// import Skills from './Skills.svelte';
 
 
 
-export { Hero, Footer, MyStory, Timeline, Aside, Skills, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
+export { Hero, Footer, MyStory, Timeline, SectionWrap, Aside, Skills, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };

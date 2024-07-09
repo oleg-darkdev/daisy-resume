@@ -12,6 +12,7 @@ import {
 
 import skillsTools from './data/skillsTools.js';
 import timeline from './data/timeline.js';
+import faq from './data/faq.js';
 
 import {
 	portfolio,
@@ -48,6 +49,7 @@ import services from './data/services.js';
 
 export {
 	timeline,
+	faq,
 	portfolio,
 	theStoriesBoardgames, 
 	agileFansBoardgames, 
