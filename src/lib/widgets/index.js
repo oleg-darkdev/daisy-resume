@@ -13,8 +13,8 @@ import Gallery from './Gallery.svelte';
 import TextDivider from './TextDivider.svelte';
 import MyStory from './MyStory.svelte';
 import Timeline from './Timeline.svelte';
-// import Gamification from './Gamification.svelte';
+import Skills from './Skills.svelte';
 
 
 
-export { Hero, Footer, MyStory, Timeline, Aside, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
+export { Hero, Footer, MyStory, Timeline, Aside, Skills, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
