@@ -1,5 +1,11 @@
+<script>
+
+    export let link;
+</script>
+
+
 <div class="curve-block-center">
-    <a id="right" href="#services" class="curve-link w-inline-block">
+    <a href="{link}" class="curve-link w-inline-block">
     <div class="curve-arrow">
         <div class="clip">
         <div class="hover-arrow top">
@@ -21,3 +27,98 @@
     <img src="/images/curver.svg" loading="lazy" alt="Curver img">
     </a>
 </div>
+
+
+<style>
+.icon {
+  width: .7rem;
+  height: .7rem;
+  color: #0b0c0f;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.w-embed:before, .w-embed:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-embed:after {
+  clear: both;
+}
+    
+.hover-arrow.right {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: -100%;
+}
+
+.hover-arrow.left {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: -100%;
+  right: auto;
+}
+
+.hover-arrow.top {
+  position: absolute;
+  top: -100%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.clip {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.curve-block-center {
+  height: 0;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr .9fr;
+  grid-auto-columns: 1fr;
+  align-content: end;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  position: absolute;
+  top: -.4px;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.curve-link {
+  color: #fff;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: -1px;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.curve-arrow {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #e7eeee;
+  border-radius: 100rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  position: absolute;
+  top: .5rem;
+}
+</style>

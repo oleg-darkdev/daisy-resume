@@ -1,6 +1,6 @@
 <script>
-	import { FaqCard } from '$entities';
-	// import { portfolio, skillsTools } from '$shared';
+	import { FaqCard, CurverNav } from '$entities';
+	import { services } from '$shared';
 
   const faq = [
         {
@@ -10,45 +10,69 @@
 
     }
   ]
+
+
+  let showFaq = false;
 </script>
 
+<section class="home-about mt-8" on:click={()=> showFaq = !showFaq} >
+  <div class="padding-horizontal padding-small">
+    <div class="grid-large">
+      <div  class="home-service-block faq-wrap">
+        <CurverNav link="#faq"/>
 
-<div class="padding-horizontal padding-large">
-  <div class="padding-bottom padding-large">
-    <div class="home-service_grid">
-      <div class="">
-        <div  class="font-optiker">
-          QUESTIONS
-          <!-- <div class="letter-animation">
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-1"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-2"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-3"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-4"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-5"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-6"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-7"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-8"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-9"></div>
-            <div style="-webkit-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="letter-10"></div>
+
+
+
+          <div class="{showFaq ? 'padding-top padding-huge': ''}">
+          <div class="padding-horizontal padding-medium">
+            {#if showFaq}
+              <div class="home-service-top">
+                <div class="home-service-intro">
+                  <div class="text-size-large text-align-center">If you have any questions, the F.A.Q. below should help you - or you can give them to me personally.</div>
+                  <a href="#contact" class="button is-light w-inline-block">
+                    <div class="text-size-xsmall">Get in touch</div>
+                  </a>
+                </div>
+              </div>
+            {/if}
           </div>
-      -->
-        </div>
-      </div>
-      <div id="faq-wrap" class="home-faq-block">
-        <a name='faq' />
+          <div class="home-service">
+            <a name='faq' />
 
-        <div class="home-faq-list radius-regular">
-          {#each faq as faqData}
-            <FaqCard {faqData}/>
-          {/each}
+            <div class="{showFaq ? 'padding-top padding-bottom padding-huge': ''}">
+                <div class="home-service_grid">
+                  <div class="">
+                    <div  class="font-optiker">
+                      QUESTIONS
+                    </div>
+                  </div>
+                  <div class="home-faq-block home-faq-wrap">
+                    <a name='faq' />
+                    {#if showFaq}
+                      <div class="home-faq-list radius-regular">
+                        {#each faq as faqData}
+                          <FaqCard {faqData}/>
+                        {/each}
+                      </div>
+                    {/if}
+                  </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
 
 
 <style>
+.home-faq-wrap {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+
 .home-faq-block {
   /* min-height: 35rem; */
   grid-column-gap: 5rem;
@@ -56,6 +80,10 @@
   flex-direction: column;
   justify-content: space-between;
   display: flex;
+}
+
+.faq-wrap {
+  grid-area: 1 / 1 / 2 / 4;
 }
 
 

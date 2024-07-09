@@ -1,50 +1,36 @@
 <script>
-	import {  ServiceCard, CurverNav, NavBarLink } from '$entities';
-	import { services, skillsTools  } from '$shared';
+	import {  ServiceCard, CurverNav } from '$entities';
+	import { services } from '$shared';
+
+
+  let showServices = false;
 </script>
 
-<section class="home-about">
+<section class="services-wrap"  on:click={()=> showServices = !showServices} >
     <div class="padding-horizontal padding-small">
       <div class="grid-large">
         <div class="home-service-block services-wrap">
-          <div class="curve-block-center">
-            <a id="right" href="#services" class="curve-link w-inline-block ">
-            <div class="curve-arrow bg-violet-700">
-                <div class="clip">
-                <div class="hover-arrow top">
-                    <div class="icon w-embed">
-                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                    </svg>
-                    </div>
-                </div>
-                <div class="hover-arrow">
-                    <div class="icon w-embed">
-                    <svg width="420" height="420" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
-                    </svg>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <img src="/images/curver.svg" loading="lazy" alt="Curver img">
-            </a>
-          </div>
+          <CurverNav link="#services"/>
 
 
-          <div class="padding-top padding-huge">
+          <div class="{showServices ? 'padding-top padding-huge': ''} ">
             <div class="padding-horizontal padding-medium">
-              <div class="home-service-top">
-                <div class="home-service-intro">
-                  <div class="text-size-large text-align-center">
-                    I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.</div>
-                  <a href="#contact" class="button is-light w-inline-block">
-                        <div class="text-size-xsmall">Contact</div>
-                  </a>
+              
+              {#if showServices}
+                <div class="home-service-top">
+                  <div class="home-service-intro">
+                    <div class="text-size-large text-align-center">
+                      I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.</div>
+                    <a href="#contact" class="button is-light w-inline-block">
+                          <div class="text-size-xsmall">Contact</div>
+                    </a>
+                  </div>
                 </div>
-              </div>
+              {/if}
             </div>
+
             <a name='services' />
+
             <div class="home-service">
               <div class="font-optiker">
 
@@ -65,6 +51,7 @@
               </div>
               <div class="padding-horizontal padding-large">
                 <div class="home-service_base">
+                  {#if showServices}
                   <div class="home-service-list pb-0">
                     {#each services as service}
                     <ServiceCard {service} />
@@ -84,38 +71,10 @@
                       </div>
                     </div> -->
                   </div>
+                  {/if}
                 </div>
               </div>
-            </div>
-
-            <div class="home-service">
-              <div class="font-optiker">
-                Skills
-              </div>
-              <div class="padding-horizontal padding-large">
-                <div class="home-service_base">
-                  <div class="home-skils-list flex flex-row flex-wrap justify-center pb-20">
-                    {#each skillsTools as skill}
-                      <img src="{skill.img}" class='w-40 mx-4 my-6 grayscale hover:grayscale-0 hover:scale-110 hover:transition hover:duration-1000  hover:ease-in-out' alt="{skill.text} skill"/>
-                    {/each}
-                    <!-- <div class="home-service_card end">
-                      <div class="home-service_top">
-                        <div class="text-size-small text-style-muted">003</div>
-                        <div class="home-service_intro">
-                          <div class="text-size-large">Web development</div>
-                          <div class="text-size-regular text-style-muted text-style-2lines">This involves designing user interfaces, such as buttons, menus, forms, and other</div>
-                        </div>
-                      </div>
-                      <div class="home-service_image">
-                        <div class="home-service_height">
-                          <img src="" loading="lazy" alt="" class="image-fill">
-                        </div>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
@@ -136,5 +95,11 @@
   .services-wrap {
   grid-area: 1 / 1 / 2 / 4;
 }
+
+.services-wrap {
+  z-index: 25;
+  position: relative;
+}
+
 
 </style>
