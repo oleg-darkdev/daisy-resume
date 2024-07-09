@@ -10,7 +10,7 @@
 <section class="timeline-wrap  mt-8" on:click={()=> showTimeline = !showTimeline} >
       <div class="padding-horizontal padding-small">
         <div class="grid-large">
-          <div id="services" class="home-service-block services-wrap">
+          <div  class="home-service-block home-service-timeline-wrap">
             <CurverNav link="#timeline"/>
 
             <div class="{showTimeline ? 'padding-top padding-huge': ''}">
@@ -20,7 +20,7 @@
               </div>
 
 
-              
+              <a name='timeline' />
             {#if showTimeline}
                 <div class="padding-horizontal padding-large">
                     <div class="padding-bottom padding-large">
@@ -37,7 +37,8 @@
                                     </div>
                                 </div>
                                 </div>
-                                <a name='timeline' />
+                                
+                                
                             </div>
                             
                             <div  class="about-history-list">
@@ -78,6 +79,9 @@
   position: relative;
 }
 
+.home-service-timeline-wrap {
+  grid-area: 1 / 1 / 2 / 4;
+}
 
 .about-history-grid {
   grid-area: span 1 / span 1 / span 1 / span 1;
