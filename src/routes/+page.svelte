@@ -34,9 +34,9 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
 
     <!-- <Services /> -->
 
-    <SectionWrap showSection={showServicesSection} title="Services"  anchor='services'>
+    <SectionWrap bind:showSection={showServicesSection} title="Services"  anchor='services'>
       <div slot='text-block'>
-        <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
+        <TextBlock bind:showSection={showServicesSection} title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
       </div>
 
       <div slot='content'>
@@ -46,9 +46,9 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
 
 
 
-    <SectionWrap showSection={showSkillsSection} title="Skills"  anchor='skills'>
+    <SectionWrap bind:showSection={showSkillsSection} title="Skills"  anchor='skills'>
       <div slot='text-block'>
-        <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
+        <TextBlock bind:showSection={showSkillsSection} title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
       </div>
 
       <div slot='content'>
@@ -179,9 +179,9 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
     </TextDivider>
 
 
-    <SectionWrap showSection={showAboutSection} title="My story" customClasses='lg:mt-20 lg:mb-32 mt-16' anchor='my-story'>
+    <SectionWrap bind:showSection={showAboutSection} title="My story" customClasses='lg:mt-20 lg:mb-32 mt-16' anchor='my-story'>
       <div slot='text-block'>
-        <TextBlock title='With years of experience in the industry, I have worked with businesses of all sizes.' link='#contact' btnTitle='Get in touch'/>
+        <TextBlock bind:showSection={showAboutSection} title='With years of experience in the industry, I have worked with businesses of all sizes.' link='#contact' btnTitle='Get in touch'/>
       </div>
 
       <div slot='content'>
@@ -195,9 +195,9 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
 
 
 
-    <SectionWrap showSection={showTimelineSection} title="Timeline" anchor='timeline'>
+    <SectionWrap bind:showSection={showTimelineSection} title="Timeline" anchor='timeline'>
       <div slot='text-block'>
-        <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
+        <TextBlock bind:showSection={showTimelineSection} title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
       </div>
 
       <div slot='content'>
@@ -205,9 +205,9 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
       </div>
     </SectionWrap>
 
-    <SectionWrap showSection={showFaqSection} title="QUESTIONS" anchor='faq'>
+    <SectionWrap bind:showSection={showFaqSection} title="QUESTIONS" anchor='faq'>
       <div slot='text-block'>
-        <TextBlock title='If you have any questions, the F.A.Q. below should help you - or you can give them to me personally.' link='#contact' btnTitle='Get in touch'/>
+        <TextBlock bind:showSection={showFaqSection} title='If you have any questions, the F.A.Q. below should help you - or you can give them to me personally.' link='#contact' btnTitle='Get in touch'/>
       </div>
 
       <div slot='content'>
@@ -215,12 +215,14 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
       </div>
     </SectionWrap>
 
+    <a name='contact' />
+
     <SectionWrap showSection={showFaqSection} title="Contact" anchor='contact'>
       <div slot='text-block'>
         <TextBlock title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." link='#contact' btnTitle='Get in touch'/>
       </div>
 
-      <div slot='content'>
+      <div slot='content'>        
         <Contact />
       </div>
     </SectionWrap>
