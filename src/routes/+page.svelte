@@ -215,17 +215,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
       </div>
     </SectionWrap>
 
-    <a name='contact' />
-
-    <SectionWrap showSection={showFaqSection} title="Contact" anchor='contact'>
-      <div slot='text-block'>
-        <TextBlock title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." link='#contact' btnTitle='Get in touch'/>
-      </div>
-
-      <div slot='content'>        
-        <Contact />
-      </div>
-    </SectionWrap>
+    <Contact />
 
      <!-- <Faq /> -->
     <!-- <section class="home-about">
