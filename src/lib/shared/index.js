@@ -4,15 +4,18 @@ import {
 	PauseOutlineFilled,
 	LogoLinkedin,
 	GameConsole,
-	LogoGithub,
 	UserProfile,
 	Code,
-	DocumentPdf
+	DocumentPdf,
+	LogoGithub, 
+	LogoFacebook
 } from './ui/icons.js';
 
 import skillsTools from './data/skillsTools.js';
 import timeline from './data/timeline.js';
 import faq from './data/faq.js';
+import navigation from './data/navigation.js';
+import services from './data/services.js';
 
 import {
 	portfolio,
@@ -42,13 +45,10 @@ import {
 	techSopot
 } from './data/portfolio.js';
 
-
-
-// no mine
-import services from './data/services.js';
-
 export {
+	LogoFacebook,
 	timeline,
+	navigation,
 	faq,
 	portfolio,
 	theStoriesBoardgames, 

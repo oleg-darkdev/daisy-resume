@@ -1,32 +1,5 @@
 <script>
-  const navigation = [
-    {
-      title: 'Services',
-      href: '#services'
-    },
-    {
-      title: 'Works',
-      href: '#works'
-    },
-    {
-      title: 'Boardgames',
-      href: '#boardgames'
-    },
-    {
-      title: 'About',
-      href: '#my-story'
-    },
-
-    {
-      title: 'F.A.Q.',
-      href: '#faq'
-    },
-    {
-      title: 'Contact',
-      href: '#contact'
-    },
-  ]
-
+  	import { navigation } from '$shared';
 </script>
 
 <footer class="section-footer1">
