@@ -8,7 +8,7 @@
 </script>
 
 <div class=" padding-bottom padding-large">
-  <div class="flex flex-row justify-between max-w-lg mx-auto ">
+  <div class="flex flex-row flex-wrap justify-between max-w-lg mx-auto lg:px-0 px-6">
     <a href="https://www.facebook.com/hulio.mondre" target="_blank" class='hover:scale-110 hover:translate-y-2 hover:transition hover:duration-1000 hover:ease-in-out'>
       <LogoFacebook size={120} />
       <div class="text-size-large text-align-center">Facebbok</div>
