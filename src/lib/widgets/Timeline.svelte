@@ -8,7 +8,7 @@
 </script>
 
 <div class="padding-horizontal padding-large">
-    <div class="">
+    <div class="padding-top">
       <div class="about-history-block">
         <div class="about-history-left about-history-grid">
           <div class="about-history-image radius-regular">

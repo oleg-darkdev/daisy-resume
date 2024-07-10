@@ -4,7 +4,7 @@
 
 <div class="padding-horizontal padding-large">
   <div class="padding-bottom">
-    <div class="padding-top">
+    <div class="padding-top ">
       <div class="about-history-block">
         <div class="about-history-left">
           <div class="about-history-image radius-regular">
