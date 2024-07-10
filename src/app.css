@@ -182,7 +182,7 @@
     padding-right: 0rem !important;
     padding-left: 0rem !important;
   }
-  
+
 @media screen and (max-width: 480px) {
 	.item-even:nth-child(2) {
 		margin-top: 0; /* Смещение каждого четного элемента вниз на 200 пикселей */
@@ -1001,13 +1001,8 @@ textarea.w-input, textarea.w-select {
 
 
 @media (min-width: 991px) {
-  
-  .font-optiker {
-    font-family: Optiker k;
-    font-size: 17em;
-    margin-bottom: -130px;
-    text-align: center;
-}
+
+
 }
 
 @media screen and (max-width: 991px) {
@@ -6313,14 +6308,8 @@ figcaption {
 }
 
 @media screen and (max-width: 991px) {
-  
 
-.font-optiker {
-  font-family: Optiker k;
-  font-size: 17em;
-  margin-bottom: -130px;
-  text-align: center;
-}
+
   #w-node-_33a40b8b-70fe-856d-a5d5-400b2b14b0a5-a49ada69 {
     grid-row: 1 / 2;
   }
@@ -6374,12 +6363,7 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
-.font-optiker {
-  font-family: Optiker k;
-  font-size: 17em;
-  margin-bottom: -130px;
-  text-align: center;
-}
+
 
 
   #nowThis.w-node-_01521a5e-18ee-4a67-e5ed-a483cfb6ffb0-019ada71 {
@@ -6414,12 +6398,7 @@ figcaption {
     grid-area: 1 / 1 / 2 / 4;
   }
 
-  .font-optiker {
-    font-family: Optiker k;
-    font-size: 3.5em;
-    margin-bottom: 2px;
-    text-align: center;
-  }
+
 }
 
 
