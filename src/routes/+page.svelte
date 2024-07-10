@@ -1,5 +1,5 @@
 <script>
-	import { Hero, Footer, BoardgamesList, Aside, SectionWrap, Gallery, Skills, Timeline, MyStory, TextDivider, Feedback, Faq, Gamification, Header, Services, PdfViewer, About } from '$widgets';
+	import { Hero, Footer, BoardgamesList, Aside, SectionWrap, Gallery, Skills, Contact, Timeline, MyStory, TextDivider, Feedback, Faq, Gamification, Header, Services, PdfViewer, About } from '$widgets';
 	import { ProgectCard,  TextBlock } from '$entities';
 	import { portfolio, theStoriesBoardgames, agileFansBoardgames, antiSystemsBoardgames, otherBoardgames, } from '$shared';
 
@@ -33,7 +33,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
     <Hero />
 
     <!-- <Services /> -->
-   
+
     <SectionWrap showSection={showServicesSection} title="Services"  anchor='services'>
       <div slot='text-block'>
         <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
@@ -42,10 +42,10 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
       <div slot='content'>
          <Services />
       </div>
-    </SectionWrap> 
- 
+    </SectionWrap>
 
-   
+
+
     <SectionWrap showSection={showSkillsSection} title="Skills"  anchor='skills'>
       <div slot='text-block'>
         <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
@@ -71,7 +71,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
         <img src="/gif/lgbtqia.webp" loading="lazy" more="image" alt="" class="c-more-image bit-title-4">
         <img src="/gif/antiSystem.webp " loading="lazy" more="image" alt="" class="c-more-image bit-title-5">
       </TextDivider>
-    
+
     <section class="home-about">
       <div class="padding-horizontal lg:padding-small md:padding-small xl:padding-small">
          <a name="works" />
@@ -91,7 +91,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
               <div class="home-work-bottom">
                 <div class="home-work-list w-dyn-list">
                   <div role="list" class="home-work-cms w-dyn-items">
-                   
+
                       {#each portfolio as portfolioData}
 
                       <div class="mx-auto ">
@@ -179,7 +179,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
     </TextDivider>
 
 
-    <SectionWrap showSection={showAboutSection} title="My story" customClasses='mt-20 mb-32' anchor='my-story'>
+    <SectionWrap showSection={showAboutSection} title="My story" customClasses='lg:mt-20 lg:mb-32 mt-16' anchor='my-story'>
       <div slot='text-block'>
         <TextBlock title='With years of experience in the industry, I have worked with businesses of all sizes.' link='#contact' btnTitle='Get in touch'/>
       </div>
@@ -188,13 +188,13 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
         <MyStory />
       </div>
     </SectionWrap>
-    
-    
+
+
 
     <Gallery />
- 
-    
-    
+
+
+
     <SectionWrap showSection={showTimelineSection} title="Timeline" anchor='timeline'>
       <div slot='text-block'>
         <TextBlock title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
@@ -215,6 +215,15 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
       </div>
     </SectionWrap>
 
+    <SectionWrap showSection={showFaqSection} title="Contact" anchor='contact'>
+      <div slot='text-block'>
+        <TextBlock title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." link='#contact' btnTitle='Get in touch'/>
+      </div>
+
+      <div slot='content'>
+        <Contact />
+      </div>
+    </SectionWrap>
 
      <!-- <Faq /> -->
     <!-- <section class="home-about">
@@ -265,10 +274,10 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
         </div>
       </div>
     </section> -->
-  
+
 
     <Footer />
-    
+
   </main>
 </div>
 
