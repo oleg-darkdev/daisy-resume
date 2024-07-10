@@ -1,11 +1,11 @@
 <script>
   // , BoardgamesList, Aside, Feedback, FooterNav, Header, PdfViewer, About
-	import { Hero, SectionWrap, Gallery, Skills, Contact, Timeline, Nav, MyStory, TextDivider,  Faq, Gamification,  Services, Footer } from '$widgets';
+	import { Hero, SectionWrap, Gallery, Skills, Contact, Educator, Timeline, Nav, MyStory, TextDivider,  Faq, Gamification,  Services, Footer } from '$widgets';
 	import { ProgectCard,  TextBlock } from '$entities';
 	import { portfolio } from '$shared';
 
 
-let showFaqSection = false, showTimelineSection = false, showAboutSection = false, showServicesSection = false, showSkillsSection = false;
+let showFaqSection = false, showEducatorSection = false, showTimelineSection = false, showAboutSection = false, showServicesSection = false, showSkillsSection = false;
 </script>
 
 <svelte:head>
@@ -181,7 +181,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
     </TextDivider>
 
 
-    <SectionWrap bind:showSection={showAboutSection} title="My story" customClasses='lg:mt-20 lg:mb-32 mt-16' anchor='my-story'>
+    <SectionWrap bind:showSection={showAboutSection} title="My story" customClasses='lg:mt-20 mt-16 mb-6' anchor='my-story'>
       <div slot='text-block'>
         <TextBlock bind:showSection={showAboutSection} title='With years of experience in the industry, I have worked with businesses of all sizes.' link='#contact' btnTitle='Get in touch'/>
       </div>
@@ -191,13 +191,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
       </div>
     </SectionWrap>
 
-
-
-    <Gallery />
-
-
-
-    <SectionWrap bind:showSection={showTimelineSection} title="Timeline" anchor='timeline'>
+    <SectionWrap bind:showSection={showTimelineSection} title="Timeline" customClasses='lg:mb-32' anchor='timeline'>
       <div slot='text-block'>
         <TextBlock bind:showSection={showTimelineSection} title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
       </div>
@@ -206,6 +200,22 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
         <Timeline />
       </div>
     </SectionWrap>
+
+
+    <Gallery />
+
+<!--  noOrgsWorkshops,
+  orgWorkshopsList, -->
+    <SectionWrap bind:showSection={showEducatorSection} title="Educator" anchor='educator'>
+      <div slot='text-block'>
+        <TextBlock bind:showSection={showEducatorSection} title='I worked with businesses & NGO of all sizes to create stunning web-sites, web-apps and designs that capture their products identity.' link='#contact' btnTitle='Get in touch'/>
+      </div>
+
+      <div slot='content'>
+        <Educator />
+      </div>
+    </SectionWrap>
+
 
     <SectionWrap bind:showSection={showFaqSection} title="QUESTIONS" anchor='faq'>
       <div slot='text-block'>
