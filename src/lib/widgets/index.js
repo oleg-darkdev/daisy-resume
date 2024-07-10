@@ -16,8 +16,8 @@ import Timeline from './Timeline.svelte';
 import Skills from './Skills.svelte';
 import SectionWrap from './SectionWrap.svelte';
 import Contact from './Contact.svelte';
-// import Skills from './Skills.svelte';
+import Nav from './Nav.svelte';
 
 
 
-export { Hero, Footer, MyStory, Timeline, SectionWrap, Contact, Aside, Skills, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
+export { Hero, Footer, MyStory, Nav, Timeline, SectionWrap, Contact, Aside, Skills, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };

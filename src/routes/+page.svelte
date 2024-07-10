@@ -1,7 +1,8 @@
 <script>
-	import { Hero, Footer, BoardgamesList, Aside, SectionWrap, Gallery, Skills, Contact, Timeline, MyStory, TextDivider, Feedback, Faq, Gamification, Header, Services, PdfViewer, About } from '$widgets';
+  // , BoardgamesList, Aside, Feedback, FooterNav, Header, PdfViewer, About
+	import { Hero, SectionWrap, Gallery, Skills, Contact, Timeline, Nav, MyStory, TextDivider,  Faq, Gamification,  Services, Footer } from '$widgets';
 	import { ProgectCard,  TextBlock } from '$entities';
-	import { portfolio, theStoriesBoardgames, agileFansBoardgames, antiSystemsBoardgames, otherBoardgames, } from '$shared';
+	import { portfolio } from '$shared';
 
 
 let showFaqSection = false, showTimelineSection = false, showAboutSection = false, showServicesSection = false, showSkillsSection = false;
@@ -29,6 +30,7 @@ let showFaqSection = false, showTimelineSection = false, showAboutSection = fals
 <!-- <Header /> -->
 <div class="page-wrapper">
   <main class="main-wrapper">
+    <Nav />
 
     <Hero />
 
