@@ -7,7 +7,7 @@
 
 <div class="curve-block-center" on:click={()=> showSection = !showSection}>
     <a  href="{link}" class=" curve-link w-inline-block">
-        <div style="background-color: #000;" class="curve-arrow group-hover:scale-110  group-hover:translate-y-2 group-hover:transition group-hover:duration-1000 group-hover:ease-in-out">
+        <div style="background-color: #000;" class="curve-arrow group-hover:scale-125  group-hover:translate-y-10 group-hover:transition group-hover:duration-1000 group-hover:ease-in-out">
           <div class="text-white">
               <!-- <div class="hover-arrow top ">
                   <div class="icon w-embed">

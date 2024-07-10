@@ -4,11 +4,11 @@
   export let showSection = false, title, customClasses, anchor;
 </script>
 
-<section class="home-about  {customClasses ? customClasses : 'mt-8'}" >
+<section class="home-about group   {customClasses ? customClasses : 'mt-6'}" >
   <div class="padding-horizontal padding-small">
     <div class="grid-large">
       <div class="home-service-block content-wrap">
-        <CurverNav link="#{anchor}" bind:showSection/>
+          <CurverNav link="#{anchor}" bind:showSection/>
 
           <div class="{showSection ? 'padding-top padding-large': ''} mt-2">
           <div class="padding-horizontal padding-medium">
@@ -21,7 +21,7 @@
           <div class="home-service">
             <a name='{anchor}' />
 
-            <div class="cursor-pointer mb-6" on:click={()=> showSection = !showSection}>
+            <div class="group-hover:transition group-hover:duration-1000 ease-in-out delay-150 transform group-hover:-translate-y-8 cursor-pointer mb-6" on:click={()=> showSection = !showSection}>
                 <div  class="font-optiker" >
                     {title}
                 </div>
