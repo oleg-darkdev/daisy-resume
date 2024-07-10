@@ -10,14 +10,14 @@
       <div class="home-service-block content-wrap">
         <CurverNav link="#{anchor}" bind:showSection/>
 
-          <div class="{showSection ? 'padding-top padding-huge': ''}">
+          <div class="{showSection ? 'padding-top padding-large': ''} mt-2">
           <div class="padding-horizontal padding-medium">
             {#if showSection}
               <slot name='text-block'/>
             {/if}
           </div>
 
-          
+
           <div class="home-service">
             <a name='{anchor}' />
 
@@ -84,10 +84,32 @@
   .home-service_grid {
     padding-top: 2rem;
   }
+  .font-optiker {
+    font-family: Optiker k;
+    font-size: 10em;
+    margin-bottom: -80px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .home-service_grid {
     padding-top: 1rem;
   }
+  .font-optiker {
+    font-family: Optiker k;
+    font-size: 3.5em;
+    margin-bottom: 2px;
+    text-align: center;
+  }
 }
+
+@media screen and (min-width: 991px) {
+  .font-optiker {
+    font-family: Optiker k;
+    font-size: 17em;
+    margin-bottom: -130px;
+    text-align: center;
+  }
+}
+
 </style>

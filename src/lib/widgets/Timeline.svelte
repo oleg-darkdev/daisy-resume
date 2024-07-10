@@ -8,7 +8,6 @@
 </script>
 
 <div class="padding-horizontal padding-large">
-  <div class="padding-bottom padding-large">
     <div class="">
       <div class="about-history-block">
         <div class="about-history-left about-history-grid">
@@ -42,7 +41,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 	<style></style>

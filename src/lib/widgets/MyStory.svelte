@@ -2,7 +2,7 @@
 
 </script>
 
-<div class="">
+<div class="padding-horizontal padding-large">
   <div class="padding-bottom">
     <div class="padding-top">
       <div class="about-history-block">
