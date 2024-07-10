@@ -1,11 +1,7 @@
 <script>
   import { CurverNav } from '$entities';
-    import LogoGithub from "carbon-icons-svelte/lib/LogoGithub.svelte";
-  import Email from "carbon-icons-svelte/lib/Email.svelte";
-  import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
-  import LogoFacebook from "carbon-icons-svelte/lib/LogoFacebook.svelte";
 	// import {   } from '$entities';
-	// import {  } from '$shared';
+	import { LogoGithub, Email, LogoLinkedin, LogoFacebook } from '$shared';
 </script>
 
 <section class="home-about mt-8" >
