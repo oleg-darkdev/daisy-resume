@@ -17,7 +17,11 @@ import Skills from './Skills.svelte';
 import SectionWrap from './SectionWrap.svelte';
 import Contact from './Contact.svelte';
 import Nav from './Nav.svelte';
+import Educator from './Educator.svelte';
+// import Nav from './Nav.svelte';
+// import Nav from './Nav.svelte';
+// import Nav from './Nav.svelte';
 
 
 
-export { Hero, Footer, MyStory, Nav, Timeline, SectionWrap, Contact, Aside, Skills, PdfViewer, Services, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };
+export { Hero, Footer, MyStory, Nav, Timeline, SectionWrap, Contact, Aside, Skills, PdfViewer, Services, Educator, Gamification, TextDivider, Header, Feedback, About, Faq, Gallery, BoardgamesList };

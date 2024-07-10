@@ -7,7 +7,7 @@ import {
 	UserProfile,
 	Code,
 	DocumentPdf,
-	LogoGithub, 
+	LogoGithub,
 	LogoFacebook
 } from './ui/icons.js';
 
@@ -16,12 +16,14 @@ import timeline from './data/timeline.js';
 import faq from './data/faq.js';
 import navigation from './data/navigation.js';
 import services from './data/services.js';
+import noOrgsWorkshops from './data/noOrgsWorkshops.js';
+import orgWorkshopsList from './data/orgWorkshopsList.js';
 
 import {
 	portfolio,
-	theStoriesBoardgames, 
-	agileFansBoardgames, 
-	antiSystemsBoardgames, 
+	theStoriesBoardgames,
+	agileFansBoardgames,
+	antiSystemsBoardgames,
 	otherBoardgames,
 	ngoProgects,
 	researchesProgects,
@@ -47,13 +49,15 @@ import {
 
 export {
 	LogoFacebook,
+  noOrgsWorkshops,
+  orgWorkshopsList,
 	timeline,
 	navigation,
 	faq,
 	portfolio,
-	theStoriesBoardgames, 
-	agileFansBoardgames, 
-	antiSystemsBoardgames, 
+	theStoriesBoardgames,
+	agileFansBoardgames,
+	antiSystemsBoardgames,
 	otherBoardgames,
 	ngoProgects,
 	researchesProgects,
