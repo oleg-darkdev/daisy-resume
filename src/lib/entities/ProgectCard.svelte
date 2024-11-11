@@ -85,7 +85,7 @@
                   </svg>
                   </div>
               </div> -->
-						<ArrowShiftDown size={32} class={project.showFullInfo ? 'rotate-180' : ''} />
+						<ArrowShiftDown size={32} class={!project.showFullInfo ? 'rotate-180' : ''} />
 					</div>
 				</div>
 				<img src="/images/curver.svg" loading="lazy" class="" alt="Curver img" />
@@ -107,7 +107,7 @@
 					class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0 lg:-mt-0 -mt-4"
 				>
 					<h3
-						class=" text-color-white text-size-xlarge {project.showFullInfo ? '' : '-mt-0 -mb-10'}"
+						class=" text-color-white text-size-xlarge {!project.showFullInfo ? '' : '-mt-0 -mb-10'}"
 					>
 						{project.title}
 					</h3>
@@ -117,7 +117,7 @@
       </a> -->
 
 					<div
-						class:hidden={!project.showFullInfo}
+						class:hidden={project.showFullInfo}
 						class="text-size-tiny text-style-allcaps text-color-white"
 					>
 						{project.shortDesc}
@@ -126,12 +126,12 @@
 			</div>
 
 			<div
-				class="card-sm rounded-t-box {project.showFullInfo
+				class="card-sm rounded-t-box {!project.showFullInfo
 					? 'max-h-[360px]'
 					: 'max-h-[180px]'}  lg:card-body pb-2 pt-4"
 			>
 				<!-- <figure class='rounded-xl   mx-1'><img src="{images[0]}" class='min-h-20 min-w-96' alt="" /></figure> -->
-				{#if project.showFullInfo}
+				{#if !project.showFullInfo}
 					<div class="wrap -mt-4">
 						{#if browser}
 							<!--   duration={3000} -->
