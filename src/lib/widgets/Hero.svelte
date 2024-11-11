@@ -18,6 +18,7 @@
 						<p class='z-10'>Product Web Engineer </p>
 						<!-- <span style='text-align: start; color: #44149c; font-size: 9vh; z-index: 0;' class='-left-8 -top-3 absolute z-0' >&amp; </span>  -->
 						<p class='z-10' style='text-align: start;'>Game designer</p>
+						<!-- <p class='z-10' style='text-align: start;'>Creative person</p> -->
 
 					</div>
 				</div>
