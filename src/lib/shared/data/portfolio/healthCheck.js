@@ -1,8 +1,8 @@
 const progect =
   {
     id: 0,
-	link: 0,
-    githubRepo: '',
+    link: 'https://health-puzzle.vercel.app/',
+    githubRepo: 'https://github.com/oleg-darkdev/health_puzzle_app',
     logo: '/images/logos/boardgames/agile-fans/health-check/logo.svg',
     icon: '/images/logos/boardgames/agile-fans/health-check/icon.svg',
     stack: [],

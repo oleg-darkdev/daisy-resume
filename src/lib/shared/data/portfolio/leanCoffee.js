@@ -1,9 +1,9 @@
 const progect =
   {
     id: 0,
-	link: 0,
+    link:'https://coffee-puzzle.vercel.app/',
   	brandColor: '#44149c',
-    githubRepo: '',
+    githubRepo: 'https://github.com/oleg-darkdev/coffee-puzzle_app',
     logo: '/images/logos/boardgames/agile-fans/lean-coffee/logo.svg',
     icon: '/images/logos/boardgames/agile-fans/lean-coffee/icon.svg',
     stack: [],
