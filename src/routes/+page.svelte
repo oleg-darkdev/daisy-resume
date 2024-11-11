@@ -9,7 +9,7 @@ let showFaqSection = false, showEducatorSection = false, showTimelineSection = f
 </script>
 
 <svelte:head>
-	<title>Oleg_DarkDEV</title>
+	<title>Oleg_DarkDEV | Home</title>
 </svelte:head>
 
 <!-- <Aside /> -->
@@ -90,6 +90,7 @@ let showFaqSection = false, showEducatorSection = false, showTimelineSection = f
                 </div>
               </div> -->
 
+
               <div class="home-work-bottom">
                 <div class="home-work-list w-dyn-list">
                   <div role="list" class="home-work-cms w-dyn-items">
@@ -101,7 +102,8 @@ let showFaqSection = false, showEducatorSection = false, showTimelineSection = f
                           <strong
                             class="text-thin heading-style-h3 flex text-left text-3xl font-thin leading-none  lg:text-4xl"
                           >
-                            {portfolioData.year} <span class="text-sm">year</span>
+                          <!-- year -->
+                            {portfolioData.year} <span class="text-sm">projects</span>
                           </strong>
                           <!-- <span class="mt-1 text-xs font-normal leading-relaxed text-gray-700">{portfolioData.subTitle}</span> -->
                         </div>
