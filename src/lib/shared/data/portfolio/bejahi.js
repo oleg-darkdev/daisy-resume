@@ -6,18 +6,12 @@ const progect = {
 	link: 'https://bejahi.vercel.app/',
 	stack: [],
 	anchor: 'bejahi',
-  	brandColor: '#000',
+	brandColor: '#000',
 
 	title: 'Bejahi',
 	shortDesc:
 		'Historical quiz that helps users learn about the tragic repression of Jews in the Minsk Ghetto during World War II through interactive questions and historical materials.',
-	screenshotes: [
-		'/images/screenshotes/bejahi/1.gif',
-		'/images/screenshotes/bejahi/2.gif',
-		'/images/screenshotes/bejahi/3.gif',
-		'/images/screenshotes/bejahi/4.gif',
-		'/images/screenshotes/bejahi/5.gif'
-	],
+	screenshotes: ['bejahi/1.gif', 'bejahi/2.gif', 'bejahi/3.gif', 'bejahi/4.gif', 'bejahi/5.gif'],
 	video: '',
 	gif: '/gif/bejahi.gif',
 	tags: ['History', 'Education', 'Quiz-app']

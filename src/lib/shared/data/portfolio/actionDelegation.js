@@ -1,7 +1,7 @@
 const progect = {
 	id: 0,
-	link: 0,
-	githubRepo: '',
+	link: 'https://delegation-puzzle.vercel.app/',
+	githubRepo: 'https://github.com/oleg-darkdev/delegation-puzzle_app',
 	brandColor: '#44149c',
 	logo: '/images/logos/boardgames/agile-fans/action-delegation/logo.svg',
 	icon: '/images/logos/boardgames/agile-fans/action-delegation/icon.svg',
