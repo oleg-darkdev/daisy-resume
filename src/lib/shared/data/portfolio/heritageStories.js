@@ -9,7 +9,7 @@ const progect =
   	brandColor: '#44149c',
     title: 'Heritage Stories',
     shortDesc: 'Educational boardgame, enhanced by an interactive web application, about eco-friendly bicycle trip through the World Heritage Cities.',
-    screenshotes: ['heritage/1.webp', 'heritage/2.webp', 'heritage/3.webp', 'heritage/4.webp', 'heritage/5.webp', , 'heritage/6.webp', , 'heritage/7.webp',],   
+    screenshotes: ['heritage/1.webp', 'heritage/2.webp', 'heritage/3.webp', 'heritage/4.webp', 'heritage/5.webp', 'heritage/6.webp', 'heritage/7.webp',],   
     video: '',
     gif: '/gif/heritage.webp',
     tags: ['Heritage', 'UNESCO' ,'HISTORY', 'CULTURE', 'landing', 'boardgame-app']
