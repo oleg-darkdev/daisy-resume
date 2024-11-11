@@ -1,14 +1,11 @@
 <script>
-  import { CurverNav } from '$entities';
-	// import {   } from '$entities';
 	import { LogoGithub, Email, LogoLinkedin, LogoFacebook } from '$shared';
 </script>
 
-<section class="home-about mt-8" >
+<section class="home-about xl:mt-40 lg:mt-40 mt-32" >
   <div class="padding-horizontal padding-small">
     <div class="grid-large">
       <div class="home-service-block content-wrap">
-        <!-- <CurverNav link="#contact"/> -->
 
           <div class="home-service">
             <a name='contact' />
