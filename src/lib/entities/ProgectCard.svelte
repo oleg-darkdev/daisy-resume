@@ -1,17 +1,17 @@
 <script>
-  // import {Carousel} from '$lib/entities';
-  import { browser } from '$app/environment'
-  import Carousel from 'svelte-carousel'
-  import { PlayFilledAlt, PauseOutlineFilled  } from '$lib/shared';
-  import LogoGithub from "carbon-icons-svelte/lib/LogoGithub.svelte";
-  import ArrowUpRight from "carbon-icons-svelte/lib/ArrowUpRight.svelte";
-  import ArrowShiftDown from "carbon-icons-svelte/lib/ArrowShiftDown.svelte";
+	// import {Carousel} from '$lib/entities';
+	import { browser } from '$app/environment';
+	import Carousel from 'svelte-carousel';
+	import { PlayFilledAlt, PauseOutlineFilled } from '$lib/shared';
+	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
+	import ArrowUpRight from 'carbon-icons-svelte/lib/ArrowUpRight.svelte';
+	import ArrowShiftDown from 'carbon-icons-svelte/lib/ArrowShiftDown.svelte';
 
+	let showVideo = false;
 
-  let showVideo = false;
-
-export let project;
+	export let project;
 </script>
+
 <!-- lg:-my-10 md:-my-10 xl:-my-10 -->
 
 <!-- md:-my-10 lg:-my-10 xl:-my-10 -->
@@ -23,40 +23,55 @@ export let project;
   position: relative;
 } -->
 
-
-<div class="mt-10 mb-16 hover:mt-20 group hover:mb-32 mx-auto lg:hover:scale-125 md:hover:scale-125 hover:scale-110 hover:transition hover:duration-1000  hover:ease-in-out">
-<div class="mb-8">
-  <div class="flex flex-row mx-auto justify-between items-end max-w-[160px]">
-    <div class="avatar">
-      <a href='{project.githubRepo}' target="_blank" class="  hover:scale-125 hover:transition hover:duration-1000  hover:ease-in-out w-10 h-10 rounded-full">
-        <LogoGithub size={32} />
-      </a>
-    </div>
-      <!-- <div class=""> -->
-          <div class="">
-						<img src="{project.icon}" class='w-32 h-32' alt=""/>
-					</div>
-      <!-- <div class="w-18 h-18 mb-10 " style="">
+<div
+	class="mt-10 mb-16 hover:mt-20 group hover:mb-32 mx-auto lg:hover:scale-125 md:hover:scale-125 hover:scale-110 hover:transition hover:duration-1000 hover:ease-in-out"
+>
+	<div class="mb-8">
+		<div class="flex flex-row mx-auto justify-between items-end max-w-[160px]">
+			<div class="avatar">
+				<a
+					href={project.githubRepo}
+					target="_blank"
+					class="  hover:scale-125 hover:transition hover:duration-1000 hover:ease-in-out w-10 h-10 rounded-full"
+				>
+					<LogoGithub size={32} />
+				</a>
+			</div>
+			<!-- <div class=""> -->
+			<div class="">
+				<img src={project.icon} class="w-32 h-32" alt="" />
+			</div>
+			<!-- <div class="w-18 h-18 mb-10 " style="">
         <img src="{project.icon}" class='w-18 h-18 mb-10 ' />
       </div> -->
-    <!-- </div> -->
-    <div class="avatar">
-      <a href='{project.link ? project.link: '/'}' target="_blank"  class=" hover:scale-125  hover:transition hover:duration-400  hover:ease-in-out w-10 h-10 rounded-full">
-        <ArrowUpRight size={32} />
-      </a>
-    </div>
-  </div>
-</div>
+			<!-- </div> -->
+			<div class="avatar">
+				<a
+					href={project.link ? project.link : '/'}
+					target="_blank"
+					class=" hover:scale-125 hover:transition hover:duration-400 hover:ease-in-out w-10 h-10 rounded-full"
+				>
+					<ArrowUpRight size={32} />
+				</a>
+			</div>
+		</div>
+	</div>
 
-<!-- shadow-2xl rounded-xl md:w-80 md:-ml-16 md:hover:-translate-x-16 md:hover:-translate-y-8"> -->
-        
+	<!-- shadow-2xl rounded-xl md:w-80 md:-ml-16 md:hover:-translate-x-16 md:hover:-translate-y-8"> -->
 
-<div   class="border-2 rounded-box relative  max-w-xl ">
-  <div class="curve-block-center ">
-      <a  href="#{project.anchor}" on:click={()=> project.showFullInfo = !project.showFullInfo} class=" curve-link w-inline-block">
-        <div style="background-color: {project.brandColor};" class="curve-arrow group-hover:scale-110 group-hover:translate-y-2 group-hover:transition group-hover:duration-1000 group-hover:ease-in-out">
-          <div class="text-white">
-              <!-- <div class="hover-arrow top ">
+	<div class="border-2 rounded-box relative max-w-xl">
+		<div class="curve-block-center">
+			<a
+				href="#{project.anchor}"
+				on:click={() => (project.showFullInfo = !project.showFullInfo)}
+				class=" curve-link w-inline-block"
+			>
+				<div
+					style="background-color: {project.brandColor};"
+					class="curve-arrow group-hover:scale-110 group-hover:translate-y-2 group-hover:transition group-hover:duration-1000 group-hover:ease-in-out"
+				>
+					<div class="text-white">
+						<!-- <div class="hover-arrow top ">
                   <div class="icon w-embed">
                   <svg width="640" height="640" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13.0002 16.172L18.3642 10.808L19.7782 12.222L12.0002 20L4.22217 12.222L5.63617 10.808L11.0002 16.172V4H13.0002V16.172Z" fill="currentColor"></path>
@@ -70,66 +85,80 @@ export let project;
                   </svg>
                   </div>
               </div> -->
-              <ArrowShiftDown size={32} class='{project.showFullInfo ? 'rotate-180': ''}' />
-            </div>
-        </div>
-      <img src="/images/curver.svg" loading="lazy" class='' alt="Curver img">
-      </a>
-  </div>
+						<ArrowShiftDown size={32} class={project.showFullInfo ? 'rotate-180' : ''} />
+					</div>
+				</div>
+				<img src="/images/curver.svg" loading="lazy" class="" alt="Curver img" />
+			</a>
+		</div>
 
-<div class="mx-auto  flex  flex-col items-center lg:px-6 xl:px-6 md:px-6 px-3 xl:pt-6 lg:pt-6 md:pt-6 pt-3">
-	<div  class=" pt-6  mx-auto flex w-full flex-col text-left">
-   <span class="text-xs text-style-allcaps  uppercase tracking-widest mb-6">
-    <a name="{project.anchor}" />
-			{#each project.tags as tag} <span>#{tag} </span> {/each}
-		</span>
+		<div
+			class="mx-auto flex flex-col items-center lg:px-6 xl:px-6 md:px-6 px-3 xl:pt-6 lg:pt-6 md:pt-6 pt-3"
+		>
+			<div class=" pt-6 mx-auto flex w-full flex-col text-left">
+				<span class="text-xs text-style-allcaps uppercase tracking-widest mb-6">
+					<a name={project.anchor} />
+					{#each project.tags as tag}
+						<span>#{tag} </span>
+					{/each}
+				</span>
 
+				<div
+					class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0 lg:-mt-0 -mt-4"
+				>
+					<h3
+						class=" text-color-white text-size-xlarge {project.showFullInfo ? '' : '-mt-0 -mb-10'}"
+					>
+						{project.title}
+					</h3>
 
-		<div class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0  lg:-mt-0 -mt-4">
-
-      <h3 class=" text-color-white text-size-xlarge {project.showFullInfo ? '': '-mt-0 -mb-10'}">{project.title}</h3>
-
-      <!-- <a href="#contact" class="button w-inline-block">
+					<!-- <a href="#contact" class="button w-inline-block">
         <div class="text-size-xsmall">More</div>
       </a> -->
 
-      <div class:hidden={!project.showFullInfo} class="text-size-tiny text-style-allcaps text-color-white">{project.shortDesc}</div>
-		</div>
-	</div>
+					<div
+						class:hidden={!project.showFullInfo}
+						class="text-size-tiny text-style-allcaps text-color-white"
+					>
+						{project.shortDesc}
+					</div>
+				</div>
+			</div>
 
- 
-	<div class="card-sm rounded-t-box  {project.showFullInfo ? 'max-h-[360px]': 'max-h-[180px]'}  lg:card-body  pb-2 pt-4">
+			<div
+				class="card-sm rounded-t-box {project.showFullInfo
+					? 'max-h-[360px]'
+					: 'max-h-[180px]'}  lg:card-body pb-2 pt-4"
+			>
 				<!-- <figure class='rounded-xl   mx-1'><img src="{images[0]}" class='min-h-20 min-w-96' alt="" /></figure> -->
-         {#if project.showFullInfo}
-          <div class="wrap -mt-4 ">
-            {#if browser}
-                <!--   duration={3000} -->
-                <Carousel particlesToShow={2} autoplay arrows={false}>
-                  {#each project.screenshotes as screenshot, i}
-                    <!-- <Color {color} {text} /> -->
-                    <!-- <span>{i}</span> -->
-                    <!-- mx-1  -->
-                    <figure class="rounded-xl mx-1">
-                      <!--  -->
-                      <img
-                        src={screenshot}
-                        class="rounded-xl  h-20 lg:w-56 md:w-56 w-40 xl:w-56"
-                        alt="Screenshot #{i} of {project.title}"
-                      />
-                    </figure>
-                    <!-- <figure class='rounded-xl   mx-1'><img src="{screenshot}" class='min-h-20 lg:min-w-96 w-20' alt="Screenshot #{i} of {project.title}" /></figure> -->
-                  {/each}
-                </Carousel>
-              {/if}
-          </div>
-        {/if}
+				{#if project.showFullInfo}
+					<div class="wrap -mt-4">
+						{#if browser}
+							<!--   duration={3000} -->
+							<Carousel particlesToShow={2} autoplay arrows={false}>
+								{#each project.screenshotes as screenshot, i}
+									<!-- <Color {color} {text} /> -->
+									<!-- <span>{i}</span> -->
+									<!-- mx-1  -->
+									<figure class="rounded-xl mx-1">
+										<img
+											src="/images/screenshotes/{screenshot}"
+											class="rounded-xl h-20 lg:w-56 md:w-56 w-40 xl:w-56"
+											alt="Screenshot #{i} of {project.title}"
+										/>
+									</figure>
+									<!-- <figure class='rounded-xl   mx-1'><img src="{screenshot}" class='min-h-20 lg:min-w-96 w-20' alt="Screenshot #{i} of {project.title}" /></figure> -->
+								{/each}
+							</Carousel>
+						{/if}
+					</div>
+				{/if}
 
-			<!-- <h2 class="card-title">Shoes!</h2>
+				<!-- <h2 class="card-title">Shoes!</h2>
       <p>If a dog chews shoes whose shoes does he choose?</p> -->
-		<!-- </div> -->
-		<figure>
-
-			<!-- <div class="z-30 absolute left-30 ">
+				<!-- </div> -->
+				<figure>
+					<!-- <div class="z-30 absolute left-30 ">
     <button class='opacity-50 delay-200 duration-700 ease-in-out hover:opacity-100' title='Show demo video from youtube' on:click={()=> showVideo = !showVideo}>
       {#if showVideo}
             <PauseOutlineFilled  size={88} />
@@ -142,17 +171,18 @@ export let project;
       {/if}
     </button>
 </div> -->
-			{#if showVideo}
-				<iframe class="h-48 w-full rounded-b-box" src={project.video} />
-			{:else}
-				<img src={project.gif} class="h-48 rounded-b-box" alt="{project.title} gif" />
-			{/if}
-		</figure>
-    </div>
+					{#if showVideo}
+						<iframe class="h-48 w-full rounded-b-box" src={project.video} />
+					{:else}
+						<img src={project.gif} class="h-48 rounded-b-box" alt="{project.title} gif" />
+					{/if}
+				</figure>
+			</div>
+		</div>
+		<!-- </div> -->
 	</div>
-<!-- </div> -->
 </div>
-</div>
+
 <!-- <div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f2e8cf]">
     <div class="relative mx-auto">
       <div class="group relative flex cursor-pointer after:shadow-lg after:shadow-black">
@@ -200,94 +230,89 @@ export let project;
     </div>
   </div> -->
 
-
 <style>
-  @media screen and (max-width: 480px) {
-    .wrap {
-      max-width: 330px;
-    }
-    .card-sm {
-      padding: -10px;
-    }
-  }
-  @media screen and (min-width: 480px) {
-    .wrap {
-      max-width: 400px;
-    }
-  }
+	@media screen and (max-width: 480px) {
+		.wrap {
+			max-width: 330px;
+		}
+		.card-sm {
+			padding: -10px;
+		}
+	}
+	@media screen and (min-width: 480px) {
+		.wrap {
+			max-width: 400px;
+		}
+	}
 
+	.hover-arrow.right {
+		position: absolute;
+		top: 0%;
+		bottom: 0%;
+		left: auto;
+		right: -100%;
+	}
 
+	.hover-arrow.left {
+		position: absolute;
+		top: 0%;
+		bottom: 0%;
+		left: -100%;
+		right: auto;
+	}
 
+	.hover-arrow.top {
+		position: absolute;
+		top: -100%;
+		bottom: auto;
+		left: 0%;
+		right: 0%;
+	}
 
-.hover-arrow.right {
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: auto;
-  right: -100%;
-}
+	.clip {
+		position: relative;
+		overflow: hidden;
+	}
 
-.hover-arrow.left {
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: -100%;
-  right: auto;
-}
+	.curve-block-center {
+		height: 0;
+		grid-column-gap: 16px;
+		grid-row-gap: 16px;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 0.9fr;
+		grid-auto-columns: 1fr;
+		align-content: end;
+		justify-content: center;
+		align-items: flex-end;
+		display: flex;
+		position: absolute;
+		top: -0.4px;
+		bottom: auto;
+		left: 0%;
+		right: 0%;
+	}
 
-.hover-arrow.top {
-  position: absolute;
-  top: -100%;
-  bottom: auto;
-  left: 0%;
-  right: 0%;
-}
+	.curve-link {
+		color: #fff;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		margin-bottom: -1px;
+		padding: 0;
+		display: flex;
+		position: relative;
+	}
 
-.clip {
-  position: relative;
-  overflow: hidden;
-}
-
-
-.curve-block-center {
-  height: 0;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr .9fr;
-  grid-auto-columns: 1fr;
-  align-content: end;
-  justify-content: center;
-  align-items: flex-end;
-  display: flex;
-  position: absolute;
-  top: -.4px;
-  bottom: auto;
-  left: 0%;
-  right: 0%;
-}
-
-.curve-link {
-  color: #fff;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: -1px;
-  padding: 0;
-  display: flex;
-  position: relative;
-}
-
-.curve-arrow {
-  width: 4rem;
-  height: 4rem;
-  border: 1px solid #e7eeee;
-  border-radius: 100rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background-color: #fff;
-  position: absolute;
-  top: .5rem;
-}
+	.curve-arrow {
+		width: 4rem;
+		height: 4rem;
+		border: 1px solid #e7eeee;
+		border-radius: 100rem;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background-color: #fff;
+		position: absolute;
+		top: 0.5rem;
+	}
 </style>
