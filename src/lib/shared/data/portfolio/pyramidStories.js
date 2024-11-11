@@ -18,8 +18,8 @@ const progect = {
 		'pyramids/6.webp',
 		'pyramids/7.webp',
 		'pyramids/8.webp',
-		'pyramids/9.webp',
-		'pyramids/10.webp'
+		'pyramids/10.webp',
+		'pyramids/11.webp'
 	],
 	video: '',
 	gif: '/gif/pyramids.webp',

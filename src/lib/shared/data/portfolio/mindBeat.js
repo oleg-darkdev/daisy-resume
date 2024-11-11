@@ -16,8 +16,7 @@ const progect = {
 		'mindBeat/5.webp',
 		'mindBeat/6.webp',
 		'mindBeat/7.webp',
-		'mindBeat/8.webp',
-		'mindBeat/9.webp'
+		'mindBeat/8.webp'
 	],
 	video: '',
 	gif: '/gif/mindBeat.webp',
