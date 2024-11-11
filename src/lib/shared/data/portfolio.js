@@ -9,7 +9,6 @@ import bejahi from './portfolio/bejahi';
 import voteWise from './portfolio/voteWise';
 // fablab
 
-
 // commercial
 import puzzleManagement from './portfolio/puzzleManagement';
 import kanbanism from './portfolio/kanbanism';
@@ -27,8 +26,6 @@ import leanCoffee from './portfolio/leanCoffee';
 import mks from './portfolio/mks';
 // import antySystems from './portfolio/antySystems';
 // import antySystems from './portfolio/antySystems';
-
-
 
 //  anti-systems
 import antySystems from './portfolio/antySystems';
@@ -53,65 +50,71 @@ import archaeoStories from './portfolio/archaeoStories';
 import kdhStories from './portfolio/kdhStories';
 import pyramidStories from './portfolio/pyramidStories';
 
+const portfolio = [
+	{
+		year: 'Cultural',
+		subTitle: 'Lorem ipsum is placeholder text commonly used.',
+		projects: [
+			bejahi,
+			theStories,
+			castleStories,
+			pyramidStories,
+			byPl,
+			heritageStories,
+			footprintsFate
+		]
+	},
+	{
+		year: 'BTB',
+		subTitle: 'Lorem ipsum is placeholder text commonly used.',
 
+		projects: [
+			puzzleManagement,
+			cynefin,
+			actionDelegation,
 
+			// motivators,
+			healthCheck
+			// leanCoffee
 
-const portfolio = [{
-        year: 'Cultural',
-        subTitle: 'Lorem ipsum is placeholder text commonly used.',
-        projects: [
-            bejahi,
-            theStories, castleStories, pyramidStories, byPl, heritageStories, footprintsFate,
-        ]
-    },
-    {
-        year: 'Commercial',
-        subTitle: 'Lorem ipsum is placeholder text commonly used.',
+			// kanbanism,
+			// sudoScrumBan.
+			// coastOfDelay,
+			// pomodoroPlan,
+			// crazyWipLimits,
+			// easyKanban,
+			// kanbanRiders,
+		]
+	},
+	{
+		year: 'Educational',
+		subTitle: 'Lorem ipsum is placeholder text commonly used.',
+		projects: [graffiti, ecocide, mks, historyOfAnarchy, lgbtTree, antySystems]
+	},
+	{
+		year: 'Social',
+		subTitle: 'Lorem ipsum is placeholder text commonly used.',
+		projects: [
+			itingo,
+			ds5,
+			darkDevFoundation,
+			voteWise
 
-        projects: [
-            puzzleManagement,
-            cynefin,
-            actionDelegation,
-
-            // motivators,
-            healthCheck,
-            // leanCoffee
-
-            // kanbanism,
-            // sudoScrumBan.
-            // coastOfDelay,
-            // pomodoroPlan,
-            // crazyWipLimits,
-            // easyKanban,
-            // kanbanRiders,
-
-
-            mks,
-        ]
-    },
-    {
-        year: 'Social',
-        subTitle: 'Lorem ipsum is placeholder text commonly used.',
-        projects: [
-            darkDevFoundation, historyOfAnarchy, antySystems, lgbtTree, graffiti, ecocide, voteWise, itingo, ds5, 
 			// techSopot,
-        ]
-    },
-    {
-        year: 'Sports',
-        subTitle: 'Lorem ipsum is placeholder text commonly used.',
-        projects: [
-            yellowElephant,
-            mindBeat,
-            rozbrat
-        ]
-    },
+		]
+	},
+	{
+		year: 'Sports',
+		subTitle: 'Lorem ipsum is placeholder text commonly used.',
+		projects: [yellowElephant, mindBeat, rozbrat]
+	}
+
+	// {
+	// 	year: 'Commercial',
+	// 	subTitle: 'Lorem ipsum is placeholder text commonly used.',
+	// 	projects: []
+	// }
+	//
 ];
 
-
-
-export {
-    portfolio,
-    
-
-};
+export { portfolio };
