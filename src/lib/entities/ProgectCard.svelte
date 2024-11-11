@@ -24,22 +24,22 @@
 } -->
 
 <div
-	class="mt-10 mb-16 hover:mt-20 group hover:mb-32 mx-auto lg:hover:scale-125 md:hover:scale-125 hover:scale-110 hover:transition hover:duration-1000 hover:ease-in-out"
+	class="group mx-auto mb-16 mt-10 hover:mb-32 hover:mt-20 hover:scale-110 hover:transition hover:duration-1000 hover:ease-in-out md:hover:scale-125 lg:hover:scale-125"
 >
 	<div class="mb-8">
-		<div class="flex flex-row mx-auto justify-between items-end max-w-[160px]">
+		<div class="mx-auto flex max-w-[160px] flex-row items-end justify-between">
 			<div class="avatar">
 				<a
 					href={project.githubRepo}
 					target="_blank"
-					class="  hover:scale-125 hover:transition hover:duration-1000 hover:ease-in-out w-10 h-10 rounded-full"
+					class="  h-10 w-10 rounded-full hover:scale-125 hover:transition hover:duration-1000 hover:ease-in-out"
 				>
 					<LogoGithub size={32} />
 				</a>
 			</div>
 			<!-- <div class=""> -->
 			<div class="">
-				<img src={project.icon} class="w-32 h-32" alt="" />
+				<img src={project.icon} class="h-32 w-32" alt="" />
 			</div>
 			<!-- <div class="w-18 h-18 mb-10 " style="">
         <img src="{project.icon}" class='w-18 h-18 mb-10 ' />
@@ -49,7 +49,7 @@
 				<a
 					href={project.link ? project.link : '/'}
 					target="_blank"
-					class=" hover:scale-125 hover:transition hover:duration-400 hover:ease-in-out w-10 h-10 rounded-full"
+					class=" hover:duration-400 h-10 w-10 rounded-full hover:scale-125 hover:transition hover:ease-in-out"
 				>
 					<ArrowUpRight size={32} />
 				</a>
@@ -59,7 +59,7 @@
 
 	<!-- shadow-2xl rounded-xl md:w-80 md:-ml-16 md:hover:-translate-x-16 md:hover:-translate-y-8"> -->
 
-	<div class="border-2 rounded-box relative max-w-xl">
+	<div class="rounded-box relative max-w-xl border-2">
 		<div class="curve-block-center">
 			<a
 				href="#{project.anchor}"
@@ -68,7 +68,7 @@
 			>
 				<div
 					style="background-color: {project.brandColor};"
-					class="curve-arrow group-hover:scale-110 group-hover:translate-y-2 group-hover:transition group-hover:duration-1000 group-hover:ease-in-out"
+					class="curve-arrow group-hover:translate-y-2 group-hover:scale-110 group-hover:transition group-hover:duration-1000 group-hover:ease-in-out"
 				>
 					<div class="text-white">
 						<!-- <div class="hover-arrow top ">
@@ -93,10 +93,10 @@
 		</div>
 
 		<div
-			class="mx-auto flex flex-col items-center lg:px-6 xl:px-6 md:px-6 px-3 xl:pt-6 lg:pt-6 md:pt-6 pt-3"
+			class="mx-auto flex flex-col items-center px-3 pt-3 md:px-6 md:pt-6 lg:px-6 lg:pt-6 xl:px-6 xl:pt-6"
 		>
-			<div class=" pt-6 mx-auto flex w-full flex-col text-left">
-				<span class="text-xs text-style-allcaps uppercase tracking-widest mb-6">
+			<div class=" mx-auto flex w-full flex-col pt-6 text-left">
+				<span class="text-style-allcaps mb-6 text-xs uppercase tracking-widest">
 					<a name={project.anchor} />
 					{#each project.tags as tag}
 						<span>#{tag} </span>
@@ -104,10 +104,10 @@
 				</span>
 
 				<div
-					class=" max-w-md flex items-start justify-start flex-col xl:-mt-0 md:mt-0 lg:-mt-0 -mt-4"
+					class=" -mt-4 flex max-w-md flex-col items-start justify-start md:mt-0 lg:-mt-0 xl:-mt-0"
 				>
 					<h3
-						class=" text-color-white text-size-xlarge {!project.showFullInfo ? '' : '-mt-0 -mb-10'}"
+						class=" text-color-white text-size-xlarge {!project.showFullInfo ? '' : '-mb-10 -mt-0'}"
 					>
 						{project.title}
 					</h3>
@@ -128,7 +128,7 @@
 			<div
 				class="card-sm rounded-t-box {!project.showFullInfo
 					? 'max-h-[360px]'
-					: 'max-h-[180px]'}  lg:card-body pb-2 pt-4"
+					: 'max-h-[180px]'}  pb-2 pt-4 lg:card-body"
 			>
 				<!-- <figure class='rounded-xl   mx-1'><img src="{images[0]}" class='min-h-20 min-w-96' alt="" /></figure> -->
 				{#if !project.showFullInfo}
@@ -140,10 +140,10 @@
 									<!-- <Color {color} {text} /> -->
 									<!-- <span>{i}</span> -->
 									<!-- mx-1  -->
-									<figure class="rounded-xl mx-1">
+									<figure class="mx-1 rounded-xl">
 										<img
 											src="/images/screenshotes/{screenshot}"
-											class="rounded-xl h-20 lg:w-56 md:w-56 w-40 xl:w-56"
+											class="h-20 w-40 rounded-xl md:w-56 lg:w-56 xl:w-56"
 											alt="Screenshot #{i} of {project.title}"
 										/>
 									</figure>
@@ -172,9 +172,9 @@
     </button>
 </div> -->
 					{#if showVideo}
-						<iframe class="h-48 w-full rounded-b-box" src={project.video} />
+						<iframe class="rounded-b-box h-48 w-full" src={project.video} />
 					{:else}
-						<img src={project.gif} class="h-48 rounded-b-box" alt="{project.title} gif" />
+						<img src={project.gif} class="rounded-b-box h-48" alt="{project.title} gif" />
 					{/if}
 				</figure>
 			</div>
