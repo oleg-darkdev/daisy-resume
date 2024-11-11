@@ -6,6 +6,8 @@ const progect = {
 	logo: '/images/logos/boardgames/puzzle-management/delegation-puzzle/logo.svg',
 	icon: '/images/logos/boardgames/puzzle-management/delegation-puzzle/icon.svg',
 	stack: [],
+
+	anchor: 'delegation-puzzle',
 	title: 'Delegation puzzle.',
 	shortDesc:
 		'Narzędzie do wizualizacji i delegowania zadań, który pomaga wprowadzić kulturę współpracy w organizacji poprzez delegowanie decyzji i zadań w zespole.',

@@ -5,8 +5,10 @@ const progect = {
 	logo: '/images/logos/boardgames/anti-systems/hs/logo.svg',
 	icon: '/images/logos/boardgames/anti-systems/hs/icon.svg',
 	stack: [],
+
+	anchor: '',
 	title: 'Hackerspaces',
-  	brandColor: '#44149c',
+	brandColor: '#44149c',
 	shortDesc: 'Lorem ipsum is placeholder text commonly used.',
 	screenshotes: ['', '', '', '', ''],
 	video: '',

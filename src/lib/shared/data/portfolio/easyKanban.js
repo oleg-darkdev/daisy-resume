@@ -5,8 +5,10 @@ const progect = {
 	logo: '/images/logos/boardgames/agile-fans/easy-kanban/logo.svg',
 	icon: '/images/logos/boardgames/agile-fans/easy-kanban/icon.svg',
 	stack: [],
-	title: 'Easy Kanban.',	
-  	brandColor: '#44149c',
+	title: 'Easy Kanban.',
+
+	anchor: '',
+	brandColor: '#44149c',
 	shortDesc:
 		'Uproszczona wersja Kanban do symulacji i zrozumienia podstawowych zasad takiego podejścia do organizacji pracy.',
 	screenshotes: ['', '', '', '', ''],

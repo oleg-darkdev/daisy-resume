@@ -6,6 +6,8 @@ const progect = {
 	icon: '/images/logos/boardgames/puzzle-management/cynefin/icon.svg',
 	stack: [],
 	brandColor: '#00e6cd',
+
+	anchor: 'cynefin-puzzle',
 	title: 'Cynefin puzzle.',
 	shortDesc: 'Hybrid educational board game about cynefin model. ',
 	screenshotes: [

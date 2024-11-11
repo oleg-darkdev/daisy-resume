@@ -6,6 +6,8 @@ const progect = {
 	icon: '/images/logos/boardgames/the-stories/pyramid-stories/icon.svg',
 	stack: [],
 	brandColor: '#44149c',
+
+	anchor: 'pyramid-stories',
 	title: 'Pyramid Stories',
 	shortDesc:
 		'educational boardgame, enhanced by an interactive web application, that tell about pyramids in different countries of the world.',

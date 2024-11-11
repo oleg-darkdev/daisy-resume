@@ -1,8 +1,8 @@
 // social
 import footprintsFate from './portfolio/footprintsFate';
 import itingo from './portfolio/itingo';
-import techSopot from './portfolio/techSopot';
-import ddGames from './portfolio/ddGames';
+// import techSopot from './portfolio/techSopot';
+// import ddGames from './portfolio/ddGames';
 import ds5 from './portfolio/ds5';
 import darkDevFoundation from './portfolio/darkDevFoundation';
 import bejahi from './portfolio/bejahi';
@@ -11,18 +11,18 @@ import voteWise from './portfolio/voteWise';
 
 // commercial
 import puzzleManagement from './portfolio/puzzleManagement';
-import kanbanism from './portfolio/kanbanism';
+// import kanbanism from './portfolio/kanbanism';
 import actionDelegation from './portfolio/actionDelegation';
-import sudoScrumBan from './portfolio/sudoScrumBan';
-import coastOfDelay from './portfolio/coastOfDelay';
-import pomodoroPlan from './portfolio/pomodoroPlan';
-import crazyWipLimits from './portfolio/crazyWipLimits';
-import easyKanban from './portfolio/easyKanban';
-import kanbanRiders from './portfolio/kanbanRiders';
-import motivators from './portfolio/motivators';
+// import sudoScrumBan from './portfolio/sudoScrumBan';
+// import coastOfDelay from './portfolio/coastOfDelay';
+// import pomodoroPlan from './portfolio/pomodoroPlan';
+// import crazyWipLimits from './portfolio/crazyWipLimits';
+// import easyKanban from './portfolio/easyKanban';
+// import kanbanRiders from './portfolio/kanbanRiders';
+// import motivators from './portfolio/motivators';
 import cynefin from './portfolio/cynefin';
 import healthCheck from './portfolio/healthCheck';
-import leanCoffee from './portfolio/leanCoffee';
+// import leanCoffee from './portfolio/leanCoffee';
 import mks from './portfolio/mks';
 // import antySystems from './portfolio/antySystems';
 // import antySystems from './portfolio/antySystems';
@@ -33,7 +33,7 @@ import lgbtTree from './portfolio/lgbtTree';
 import historyOfAnarchy from './portfolio/historyOfAnarchy';
 import graffiti from './portfolio/graffiti';
 import ecocide from './portfolio/ecocide';
-import hackerspaces from './portfolio/hackerspaces';
+// import hackerspaces from './portfolio/hackerspaces';
 
 // sports
 import mindBeat from './portfolio/mindBeat';
@@ -45,9 +45,9 @@ import theStories from './portfolio/theStories';
 import heritageStories from './portfolio/heritageStories';
 import castleStories from './portfolio/castleStories';
 import byPl from './portfolio/byPl';
-import paleoStories from './portfolio/paleoStories';
-import archaeoStories from './portfolio/archaeoStories';
-import kdhStories from './portfolio/kdhStories';
+// import paleoStories from './portfolio/paleoStories';
+// import archaeoStories from './portfolio/archaeoStories';
+// import kdhStories from './portfolio/kdhStories';
 import pyramidStories from './portfolio/pyramidStories';
 
 const portfolio = [

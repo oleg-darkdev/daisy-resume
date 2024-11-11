@@ -8,6 +8,8 @@ const progect = {
 	stack: [],
 	brandColor: '#44149c',
 	title: 'THE Stories',
+
+	anchor: 'the-stories',
 	shortDesc:
 		'Researches-based educational project in the form of series of educational board games and open API.',
 	screenshotes: [

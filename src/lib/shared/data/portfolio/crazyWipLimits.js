@@ -6,7 +6,9 @@ const progect = {
 	icon: '/images/logos/boardgames/agile-fans/crazy-wip/icon.svg',
 	stack: [],
 	title: 'Crazy WIP limits',
-  	brandColor: '#44149c',
+	brandColor: '#44149c',
+
+	anchor: '',
 	shortDesc:
 		'Symulacja, która koncentruje się na ograniczeniach WIP i pokazuje ich znaczenie dla efektywności.',
 	screenshotes: ['', '', '', '', ''],

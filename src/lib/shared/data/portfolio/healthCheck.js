@@ -6,6 +6,8 @@ const progect = {
 	icon: '/images/logos/boardgames/puzzle-management/health-check/icon.svg',
 	stack: [],
 	brandColor: '#44149c',
+
+	anchor: 'health-puzzle',
 	title: 'Health puzzle.',
 	// Health Check - How is your team feeling?
 	shortDesc:

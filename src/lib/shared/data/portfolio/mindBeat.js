@@ -6,6 +6,8 @@ const progect = {
 	icon: '/images/logos/sport/mindBeat/icon.svg',
 	stack: [],
 	brandColor: '#44149c',
+
+	anchor: 'mind-beat',
 	title: 'MIND+BEAT',
 	shortDesc: 'Home page of chess tournament “MIND+BEAT”.',
 	screenshotes: [
