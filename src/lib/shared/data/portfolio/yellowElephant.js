@@ -1,8 +1,8 @@
 const progect = {
 	id: 0,
 	githubRepo: 'https://github.com/oleg-darkdev/yellow-elephant_landing',
-	logo: '/images/logos/yellowElephant/logo.svg',
-	icon: '/images/logos/yellowElephant/icon.svg',
+	logo: '/images/logos/sport/yellowElephant/logo.svg',
+	icon: '/images/logos/sport/yellowElephant/icon.svg',
 	link: 'https://yellow-elephant.vercel.app/',
 	stack: [],
 	anchor: 'yellowelephant',
@@ -25,7 +25,7 @@ const progect = {
 	],
 	video: '',
 	gif: '/gif/yellowElephant.webp',
-	tags: ['ecology', 'landing', 'boardgame-app']
+	tags: ['chess', 'tournament', 'sport', 'landing']
 };
 
 export default progect;
