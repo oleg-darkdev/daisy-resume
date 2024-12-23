@@ -19,24 +19,16 @@ import services from './data/services.js';
 import noOrgsWorkshops from './data/noOrgsWorkshops.js';
 import orgWorkshopsList from './data/orgWorkshopsList.js';
 
-import {
-	portfolio,
-
-} from './data/portfolio.js';
+import { portfolio, boardgames } from './data/portfolio.js';
 
 export {
 	LogoFacebook,
-  	noOrgsWorkshops,
-  	orgWorkshopsList,
+	noOrgsWorkshops,
+	orgWorkshopsList,
 	timeline,
 	navigation,
 	faq,
 	portfolio,
-	
-
-
-
-
 	services,
 	skillsTools,
 	PlayFilledAlt,
@@ -47,5 +39,6 @@ export {
 	LogoGithub,
 	Code,
 	DocumentPdf,
-	UserProfile
+	UserProfile,
+	boardgames
 };
