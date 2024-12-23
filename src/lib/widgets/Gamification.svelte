@@ -2,7 +2,7 @@
 	import { CurverNav, ProgectCard } from '$entities';
 	import { boardgames } from '$shared';
 
-	let showBoardgames = false;
+	export let showBoardgames = false;
 </script>
 
 <section class="home-about group">
@@ -14,11 +14,16 @@
 				<div class="padding-horizontal padding-medium">
 					<div class="home-about-top">
 						<div  class="padding-vertical padding-xlarge">
+							{#if showBoardgames == false}
+								<a name="boardgames"></a>
+							{/if}
 							<div class="home-about-intro">
 								<div class="text-size-xlarge text-align-center">
 									Help you with creating gamification of the learning process - on absolutely any
 									topic.
 								</div>
+
+								
 								<div
 									on:click={() => {
 										showBoardgames = true;
