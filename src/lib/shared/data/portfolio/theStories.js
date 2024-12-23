@@ -6,7 +6,7 @@ const progect = {
 	logo: '/images/logos/boardgames/the-stories/core/logo.svg',
 	icon: '/images/logos/boardgames/the-stories/core/icon.svg',
 	stack: [],
-	brandColor: '#44149c',
+	brandColor: '#723f12',
 	title: 'THE Stories',
 
 	anchor: 'the-stories',

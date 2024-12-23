@@ -5,7 +5,7 @@ const progect = {
 	logo: '/images/logos/sport/rozbrat/logo.png',
 	icon: '/images/logos/sport/rozbrat/icon.svg',
 	stack: [],
-	brandColor: '#44149c',
+	brandColor: '#dc2626',
 
 	anchor: 'rozbrat',
 	title: '“30 years rozbrat!”',

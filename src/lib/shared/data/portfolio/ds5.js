@@ -6,7 +6,7 @@ const progect = {
 	link: 'https://ds5-ngo.vercel.app/',
 	stack: [],
 	anchor: 'ds5',
-	brandColor: '#44149c',
+	brandColor: '#101729',
 
 	title: 'DS5 organisation',
 	shortDesc: 'Oficjalna strona organizacji „Dom Sąsiedzki - Alternatywy 5”',

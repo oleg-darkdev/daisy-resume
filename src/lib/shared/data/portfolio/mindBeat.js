@@ -5,7 +5,7 @@ const progect = {
 	logo: '/images/logos/sport/mindBeat/logo.svg',
 	icon: '/images/logos/sport/mindBeat/icon.svg',
 	stack: [],
-	brandColor: '#44149c',
+	brandColor: '#156ff5',
 
 	anchor: 'mind-beat',
 	title: 'MIND+BEAT',

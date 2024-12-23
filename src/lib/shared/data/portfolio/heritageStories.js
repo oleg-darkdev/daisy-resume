@@ -5,7 +5,7 @@ const progect = {
 	logo: '/images/logos/boardgames/the-stories/heritage-stories/logo.svg',
 	icon: '/images/logos/boardgames/the-stories/heritage-stories/icon.svg',
 	stack: [],
-	brandColor: '#44149c',
+	brandColor: '#713f13',
 
 	anchor: 'heritage-stories',
 	title: 'Heritage Stories',
