@@ -24,9 +24,9 @@
 } -->
 
 <div
-	class="group mx-auto mb-16 mt-10 hover:mb-32 hover:mt-20 hover:scale-110 hover:transition hover:duration-1000 hover:ease-in-out md:hover:scale-125 lg:hover:scale-125"
+	class="hover:bg-[#1a0000]  group mx-auto mb-16 mt-10 hover:mb-32 hover:mt-20 hover:scale-100 hover:transition hover:duration-1000 hover:ease-in-out md:hover:scale-110 lg:hover:scale-110"
 >
-	<div class="mb-8">
+	<div class="mb-8 ">
 		<div class="mx-auto flex max-w-[160px] flex-row items-end justify-between">
 			<div class="avatar">
 				<a

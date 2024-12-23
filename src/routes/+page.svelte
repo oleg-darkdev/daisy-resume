@@ -59,7 +59,7 @@ let showFaqSection = false, showEducatorSection = false, showTimelineSection = f
     </SectionWrap>
 
 
-    <TextDivider title="Work" subTitle="Web Design, Web Development, Creative Development">
+    <TextDivider title="Work" subTitle="Creative Web Development,  Game design, Web Design. ">
         <!-- <img src="/images/screenshotes/voteWise/1.webp" loading="lazy" more="image" alt="" class="c-more-image">
         <img src="/images/screenshotes/antiSystem/1.webp" loading="lazy" more="image" alt="" class="c-more-image bit-title-1">
         <img src="/images/screenshotes/graffityChronicles/2.webp" loading="lazy" more="image" alt="" class="c-more-image bit-title-2">
@@ -97,7 +97,7 @@ let showFaqSection = false, showEducatorSection = false, showTimelineSection = f
 
                       {#each portfolio as portfolioData}
 
-                      <div class="mx-auto ">
+                      <div class="mx-auto " id={portfolioData.anchor}>
                         <div class="mb-8 lg:mt-10 xl:mt-10 md:mt-10 mt-16 lg:ml-40 flex flex-shrink-0 flex-col  border-white px-4 pb-6 lg:w-96 xl:w-96 md:w-96 w-64 border-b-4">
                           <strong
                             class="text-thin heading-style-h3 flex text-left text-3xl font-thin leading-none  lg:text-4xl"
