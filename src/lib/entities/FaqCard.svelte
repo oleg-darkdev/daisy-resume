@@ -1,4 +1,14 @@
 <script>
+    import {
+	blur,
+	crossfade,
+	draw,
+	fade,
+	fly,
+	scale,
+	slide
+} from 'svelte/transition';
+
     export let faqData;
 </script>
 
@@ -22,7 +32,7 @@
         </div>
     </div>
 {#if faqData.show}
-    <div class="hame-faq-bottom">
+    <div transition:fade class="hame-faq-bottom">
         <div class="home-faq-content radius-regular">
             <div class="hover-text bottom-hover-text">
                 <div class="text-size-small text-style-muted">00{faqData.id}</div>
