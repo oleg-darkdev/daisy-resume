@@ -53,6 +53,7 @@ import pyramidStories from './portfolio/pyramidStories';
 const portfolio = [
 	{
 		year: 'Cultural',
+		anchor: 'cultural',
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
 		projects: [
 			bejahi,
@@ -67,14 +68,15 @@ const portfolio = [
 	{
 		year: 'BTB',
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
+		anchor: 'btb',
 
 		projects: [
 			puzzleManagement,
 			cynefin,
 			actionDelegation,
+			healthCheck
 
 			// motivators,
-			healthCheck
 			// leanCoffee
 
 			// kanbanism,
@@ -88,11 +90,15 @@ const portfolio = [
 	},
 	{
 		year: 'Educational',
+		anchor: 'educational',
+
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
 		projects: [graffiti, ecocide, mks, historyOfAnarchy, lgbtTree, antySystems]
 	},
 	{
 		year: 'Social',
+		anchor: '',
+
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
 		projects: [
 			itingo,
@@ -105,6 +111,8 @@ const portfolio = [
 	},
 	{
 		year: 'Sports',
+		anchor: 'sport',
+
 		subTitle: 'Lorem ipsum is placeholder text commonly used.',
 		projects: [yellowElephant, mindBeat, rozbrat]
 	}
@@ -117,4 +125,21 @@ const portfolio = [
 	//
 ];
 
-export { portfolio };
+const boardgames = [
+	graffiti,
+	ecocide,
+	mks,
+	historyOfAnarchy,
+	lgbtTree,
+	antySystems,
+	puzzleManagement,
+	cynefin,
+	actionDelegation,
+	healthCheck,
+	theStories,
+	castleStories,
+	pyramidStories,
+	byPl,
+	heritageStories
+];
+export { portfolio, boardgames };
