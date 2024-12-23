@@ -17,7 +17,7 @@ const navigation = [
     },
     {
         title: 'About',
-        href: '#my-story'
+        href: '#story'
     },
 
     {
