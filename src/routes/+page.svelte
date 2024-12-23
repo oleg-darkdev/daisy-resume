@@ -5,7 +5,9 @@
 	import { portfolio } from '$shared';
 
 
-let showFaqSection = false, showEducatorSection = false, showTimelineSection = false, showAboutSection = false, showServicesSection = false, showSkillsSection = false;
+let showBoardgames = false, showFaqSection = false, showEducatorSection = false, showTimelineSection = false, showAboutSection = false, showServicesSection = false, showSkillsSection = false;
+
+
 </script>
 
 <svelte:head>
@@ -140,7 +142,7 @@ let showFaqSection = false, showEducatorSection = false, showTimelineSection = f
     </section>
 
 
-    <Gamification />
+    <Gamification bind:showBoardgames/>
 
     <!-- <TextDivider title="Games" subTitle="Gamification, Hybrid board games, Educational board games.">
         <img src="/images/logos/boardgames/the-stories/bg.svg" loading="lazy" more="image" alt="" class="c-more-image">
@@ -151,7 +153,7 @@ let showFaqSection = false, showEducatorSection = false, showTimelineSection = f
         <img src="" loading="lazy" more="image" alt="" class="c-more-image bit-title-5">
     </TextDivider> -->
 
-    <a name='boardgames' />
+    <!-- <a name='boardgames' /> -->
     <!-- <section class="home-about">
       <div class="padding-horizontal lg:padding-small md:padding-small xl:padding-small">
         <div class="grid-large">
