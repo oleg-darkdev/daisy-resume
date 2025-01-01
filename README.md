@@ -59,13 +59,10 @@ _Check out the live project [\_here_](https://oleg-darkdev.vercel.app/)
 
 ## 🖌 Creators
 
-<a name=""></a>
-
-
 <table>
  <tr>
     <td align="center">
-    <img src="/assets/headshots/mini.png"" width="200px;"/><br />
+    <img src="/static/promo_imgs_for_repo/sreator.png" width="200px;"/><br />
     <sub><b>Oleg_darkDev</b></sub><br />Product Web engineer<br />
     <a href="https://github.com/oleg-darkdev" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/oleg-darkdev" target="_blank">LinkedIn</a>
@@ -79,10 +76,11 @@ _Check out the live project [\_here_](https://oleg-darkdev.vercel.app/)
 
 ## 💪🏼 Show your support
 
-Give a ⭐️ if you like our stuff!
-
 <a name="support"></a>
 
+Give a ⭐️ if you like our stuff!
+
+<a href="" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## 📝 License
 
