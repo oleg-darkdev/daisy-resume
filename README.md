@@ -6,25 +6,30 @@
 
 # Lorem
 
-![Thumbnail](https://raw.githubusercontent.com/oleg-darkdev/oleg-darkdev/refs/heads/main/darkdev_promo_banner_crop.gif)
+<!-- ![Thumbnail](https://raw.githubusercontent.com/oleg-darkdev/oleg-darkdev/refs/heads/main/darkdev_promo_banner_crop.gif) -->
 
 lorem impsum.........
 
-_Check out the live project [\_here_](https://oleg-darkdev.vercel.app/).\_
+_Check out the live project [\_here_](https://oleg-darkdev.vercel.app/)
 
 ## Table of Contents
 
 - [Screenshots](#screenshots)
-- [Acknowledgements](#acknowledgements)
+<!-- - [Acknowledgements](#acknowledgements) -->
 - [Technologies](#technologies)
 - [Usage](#usage)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Environment Variables Setup](#environment-variables-setup)
   - [Run The App](#run-the-app)
+- [Support](#support)
 - [License](#license)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<a name="screenshots"></a>
+
 
 |     ![Header](static/promo_imgs_for_repo/1.png)      |   ![Hero section](static/promo_imgs_for_repo/2.png)   |
 | :--------------------------------------------------: | :---------------------------------------------------: |
@@ -42,6 +47,8 @@ _Check out the live project [\_here_](https://oleg-darkdev.vercel.app/).\_
 
 ## 👾 Technologies
 
+<a name="technologies"></a>
+
 - [Typescipt](https://www.typescriptlang.org/).
 - [FSD architecture](https://feature-sliced.design/ru/docs/get-started)
 - [SvelteJS](https://svelte.dev/)
@@ -51,6 +58,9 @@ _Check out the live project [\_here_](https://oleg-darkdev.vercel.app/).\_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🖌 Creators
+
+<a name=""></a>
+
 
 <table>
  <tr>
@@ -71,7 +81,13 @@ _Check out the live project [\_here_](https://oleg-darkdev.vercel.app/).\_
 
 Give a ⭐️ if you like our stuff!
 
+<a name="support"></a>
+
+
 ## 📝 License
+
+<a name="license"></a>
+
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
