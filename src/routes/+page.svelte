@@ -185,7 +185,7 @@ let showBoardgames = false, showFaqSection = false, showEducatorSection = false,
     </TextDivider>
 
 
-    <SectionWrap bind:showSection={showAboutSection} title="My story" customClasses='lg:mt-20 mt-16 mb-6' anchor='my-story'>
+    <SectionWrap bind:showSection={showAboutSection} title="My story" customClasses='lg:mt-20 mt-16 mb-6' anchor='story'>
       <div slot='text-block'>
         <TextBlock bind:showSection={showAboutSection} title='With years of experience in the industry, I have worked with businesses of all sizes.' link='#contact' btnTitle='Get in touch'/>
       </div>
